@@ -1,6 +1,5 @@
 import { storageService } from "./storage-service.js"
 import { utilService } from "./util-service.js"
-import axios from "axios"
 
 const KEY = "gigs_db"
 
@@ -33,12 +32,9 @@ const BASE_URL =
 async function query() {
   try {
     // const res = await axios.get(BASE_URL, { params: filterBy })
-<<<<<<< HEAD
-    const res = await storageService.query(TOY_KEY)
-=======
-    const res = await storageService.query(KEY)
->>>>>>> 3727915e9a9da7e0a246f71af566dce2fd8185bf
-    return res.data
+    const res = await storageService.query()
+    // return res.data
+    return res
   } catch (err) {
     console.error(err)
   }

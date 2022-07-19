@@ -1,14 +1,33 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
+<template>
+  <section>
+    <app-header />
+    <router-view />
+    <app-footer />
+  </section>
+</template>
+
+<script>
+// import { RouterLink, RouterView } from "vue-router";
+import appHeader from "./cmps/app-header.cmp.vue";
+import appFooter from "./cmps/app-footer.cmp.vue";
+export default {
+  name: "main-app",
+  props: [],
+  components: {
+    appHeader,
+    appFooter,
+  },
+  data() {
+    return {};
+  },
+  methods: {},
+
+  created() {
+     
+     this.$store.dispatch({ type: 'loadGigs' })
+  },
+  unmounted() {},
+};
 </script>
 
-<template>
-  <header>
-    <nav>
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
-    </nav>
-  </header>
 
-  <RouterView />
-</template>
