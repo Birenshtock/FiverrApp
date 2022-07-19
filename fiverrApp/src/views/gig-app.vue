@@ -1,17 +1,17 @@
 <template>
-  <!-- <section >
+  <section >
     <gig-list :gigs="gigs" />
-  </section> -->
+  </section>
 
 
 
-  <pre>
+  <!-- <pre>
     {{gigs}}
-  </pre>
+  </pre> -->
 </template>
 
 <script>
-// import gigList from '../cmps/gig-list.vue'
+import gigList from '../cmps/gig-list.cpm.vue'
 
 export default {
   name: 'toy-app',
@@ -28,7 +28,7 @@ export default {
    
   },
   components: {
-    // gigList,
+    gigList,
     
   },
 }

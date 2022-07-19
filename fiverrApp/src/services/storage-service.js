@@ -16,7 +16,7 @@ export const storageService = {
 }
 
 function query() {
-  console.log('gigss',gigs)
+ 
  
 
   // var entities = JSON.parse(localStorage.getItem(entityType)) || []
