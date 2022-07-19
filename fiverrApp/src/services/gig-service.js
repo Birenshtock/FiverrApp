@@ -33,7 +33,7 @@ const BASE_URL =
 async function query() {
   try {
     // const res = await axios.get(BASE_URL, { params: filterBy })
-    const res = await storageService.query(TOY_KEY)
+    const res = await storageService.query(KEY)
     return res.data
   } catch (err) {
     console.error(err)
