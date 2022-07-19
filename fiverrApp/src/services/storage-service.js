@@ -1,3 +1,11 @@
+import { gigService } from '../services/gig-service.js'
+
+// const fs = require('fs')
+// const gigs = require('../../data/gigs.json')
+
+import gigs from '../../data/gigs.json'
+
+
 export const storageService = {
   query,
   get,
@@ -7,9 +15,12 @@ export const storageService = {
   postMany,
 }
 
-function query(entityType) {
-  var entities = JSON.parse(localStorage.getItem(entityType)) || []
-  return Promise.resolve(entities)
+function query() {
+  console.log('gigss',gigs)
+ 
+
+  // var entities = JSON.parse(localStorage.getItem(entityType)) || []
+  return Promise.resolve(gigs)
 }
 
 function get(entityType, entityId) {

@@ -1,4 +1,3 @@
-
 <template>
   <section>
     <app-header />
@@ -24,12 +23,11 @@ export default {
   methods: {},
 
   created() {
+     
+     this.$store.dispatch({ type: 'loadGigs' })
   },
   unmounted() {},
 };
 </script>
-
-<style>
-</style>
 
 
