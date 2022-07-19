@@ -1,11 +1,11 @@
-<template>
-    <!-- <footer class="footer">
+<!-- <template>
+    <footer class="footer">
         <hr>
         Created by: <br>
         Danielle Ilyasov, Adi Birenshtock, David Eldar <br>
         &copy; Team D.A.D - 2022
-    </footer> -->
-</template>
+    </footer>
+</template> -->
 
 <!-- <style>
 footer{
