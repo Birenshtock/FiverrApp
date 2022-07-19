@@ -30,9 +30,6 @@ export default {
 </script>
 
 <style>
-#main-app{
- text-align: center;
-}
 </style>
 
 
