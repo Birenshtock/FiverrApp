@@ -95,9 +95,7 @@ async function save(gig) {
 }
 
 function getEmptyGig() {
-  return {
-   
-  }
+  return {}
 }
 
 function getLabels() {

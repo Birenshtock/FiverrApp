@@ -3,7 +3,7 @@
         <hr>
         Created by: <br>
         Danielle Ilyasov, Adi Birenshtock, David Eldar <br>
-        &copy; Team D.A.D - 2022
+        &copy; Team D.A.D - Jul 2022
     </footer> -->
 </template>
 

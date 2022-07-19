@@ -24,7 +24,7 @@ export default {
 
   created() {
      
-     this.$store.dispatch({ type: 'loadGigs' })
+    this.$store.dispatch({ type: 'loadGigs' })
   },
   unmounted() {},
 };
