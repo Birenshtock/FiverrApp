@@ -6,8 +6,11 @@
 
 // basics
 @import 'basics/_base.scss';
-// @import 'basics/helpers';
+@import 'basics/helpers.scss';
 
 // components
 @import 'components/_footer.scss';
 @import 'components/_gig-preview.scss';
+
+//setup
+@import 'setup/typography.scss'
