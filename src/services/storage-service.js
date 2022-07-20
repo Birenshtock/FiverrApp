@@ -16,13 +16,18 @@ export const storageService = {
 }
 
 function query(filterBy) {
-  const {title } = filterBy
+  const {title, catagory } = filterBy
   const regex = new RegExp(title, 'i')
-  let filteredGigs = gigs.filter((gig) => regex.test(gig.title))
- 
- 
+  console.log('ata mefager')
+   
+  let filteredGigs 
+  if (!catagory){
+    filteredGigs = gigs.filter((gig) => regex.test(gig.title))
+    return Promise.resolve(filteredGigs)
+  } 
 
-  // var entities = JSON.parse(localStorage.getItem(entityType)) || []
+  filteredGigs = gigs.filter((gig) => regex.test(gig.title)).filter((gig) => gig.catagory===catagory)
+
   return Promise.resolve(filteredGigs)
 }
 

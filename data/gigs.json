@@ -1,6 +1,7 @@
 [
     {
         "_id": "i101",
+        "catagory": "Logo",
         "title": "I will do superb, unique and modern business logo design",
         "price": 12,
         "owner": {
@@ -33,6 +34,7 @@
       },
     {
         "_id": "i102",
+        "catagory": "Wordpress",
         "title": "I will design your logo",
         "price": 12,
         "owner": {
@@ -65,6 +67,7 @@
       },
     {
         "_id": "i103",
+        "catagory": "VoiceOver",
         "title": "I will design your logo",
         "price": 12,
         "owner": {

@@ -20,7 +20,7 @@ import gigList from '../cmps/gig-list.cpm.vue'
 import appFilter from "../cmps/app-filter.cmp.vue";
 
 export default {
-  name: 'toy-app',
+  name: 'gig-app',
   created() {
     //  console.log('gigs',gigs)
     this.$store.dispatch({ type: 'loadGigs' })
