@@ -1,4 +1,21 @@
 <template>
+ <lightgallery
+        :settings="{ speed: 500, plugins: plugins }"
+        :onInit="onInit"
+        :onBeforeSlide="onBeforeSlide"
+    >
+        <a href="img/img1.jpg">
+            <img alt="img1" src="img/thumb1.jpg" />
+        </a>
+        <a href="img/img2.jpg">
+            <img alt="img2" src="img/thumb2.jpg" />
+        </a>
+        ...
+    </lightgallery>
+
+
+
+
   <section class="gig-detalis" v-if="gig">
  
   <!-- <pre>{{gig}}</pre> -->
@@ -6,8 +23,10 @@
   <div class="owner-details">
     <img :src="gig.owner.imgUrl" >
     <div class="owner-fullname">{{gig.owner.fullname}}</div>
-    <div>{{gig.owner.level}}</div> 
-    <div class="stars">⭐⭐⭐⭐⭐5(73)</div>
+    <div class="space">&nbsp;|&nbsp;</div>
+  
+    <!-- <div>{{gig.owner.level}}</div>  -->
+    <div class="stars"><span>&#9733;&#9733;&#9733;&#9733;&#9733; 6</span> (73)</div>
   </div>
 
   <div class="block text-center" m="t-4">
@@ -23,7 +42,7 @@
         <button>See all reviews</button>
     </div>
 
-    <div>
+    <div class="about-gig">
         <h2>About This Gig</h2>
       
         <p> {{gig.description}}</p>
@@ -91,7 +110,8 @@ export default {
         // .then((currToy) => {
         // this.gig = currToy
         // })
-    console.log('gig',this.gig)
+    // console.log('gig',this.gig)
+    console.log('gig s only.\n✔ 100% ')
    
 
     

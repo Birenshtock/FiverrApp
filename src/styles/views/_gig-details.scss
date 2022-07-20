@@ -1,16 +1,39 @@
 .gig-detalis{
-    background-color: aquamarine;
+    border: 1px black solid;
+    color: $clr1;
+  
     width: 60vw;
+    font-family: Arial, Helvetica, sans-serif;
+    h1{
+        font-size: 28px;
+        padding-bottom: 16px;
+      
+    }
+  
     .owner-details{
         display: flex;
         align-items: center;
+        font-size: 14px;
+        line-height: 21px;
         img{
             border-radius: 50%;
             width: 30px;
             height: 30px;
+            margin-right: 10px;
         }
         .owner-fullname{
+        
             font-weight: bold;
+        }
+        .space{
+            color: #c5c6c9;
+        }
+        .stars{
+            span{
+
+                color: #ffbe5b;
+                font-weight: 700;
+            }
         }
     }
 
@@ -21,10 +44,15 @@
     }
     .reviews{
         display: flex;
+        justify-content: space-between;
         align-items: center;
+        h2{
+            font-size: 20px;
+        }
         
         button{
             
+            font-size: 14px;
             border: none;
             background-color: rgba(240, 248, 255, 0);
             color: #1dbf73
@@ -32,6 +60,22 @@
         }
         button:hover{
             cursor: pointer;
+        }
+    }
+
+    .about-gig{
+        h2{
+            font-size: 20px;
+            line-height: 28px;
+            padding-bottom: 25px;
+        }
+        
+        p{
+            font-size: 1rem;
+            color: $clr2;
+            word-wrap: break-word;
+            letter-spacing: 2px;
+            
         }
     }
 

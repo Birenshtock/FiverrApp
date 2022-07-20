@@ -1,5 +1,5 @@
 <template>
-  <section v-if="gig" class="gig-preview">
+  <section v-if="gig" class="gig-preview" @click="goToDetail">
     <div class="inner-wrappers">
       <el-carousel trigger="click" height="160px">
         <el-carousel-item v-for="img in gig.imgs" :key="img" >
@@ -23,7 +23,7 @@
         <span>{{ gig.price }}.99 $</span>
       </div>
     </footer>
-    <router-link   :to="'/gig/'+gig._id">Details</router-link>
+  
   </section>
 
 
@@ -46,7 +46,11 @@ export default {
     test() {
       console.log('testtt')
       this.like = !this.like
-    }
+    },
+     goToDetail() {
+      this.$router.push(`/gig/${this.gig._id}`)
+    },
+
   },
   computed: {
     liked() {
