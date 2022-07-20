@@ -24,7 +24,14 @@
         <span>{{ gig.price }}.99 $</span>
       </div>
     </footer>
+    <router-link   :to="'/gig/'+gig._id">Details</router-link>
   </section>
+
+
+  
+
+
+  
 </template>
 <script>
 export default {

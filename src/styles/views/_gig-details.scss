@@ -1,0 +1,56 @@
+.gig-detalis{
+    background-color: aquamarine;
+    width: 60vw;
+    .owner-details{
+        display: flex;
+        align-items: center;
+        img{
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+        }
+        .owner-fullname{
+            font-weight: bold;
+        }
+    }
+
+    .block text-center{
+        img{
+            width: 100%;
+        }
+    }
+    .reviews{
+        display: flex;
+        align-items: center;
+        
+        button{
+            
+            border: none;
+            background-color: rgba(240, 248, 255, 0);
+            color: #1dbf73
+            
+        }
+        button:hover{
+            cursor: pointer;
+        }
+    }
+
+    .about-seller{
+        display: flex;
+        img{
+            border-radius: 50%;
+            height: 110px;
+            width: 110px;
+            margin-right: 10px;
+        }
+        .owner-details{
+            display: block;
+        }
+    }
+
+    .extended-owner-details{
+        border: 1px solid black;
+    }
+
+
+}
