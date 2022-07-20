@@ -2,8 +2,8 @@
   <section class="main-filter">
     <el-input
       @input="setFilter"
-      v-model="filterBy.txt"
-      placeholder="Search by toy name..."
+      v-model="filterBy.title"
+      placeholder="What service are you looking for?"
       clearable
       size="large"
     />
@@ -18,34 +18,20 @@ export default {
     return {
       filterBy: {
         txt: '',
-        status: '',
-        byLabel: [],
-        bySort: '',
+        byCatagories: [],
       },
-      labels: [
-        'On wheels',
-        'Box game',
-        'Art',
-        'Baby',
-        'Doll',
-        'Puzzle',
-        'Outdoor',
-        'Battery powered',
+      tags: [
+          "logo-design",
+          "artisitic",
+          "proffesional",
+          "accessible"
       ],
-      stockOptions: ['In stock', 'Out of stock'],
-      sortOptions: [
-        'Name - Increasing',
-        'Price - Increasing',
-        'Created - Increasing',
-        'Name - Decreasing',
-        'Price - Decreasing',
-        'Created - Decreasing',
-      ],
+
     }
   },
   methods: {
     setFilter() {
-      if (this.filterBy.byLabel[0] === '') this.filterBy.byLabel = []
+      
       this.$emit('setFilter', this.filterBy)
     },
   },

@@ -31,9 +31,9 @@ export default {
     //   const idx = state.toys.findIndex((t) => t._id === toyId)
     //   state.toys.splice(idx, 1)
     // },
-    // setFilter(state, { filterBy }) {
-    //   state.filterBy = filterBy
-    // },
+    setFilter(state, { filterBy }) {
+      state.filterBy = filterBy
+    },
     // setSort(state, { sortBy }) {
     //   state.sortBy = sortBy
     // },
@@ -55,9 +55,15 @@ export default {
     //     commit({ type: 'removeToy', toyId })
     //   })
     // },
-    // setFilter({ dispatch, commit }, { filterBy }) {
+    // setFilterBy({ dispatch, commit }, { filterBy }) {
     //   commit({ type: 'setFilter', filterBy })
-    //   dispatch({ type: 'loadToys' })
+    //   dispatch({ type: 'loadGigs' })
     // },
+    setFilterBy({ commit }, { filterBy }) {
+      gigService.query(filterBy).then((gigs) => {
+        commit({ type: 'setGigs', gigs })
+      })
+    },
   },
+
 }
