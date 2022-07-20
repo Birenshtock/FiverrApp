@@ -23,11 +23,10 @@
 
 
     .seller-identifiers{
-        line-height: 120%;
-        box-sizing: border-box;
-        padding: 12px 12px 8px;
-        height: 54px;
-        width: 100%;      
+        align-items: center;
+        display: flex;
+        gap: 10px;
+        padding: 8px 0 8px 12px;  
         
         a{
             font-weight: 600;
@@ -37,14 +36,20 @@
         }
     }
 
+    .gig-title{
+        padding: 8px 20px 8px 12px;
+        height: 57.59px;
+        margin: 0;
+    }
+
     &:hover{
         color:rgb(20, 147, 20)
     }
 
     .content-info{
-        margin-bottom: 15px;
-        margin-left: 12px;
-        
+
+        padding: 8px 12px 20px;
+
         a{
             color: #ffbe5b;
             font-weight: 700;
@@ -52,23 +57,23 @@
             span{
                 color: #b5b6ba;
                 font-weight: 400;
-                margin-left: 2px;
+                margin-left: 4px;
             }
         }
     }
 
     footer{
-        padding: 10px 12px;
+        padding: 8px;
         align-items: center;
         clear: both;
         border-top: 1px solid #efeff0;
         min-height: 24px;
         justify-content: space-between;
+        height: 54px;
 
         p{
             color: #b5b6ba;
             cursor: pointer;
-
         }
         
         small{
