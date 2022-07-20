@@ -13,15 +13,15 @@
     border: 1px solid #e4e5e7;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
+    .red{
+        color: rgb(171, 15, 15);
+    }
 
     img {
         width: 100%;
     }
 
-    a{
-        margin-left: 12px;
-        margin-bottom: 10px;
-    }
+
     .seller-identifiers{
         line-height: 120%;
         box-sizing: border-box;
@@ -38,13 +38,13 @@
     }
 
     &:hover{
-        a{
-            color:rgb(20, 147, 20)
-        }
+        color:rgb(20, 147, 20)
     }
 
     .content-info{
         margin-bottom: 15px;
+        margin-left: 12px;
+        
         a{
             color: #ffbe5b;
             font-weight: 700;
@@ -67,12 +67,10 @@
 
         p{
             color: #b5b6ba;
+            cursor: pointer;
 
-            .red{
-                color: rgb(171, 15, 15);
-            }
         }
-
+        
         small{
             color: #74767e;
             font-size: 10px;
@@ -87,6 +85,8 @@
         span{
             text-align: right;
             font-size: 18px;
+            color: black;
         }
     }
 }
+      
