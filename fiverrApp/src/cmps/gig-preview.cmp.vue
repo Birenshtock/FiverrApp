@@ -1,6 +1,6 @@
 <template>
   <section v-if="gig" class="gig-preview" >
-  <img :src="gig.image" alt="">
+  <img :src="gig.img" alt="">
   <div class="inner-wrappers">
     <img :src="imgUrl" alt="">
   <div class="seller-identifiers">
