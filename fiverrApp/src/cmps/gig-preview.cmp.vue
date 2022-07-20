@@ -18,7 +18,7 @@
       <a>&#9733; 5.0<span>(1K+)</span></a>
     </div>
     <footer class="previw-footer flex">
-      <a>&#10084;</a>
+      <p :onclick="this.like!=this.like" :class="liked">&#10084;</p>
       <div class="flex-col price">
         <small>STARTING AT</small>
         <span>{{gig.price}}.99 $</span>
@@ -32,10 +32,14 @@ export default {
     gig: Object,
   },
   data() {
-    return {};
+    return {
+      like: false,
+    };
   },
   methods: {
-
+    liked(){
+      return like? 'red' : ''
+    }
   },
   computed: {},
   created() {},

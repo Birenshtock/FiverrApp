@@ -44,6 +44,7 @@
     }
 
     .content-info{
+        margin-bottom: 15px;
         a{
             color: #ffbe5b;
             font-weight: 700;
@@ -64,8 +65,12 @@
         min-height: 24px;
         justify-content: space-between;
 
-        a{
+        p{
             color: #b5b6ba;
+
+            .red{
+                color: rgb(171, 15, 15);
+            }
         }
 
         small{
