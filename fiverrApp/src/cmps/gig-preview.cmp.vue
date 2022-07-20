@@ -17,6 +17,9 @@
    <small>STARTING AT</small>
    <span>{{gig.price}}</span>
   </footer>
+
+  
+    <router-link class="btn"  :to="'/gig/'+gig._id">Details</router-link>
     
 
 

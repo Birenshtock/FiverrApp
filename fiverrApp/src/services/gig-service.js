@@ -32,9 +32,9 @@ const BASE_URL =
 async function query() {
   try {
     // const res = await axios.get(BASE_URL, { params: filterBy })
-    const res = await storageService.query()
+    const gigs = await storageService.query()
     // return res.data
-    return res
+    return gigs
   } catch (err) {
     console.error(err)
   }
@@ -46,8 +46,8 @@ async function query() {
 async function getById(gigId) {
   try {
     // const res = await axios.get(BASE_URL + gigId)
-    const res = await storageService.get(KEY, gigId)
-    return res.data
+    const gig = await storageService.get(KEY, gigId)
+    return gig
   } catch (err) {
     console.error(err)
   }
@@ -60,7 +60,7 @@ async function remove(gigId) {
   try {
     // const res = await axios.delete(BASE_URL + gigId)
     const res = await storageService.remove(KEY, gigId)
-    return res.data
+    return res
   } catch (err) {
     console.error(err)
   }
@@ -74,11 +74,11 @@ async function save(gig) {
     if (gig._id) {
       // const res = await axios.put(BASE_URL + gig._id, gig)
       const res = await storageService.put(KEY, gig)
-      return res.data
+      return res
     } else {
       // const res = await axios.post(BASE_URL, gig)
       const res = await storageService.post(KEY, gig)
-      return res.data
+      return res
     }
   } catch (err) {
     console.error(err)
