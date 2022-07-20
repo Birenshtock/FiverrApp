@@ -1,5 +1,17 @@
 <template>
 
+  <section class="main-filter">
+    <el-input
+      @input="setFilter"
+      v-model="filterBy.title"
+      placeholder="What service are you looking for?"
+      clearable
+      size="large">
+      <span>&#128269;</span>
+    </el-input>
+    
+    </section>
+
 <div class="filter-by-catagory">
   <div @click="setCatagory('')">All</div>
   <div @click="setCatagory('Logo')">Logo Design</div>
@@ -12,15 +24,7 @@
 
 
 
-  <section class="main-filter">
-    <el-input
-      @input="setFilter"
-      v-model="filterBy.title"
-      placeholder="What service are you looking for?"
-      clearable
-      size="large"
-    />
-    </section>
+
 </template>
 
 
