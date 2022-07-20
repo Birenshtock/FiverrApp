@@ -40,6 +40,7 @@ export default {
   },
   actions: {
     loadGigs({ commit, state }) {
+      console.log('hiii');
       gigService.query(state.filterBy).then((gigs) => {
         console.log('gigs',gigs)
         commit({ type: 'setGigs', gigs })
