@@ -1,3 +1,12 @@
 *{
     box-sizing: border-box;
 }
+
+a {
+    text-decoration: none;
+
+    // &.active {
+    //     background-color: yellow;
+    //     color: blue;
+    // }
+}

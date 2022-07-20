@@ -1,9 +1,8 @@
 <template>
   <section v-if="gig" class="gig-preview">
-    <img :src="gig.img" alt="">
     <div class="inner-wrappers">
-      <el-carousel trigger="click" height="230px">
-        <el-carousel-item v-for="img in gig.imgs" :key="img">
+      <el-carousel trigger="click" height="160px">
+        <el-carousel-item v-for="img in gig.imgs" :key="img" >
           <img :src="img" alt="">
         </el-carousel-item>
       </el-carousel>
@@ -13,8 +12,8 @@
         <!-- <span class="seller-rate">Seller Rate</span> -->
       </div>
     </div>
+    <p class="gig-title">{{ gig.title }}</p>
     <div class="content-info">
-      <p>{{ gig.title }}</p>
       <a>&#9733; 5.0<span>(1K+)</span></a>
     </div>
     <footer class="previw-footer flex">
