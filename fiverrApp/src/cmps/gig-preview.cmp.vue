@@ -1,37 +1,27 @@
 <template>
   <section v-if="gig" class="gig-preview" >
-  <img :src="gig.img" alt="">
-  <div class="inner-wrappers">
-
-  <div class="block text-center">    
-    <el-carousel trigger="click" height="200px">
-      <el-carousel-item v-for="img in gig.imgs" :key="img">
-      <img :src="img" alt="">
-      </el-carousel-item>
-    </el-carousel>
-  </div>
-
-  <div class="seller-identifiers">
-<h5 class="seller-name" >{{gig.fullname}}</h5>
-<span class="seller-rate">Seller Rate</span>
-</div>
-  </div>
-  <a>{{gig.title}}</a>
-  <div class="content-info">
-   <span>⭐ 5k</span>
-  </div>
-  <footer class="previw-footer">
-   &#10084; 
-   <small>STARTING AT</small>
-   <span>{{gig.price}}</span>
-  </footer>
-
-  
-    <router-link class="btn"  :to="'/gig/'+gig._id">Details</router-link>
-    
-
-
-
+    <img :src="gig.img" alt="">
+    <div class="inner-wrappers">
+      <el-carousel trigger="click" height="200px">
+        <el-carousel-item v-for="img in gig.imgs" :key="img">
+        <img :src="img" alt="">
+        </el-carousel-item>
+      </el-carousel>
+      <div class="seller-identifiers">
+        <h5 class="seller-name" >{{gig.fullname}}</h5>
+        <span class="seller-rate">Seller Rate</span>
+      </div>
+    </div>
+    <a>{{gig.title}}</a>
+    <div class="content-info">
+      <span>⭐ 5k</span>
+    </div>
+    <footer class="previw-footer">
+      &#10084; 
+      <small>STARTING AT</small>
+      <span>{{gig.price}}</span>
+    </footer>
+      <router-link class="btn" :to="'/gig/'+gig._id">Details</router-link>
   </section>
 </template>
 <script>
