@@ -1,5 +1,5 @@
 <template>
- <lightgallery
+ <!-- <lightgallery
         :settings="{ speed: 500, plugins: plugins }"
         :onInit="onInit"
         :onBeforeSlide="onBeforeSlide"
@@ -11,7 +11,7 @@
             <img alt="img2" src="img/thumb2.jpg" />
         </a>
         ...
-    </lightgallery>
+    </lightgallery> -->
 
 
 

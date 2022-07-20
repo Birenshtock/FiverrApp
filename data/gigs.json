@@ -97,6 +97,69 @@
         ],
         "likedByUsers" : ["mini-user"]
        
+      },
+    {
+        "_id": "i103",
+        "catagory": "VoiceOver",
+        "title": "I will design your logo",
+        "price": 12,
+        "owner": {
+          "_id": "u101",
+          "fullname": "Dudu Da",
+          "imgUrl": "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/d366617946e54cbc9aa114f27259e3ef-1552848300306/3c155f72-15c9-47d0-8f68-b75a519a7999.jpg",
+          "level": "basic/premium",
+          "rate": 4,
+          "loc": "India",
+        "memberSince": "Jun 2014",
+        "avgResponceTime": "2 hours",
+        "lastDelivery": "about 3 hours",
+        "about": "Hello! My name is VD. I am a connoisseur of art and music. I love being around nature and my pets. I have a team of professional graphic designers with an experience of 8+ years. We specialize in logo designing. We're available exclusively on fiverr to rock your world with our designing skills. Come and experience it for yourself!"
+        },
+        "daysToMake": 3,
+        "imgs": [
+          "https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/123756949/original/485741b4d2dfd5727cde43edeae7946e1779d69d.jpg",
+          "https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs2/123756949/original/7fe3439d117c631119a75788d38e953d0f2b6fb0.jpg",
+          "https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/attachments/delivery/asset/7686e433debd21405b14fc435f3ad664-1658178919/upwood-01.jpg"
+        ],
+        "description": "Hi there ! Thanks for stopping by !!\nA Team of Talented Graphic Designer with 8+ years of experience in Graphic Industry, expertise as Logo Maker, You'll get creative & AWESOME logo design for your business.\nMy portfolio : https://www.fiverr.com/users/design_desk/portfolio/NjFiYjE4NmMwZTgwMDUwMDAxZTMzMjJh\n★ Why Us? ★\nTalented Logo Maker Team\nFully custom made, creative, original, UNIQUE and AWESOME designs\nProfessional customer support 24/7\nHigh Quality work\n100% money back policy if not satisfied\n★ WHAT DO YOU GET? ★\n✔ Highly Professional, UNIQUE & High Quality designs\n✔ UNLIMITED revisions until u r 100% satisfied\n✔ Fast turn around time 24 to 48 hours only.\n✔ 100% original & unique vector design from Adobe Illustrator\n✔ Vector Source Files (scalable without any quality loss) (AI, EPS, PDF) for the final design ✔ PROFESSIONAL Communication & Outstanding Customer Support ✔ Guaranteed High Quality work\nIf you have any question,\nFeel free to★ Contact Me! ★I'll be happy to help !\nLet's get started!\n-Your Logo Maker",
+        "tags": [
+          "logo-design",
+          "artisitic",
+          "proffesional",
+          "accessible"
+        ],
+        "likedByUsers" : ["mini-user"]
+       
+      },
+    {
+        "_id": "i105",
+        "catagory": "Wordpress",
+        "title": "I will do wordpress malware removal within 1hour",
+        "price": 50,
+        "owner": {
+          "_id": "u102",
+          "fullname": "malware_hunter5",
+          "imgUrl": "https://fiverr-res.cloudinary.com/image/upload/t_profile_small,q_auto,f_auto/v1/attachments/profile/photo/97b7f1ac3c14ffff73598f01d54fc9ed-1601992611040/5a6b5e7c-b510-4497-acc5-b3439de752fc.jpg",
+          "rate": 5,
+          "loc": "Pakistan",
+        "memberSince": "Oct 2020",
+        "avgResponceTime": "1 hour",
+        "lastDelivery": "about 13 hours",
+        "about": "I am Muhammad umar , a WordPress Developer, system administrator and cyber security expert . I will help you in wide range of services including malware hunting , website security , Network security and system security. Feel free to reach out to me so we can start planning your next project!"
+        },
+        "daysToMake": 3,
+        "imgs": [
+          "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/177849864/original/1b52406ee038703a5b3f3fb1ae6a4cccbddfb75a/remove-malware-and-viruses.png","https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs2/177849864/original/c13b7c3ff4b5bb62e1baffa9f4d6f20fe2e13094/remove-malware-and-viruses.png","https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs3/177849864/original/ae0018bb76e4e4e42d9973c93861fbc29e246990/remove-malware-and-viruses.png","https://fiverr-res.cloudinary.com/images/t_smartwm/t_main1,q_auto,f_auto,q_auto,f_auto/attachments/delivery/asset/4f38f7e55c01be0df8ab7df3eb182972-1657921024/12/remove-malware-and-viruses.PNG"
+        ],
+        "description": "A hacked site will cause serious harm to your business revenue. Hackers will steal user info, passwords and install malicious code. \n I will clean/ delete or remove Malware or any obfuscated code from your WordPress site. \n Guarantee and Proof of Clean Website \n Detailed Scan of all Files \n Removal of all Infected Files \n This Gig is per one domain, So please, if you have more than 1 domain affected order more Gigs or contact me. \n I PROMISE YOU WILL GET QUALITY WORK.",
+        "tags": [
+          "logo-design",
+          "artisitic",
+          "proffesional",
+          "accessible"
+        ],
+        "likedByUsers" : ["mini-user"]
+       
       }
     ]
    
