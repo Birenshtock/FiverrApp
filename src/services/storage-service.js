@@ -15,12 +15,15 @@ export const storageService = {
   postMany,
 }
 
-function query() {
+function query(filterBy) {
+  const {title } = filterBy
+  const regex = new RegExp(title, 'i')
+  let filteredGigs = gigs.filter((gig) => regex.test(gig.title))
  
  
 
   // var entities = JSON.parse(localStorage.getItem(entityType)) || []
-  return Promise.resolve(gigs)
+  return Promise.resolve(filteredGigs)
 }
 
 function get(entityType, entityId) {

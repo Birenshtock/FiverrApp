@@ -1,7 +1,7 @@
 <template>
   <section >
     <div class="app-filter">
-        <app-filter to="/app-filter" class="main-filter"></app-filter>
+        <app-filter to="/app-filter" class="main-filter"  @setFilter="setFilter"></app-filter>
     </div>
     <div class="gig-list">
       <gig-list :gigs="gigs" />

@@ -40,8 +40,8 @@ export default {
   },
   actions: {
     loadGigs({ commit, state }) {
+ 
       gigService.query(state.filterBy).then((gigs) => {
-        console.log('gigs',gigs)
         commit({ type: 'setGigs', gigs })
       })
     },
@@ -60,7 +60,9 @@ export default {
     //   dispatch({ type: 'loadGigs' })
     // },
     setFilterBy({ commit }, { filterBy }) {
-      gigService.query(filterBy).then((gigs) => {
+      console.log('ueu',filterBy)
+      gigService.query(filterBy)
+      .then((gigs) => {
         commit({ type: 'setGigs', gigs })
       })
     },

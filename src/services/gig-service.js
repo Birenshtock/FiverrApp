@@ -29,10 +29,11 @@ const BASE_URL =
     ? "/api/gig"
     : "//localhost:3030/api/gig"
 
-async function query() {
+async function query(filterBy) {
   try {
+    
     // const res = await axios.get(BASE_URL, { params: filterBy })
-    const gigs = await storageService.query()
+    const gigs = await storageService.query(filterBy)
     // return res.data
     return gigs
   } catch (err) {

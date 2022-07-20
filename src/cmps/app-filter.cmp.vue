@@ -17,8 +17,8 @@ export default {
   data() {
     return {
       filterBy: {
-        txt: '',
-        byCatagories: [],
+        title: '',
+        // byCatagories: [],
       },
       tags: [
           "logo-design",
