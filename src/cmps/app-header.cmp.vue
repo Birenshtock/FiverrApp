@@ -1,7 +1,7 @@
 
 <template>
   <header class="main-header" ref="header">
-    <div class="header-container">
+    <div class="header-container flex align-center space-between">
       <router-link to="/"><div class="main-logo">Binderr<span>.</span></div></router-link>
  <app-filter to="/app-filter" class="header-filter"  @setFilter="setFilter"></app-filter>
     <nav class="main-header-nav" ref="nav" v-bind:style="{ position: stickyNav ? 'fixed' : 'static' }">

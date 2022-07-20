@@ -1,18 +1,26 @@
+
+
+
+
 <template>
 
-  <section class="main-filter">
-    <el-input
+  <section class="main-filter flex">
+    <!-- <input
       @input="setFilter"
       v-model="filterBy.title"
       placeholder="What service are you looking for?"
       clearable
       size="large">
-      <span>&#128269;</span>
-    </el-input>
-    
-    </section>
-
-<div class="filter-by-catagory">
+    </input> -->
+    <div class="input-container">
+    <input type="text" @input="setFilter"
+      v-model="filterBy.title"
+      placeholder="What service are you looking for?"
+      clearable
+      size="large">
+    <button type="submit"><i class="fa fa-search"></i></button>
+    </div>  
+      <!-- <div class="filter-by-catagory">
   <div @click="setCatagory('')">All</div>
   <div @click="setCatagory('Logo')">Logo Design</div>
    <div @click="setCatagory('Wordpress')">Wordpress</div>
@@ -20,7 +28,11 @@
   <div  @click="setCatagory('VideoExplainer')">Video Explainer</div>
   <div  @click="setCatagory('Programming')">Programming</div>
   <div  @click="setCatagory('Illustration')">Illustration</div>
-</div>
+</div> -->
+  
+    </section>
+
+
 
 
 
