@@ -2,7 +2,15 @@
   <section v-if="gig" class="gig-preview" >
   <img :src="gig.img" alt="">
   <div class="inner-wrappers">
-    <img :src="imgUrl" alt="">
+
+  <div class="block text-center">    
+    <el-carousel trigger="click" height="200px">
+      <el-carousel-item v-for="img in gig.imgs" :key="img">
+      <img :src="img" alt="">
+      </el-carousel-item>
+    </el-carousel>
+  </div>
+
   <div class="seller-identifiers">
 <h5 class="seller-name" >{{gig.fullname}}</h5>
 <span class="seller-rate">Seller Rate</span>
@@ -17,9 +25,6 @@
    <small>STARTING AT</small>
    <span>{{gig.price}}</span>
   </footer>
-    
-
-
 
   </section>
 </template>
