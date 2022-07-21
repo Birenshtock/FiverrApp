@@ -1,5 +1,17 @@
+// .main-layout {
+//     /* box-sizing: content-box; */
+//     padding-inline-start: 1.6rem;
+//     padding-inline-end: 1.6rem;
+// }
+
 .main-layout {
-    /* box-sizing: content-box; */
-    // padding-inline-start: 1.6rem;
-    // padding-inline-end: 1.6rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: $layoutPadding 1fr $layoutPadding;
+    >* {
+        grid-column: 2;
+    }
+    >*.full {
+        grid-column: 1 / -1;
+    }
 }

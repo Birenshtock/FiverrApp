@@ -48,6 +48,7 @@ export default {
       this.like = !this.like
     },
      goToDetail() {
+      console.log('goToDetail')
       this.$router.push(`/gig/${this.gig._id}`)
     },
 
@@ -58,7 +59,9 @@ export default {
       return { red: this.like }
     },
   },
-  created() { },
+  created() { 
+    console.log('gig',this.gig)
+  },
   unmounted() { },
 };
 </script>

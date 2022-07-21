@@ -56,7 +56,11 @@
       </ul>
     </div>
   </div>
+
+  <button @click="createOrder">continue</button>
   </section>
+
+
 </template>
 
 <script>
@@ -69,6 +73,7 @@ export default {
   data() {
     return {
       gig: null,
+
 
     }
   },
@@ -100,6 +105,27 @@ export default {
     showBig(img){
       console.log('big',img);
     },
+    createOrder(){
+      const newOrder={
+        
+        "_id": "o1225",
+        "createdAt": 9898989,
+        "buyer": "mini-user",
+        "seller": "mini-user",
+        "gig": {
+          // "_id": this.gig._id,
+          "name": "DDDDDDDDD",
+          "price": 20
+        },
+        "status": "pending"
+      }
+
+      this.$store.dispatch({ type: 'addOrder', order: newOrder })
+      
+
+      console.log('order')
+       this.$router.push(`/user`)
+    }
   },
 }
 </script>

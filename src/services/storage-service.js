@@ -3,7 +3,8 @@ import { gigService } from '../services/gig-service.js'
 // const fs = require('fs')
 // const gigs = require('../../data/gigs.json')
 
-import gigs from '../../data/gigs.json'
+// import gigs from '../../data/gigs.json'
+// import orders from '../../data/orders.json'
 
 
 export const storageService = {
@@ -15,20 +16,21 @@ export const storageService = {
   postMany,
 }
 
-function query(filterBy) {
-  const {title, catagory } = filterBy
-  const regex = new RegExp(title, 'i')
-  console.log('ata mefager')
+function query(key) {
+  return Promise.resolve(JSON.parse(localStorage.getItem(key)) || [])
+
+
+  // const {title, catagory } = filterBy
+  // const regex = new RegExp(title, 'i')
+  // console.log('ata mefager')
    
-  let filteredGigs 
-  if (!catagory){
-    filteredGigs = gigs.filter((gig) => regex.test(gig.title))
-    return Promise.resolve(filteredGigs)
-  } 
+  // let filteredGigs 
+  // if (!catagory){
+  //   filteredGigs = gigs.filter((gig) => regex.test(gig.title))
+  //   return Promise.resolve(filteredGigs)
+  // } 
 
-  filteredGigs = gigs.filter((gig) => regex.test(gig.title)).filter((gig) => gig.catagory===catagory)
-
-  return Promise.resolve(filteredGigs)
+  // filteredGigs = gigs.filter((gig) => regex.test(gig.title)).filter((gig) => gig.catagory===catagory)
 }
 
 function get(entityType, entityId) {
@@ -39,6 +41,7 @@ function get(entityType, entityId) {
 }
 
 function post(entityType, newEntity) {
+  console.log('ggggggggggggggggggggggg')
   newEntity._id = _makeId()
   return query(entityType).then(entities => {
     entities.push(newEntity)

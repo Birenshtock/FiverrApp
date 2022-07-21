@@ -31,14 +31,36 @@ const BASE_URL =
 
 async function query(filterBy) {
   try {
+    // const entities= 'gigs'
+
+    const gigs = await storageService.query(KEY)
+
+  const {title, catagory } = filterBy
+  const regex = new RegExp(title, 'i')
+  console.log('ata mefager')
+  let filteredGigs 
+  if (!catagory){
+    filteredGigs = gigs.filter((gig) => regex.test(gig.title))
+    return Promise.resolve(filteredGigs)
+  } 
+
+  filteredGigs = gigs.filter((gig) => regex.test(gig.title)).filter((gig) => gig.catagory===catagory)
+
+  
+  return Promise.resolve(filteredGigs)
+} catch (err) {
+  console.error(err)
+}
+
+  // try {
     
-    // const res = await axios.get(BASE_URL, { params: filterBy })
-    const gigs = await storageService.query(filterBy)
-    // return res.data
-    return gigs
-  } catch (err) {
-    console.error(err)
-  }
+  //   // const res = await axios.get(BASE_URL, { params: filterBy })
+  //   const gigs = await storageService.query(filterBy)
+  //   // return res.data
+  //   return gigs
+  // } catch (err) {
+  //   console.error(err)
+  // }
 
   // return axios.get(BASE_URL, { params: filterBy }).then((res) => res.data)
   // return storageService.query(TOY_KEY)
