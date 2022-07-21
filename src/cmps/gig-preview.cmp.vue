@@ -1,11 +1,16 @@
 <template>
   <section v-if="gig" class="gig-preview" @click="goToDetail">
     <div class="inner-wrappers">
-      <el-carousel trigger="click" height="160px">
+      <!-- <el-carousel trigger="click" height="160px">
         <el-carousel-item v-for="img in gig.imgs" :key="img" >
           <img :src="img" alt="">
         </el-carousel-item>
-      </el-carousel>
+      </el-carousel> -->
+     <vueper-slides fade :touchable="true" height="160px">
+      <vueper-slide
+        v-for="img in gig.imgs" :key="img"  :image="img" />
+    </vueper-slides>
+
       <div class="seller-identifiers flex">
         <el-avatar :size="24" :src="gig.owner.imgUrl" />
         <a class="seller-name">{{ gig.owner.fullname }}</a>
@@ -33,6 +38,9 @@
   
 </template>
 <script>
+import { VueperSlides, VueperSlide } from 'vueperslides'
+import 'vueperslides/dist/vueperslides.css'
+
 export default {
   props: {
     gig: Object,
@@ -60,5 +68,7 @@ export default {
   },
   created() { },
   unmounted() { },
+   components: { VueperSlides, VueperSlide },
+  
 };
 </script>
