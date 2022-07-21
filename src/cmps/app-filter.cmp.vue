@@ -20,7 +20,8 @@
       size="large">
     <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
     </div>  
-      <!-- <div class="filter-by-catagory">
+
+      <div class="filter-by-catagory">
   <div @click="setCatagory('')">All</div>
   <div @click="setCatagory('Logo')">Logo Design</div>
    <div @click="setCatagory('Wordpress')">Wordpress</div>
@@ -28,7 +29,7 @@
   <div  @click="setCatagory('VideoExplainer')">Video Explainer</div>
   <div  @click="setCatagory('Programming')">Programming</div>
   <div  @click="setCatagory('Illustration')">Illustration</div>
-</div> -->
+</div> 
   
     </section>
 

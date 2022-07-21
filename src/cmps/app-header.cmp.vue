@@ -1,7 +1,7 @@
 
 <template>
   <header class="top-header" >
-    <div class="header-row-container header-layout">
+    <div class="header-row-container main-layout">
         <!-- <button class="menu-toggle">☰</button> -->
      <div class="main-logo-container"><router-link to="/"><h1 class="main-logo">binderr<span>.</span></h1></router-link></div>
  <app-filter to="/app-filter" class="header-filter"  @setFilter="setFilter"></app-filter>

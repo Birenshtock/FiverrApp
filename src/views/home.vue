@@ -1,23 +1,50 @@
 
 <template>
-  <main>
-    
-    <h1>This is our home page</h1>
-    <app-filter to="/app-filter" class="main-filter"  @setFilter="setFilter"></app-filter>
+ <div id='mydiv' class="full"></div>
+    <!-- <img class="home-page-image full" src="../styles/imgs/fiverr1.png" alt=""> -->
+  <main class="home-page">
+
+       <h1>Find the perfect <span>   &nbsp; freelance</span> </h1>
+       <h1> services for your business</h1>
+
+       <div class="search-input">
+        <div class="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+         <!-- <el-input class="input" placeholder='Try "building mobile app"'/> -->
+         <input  class="input" type="text" placeholder='Try "building mobile app"'>
+       
+        <button class="button">Search</button>
+       </div>
+
+     
+    <!-- <app-filter to="/app-filter" class="main-filter"  @setFilter="setFilter"></app-filter> -->
 
   </main>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum repellat, ipsa praesentium autem ea libero minima illum quasi quos molestias. Laborum, omnis adipisci non quis dicta mollitia quasi facilis suscipit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe unde similique praesentium quo quidem officiis corporis cupiditate non corrupti adipisci nulla, at quia numquam facere soluta voluptates laborum voluptatum voluptas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe unde similique praesentium quo quidem officiis corporis cupiditate non corrupti adipisci nulla, at quia numquam facere soluta voluptates laborum voluptatum voluptas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe unde similique praesentium quo quidem officiis corporis cupiditate non corrupti adipisci nulla, at quia numquam facere soluta voluptates laborum voluptatum voluptas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe unde similique praesentium quo quidem officiis corporis cupiditate non corrupti adipisci nulla, at quia numquam facere soluta voluptates laborum voluptatum voluptas.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe unde similique praesentium quo quidem officiis corporis cupiditate non corrupti adipisci nulla, at quia numquam facere soluta voluptates laborum voluptatum voluptas.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe unde similique praesentium quo quidem officiis corporis cupiditate non corrupti adipisci nulla, at quia numquam facere soluta voluptates laborum voluptatum voluptas.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe unde similique praesentium quo quidem officiis corporis cupiditate non corrupti adipisci nulla, at quia numquam facere soluta voluptates laborum voluptatum voluptas.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe unde similique praesentium quo quidem officiis corporis cupiditate non corrupti adipisci nulla, at quia numquam facere soluta voluptates laborum voluptatum voluptas.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe unde similique praesentium quo quidem officiis corporis cupiditate non corrupti adipisci nulla, at quia numquam facere soluta voluptates laborum voluptatum voluptas.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe unde similique praesentium quo quidem officiis corporis cupiditate non corrupti adipisci nulla, at quia numquam facere soluta voluptates laborum voluptatum voluptas.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe unde similique praesentium quo quidem officiis corporis cupiditate non corrupti adipisci nulla, at quia numquam facere soluta voluptates laborum voluptatum voluptas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe unde similique praesentium quo quidem officiis corporis cupiditate non corrupti adipisci nulla, at quia numquam facere soluta voluptates laborum voluptatum voluptas.</p>
+    
 </template>
 
 <script>
-import appFilter from "../cmps/app-filter.cmp.vue";
+// import appFilter from "../cmps/app-filter.cmp.vue";
    export default {
     comments:{
-      appFilter,
+      // appFilter,
     },
    data() {
-   return {};
+   return {
+    // homeImgs: ['../styles/imgs/fiverr1.png','../styles/imgs/fiverr1.png','../styles/imgs/fiverr1.png','../styles/imgs/fiverr1.png','../styles/imgs/fiverr1.png'],
+    // currImg:''
+   };
    },
-   created() {},
+   created() {
+    
+    // setInterval(()=>{
+    //   for(var i=0; i<this.homeImgs.length; i++){
+    //     this.currImg=homeImgs[i]
+    //     i+1
+    //   }
+    // },1000000)
+
+   },
    methods: {},
    computed: {},
    unmounted() {},

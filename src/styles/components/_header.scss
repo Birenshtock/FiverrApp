@@ -2,6 +2,8 @@ header.top-header{
     flex-wrap: nowrap;
     width: 100%;
     border-bottom: 1px solid black;
+    position: relative;
+    
     .header-row-container {
 
         display: flex;

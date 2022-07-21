@@ -2,13 +2,21 @@
 $clr1: #404145; //כותרות
 $clr2:  #62646a;
 $clr3: #347138;
-$clr4:  #fff; // root app color
+$clr4: rgb(251, 245, 245);
+$clr5: darken($clr3, 40%);
+$layoutPadding: 20px;
+// $clr4:  #fff; // root app color
 // $clr7: darken($clr3, 40%);
 $clr5:rgb(122, 200, 122); // repetetive element color
 
 
 // LAYOUT
+<<<<<<< HEAD
 $layoutPadding: 259px;
+=======
+$mainLayoutPadding: 259px;
+
+>>>>>>> 95c56b298ef043d44fc0bdc7b89e2715d64c9c1b
 
 
 // LAYOUT BREAKPOINTS
