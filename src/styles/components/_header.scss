@@ -1,35 +1,149 @@
-.main-header{
-
-    display: flex;
-    justify-content: center;
-    // align-items:center;
-    height: 10vh;
-    padding: 0 1rem;
+header.top-header{
+    flex-wrap: nowrap;
+    width: 100%;
     border-bottom: 1px solid black;
     position: relative;
     
+    .header-row-container {
 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-content:center;
+        align-items: center;
+        height: 80px;
+        margin: auto;
+        
+        // position: relative;
+        
+    }
+
+    .top-header-nav-bar-container{
+        display: flex;
+        // flex-direction: row;
+        align-items: center;
+        flex-grow: 1;
+        justify-self: flex-end;
+        // @include for-normal-header-layout {
+
+        // }
+
+
+        .nav-helper{
+            width: 30%;
+            flex-grow: 1;
+        }
+
+        ul {
+         align-items: center;
+         justify-content: space-between;
+         margin: 0;
+         width: 65%;
+
+         li a{
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            color: #7a7d85;
+            font-size: 1.1rem;
+           
+            
+        }
+        .join-btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 62.55px;
+            height:36px ;
+
+            border-radius: 5px;
+            border-color: $clr5;;
+            color: $clr5;
+            &:hover{
+                background-color:$clr5 ;
+                color: $clr4;
+            }
+        
+            
+        }
+    }
+
+
+
+    }
+    .main-logo-container{
+        width:15%;
+        height: 12vh;
+    
+        .main-logo{
+       
+            font-family: Helvetica, sans-serif;
+            font-weight: 900;
+            font-size: 2rem;
+            color: black;
+            letter-spacing: -2.3px;
+        
+            span{
+                font-size: 1.5em;
+                color: $clr5;
+                font-family:'Times New Roman', Times, serif;
+            
+            }
+        }
+     
+    }
 
 
 }
 
 .header-filter {
-    width: 12em;
+    width: 8em;
+    justify-content: center;
 }
 
 
-.main-logo{
-   
-    font-family: Helvetica, sans-serif;
-    font-weight: 900;
-    font-size: 2rem;
-    color: black;
 
-    span{
-        font-size: 1.5em;
-        color: lightgreen;
-        font-family:'Times New Roman', Times, serif;
-    
-    }
-}
 
+
+
+//   .header-row-wrapper {
+//     width: 100%;
+//     flex-wrap: nowrap;
+//     .header-row {
+//       align-items: center;
+//       @include for-normal-max-layout {
+//         justify-content: space-between;
+//       }
+//       &.row-main {
+//         height: 80px;
+//         align-content: center;
+//         flex-wrap: nowrap;
+//       }
+//       .btn-nav {
+//         &.home-header-color {
+//           @include for-normal-header-layout {
+//             color: #fff;
+//           }
+//         }
+//         @include for-wide-header-layout {
+//           display: none;
+//         }
+//         cursor: pointer;
+//         background-color: inherit;
+//         border: 0;
+//         display: flex;
+//         align-items: center;
+//         .menu-icon {
+//           width: 50px;
+//           height: 30px;
+//           margin-left: -20px;
+//         }
+//       }
+//       & > .notification-dot {
+//       }
+//     }
+
+//     nav li {
+//       white-space: nowrap;
+//     }
+//   }
