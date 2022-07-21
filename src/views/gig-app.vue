@@ -1,7 +1,8 @@
 <template>
   <section >
+
     <!-- <div class="app-filter"> -->
-        <app-filter to="/app-filter" class="main-filter"  @setFilter="setFilter"></app-filter>
+        <!-- <app-filter to="/app-filter" class="main-filter"  @setFilter="setFilter"></app-filter> -->
     <!-- </div> -->
     <div class="gig-list">
       <gig-list :gigs="gigs" />
@@ -17,7 +18,7 @@
 
 <script>
 import gigList from '../cmps/gig-list.cpm.vue'
-import appFilter from "../cmps/app-filter.cmp.vue";
+
 
 export default {
   name: 'gig-app',
@@ -31,14 +32,14 @@ export default {
     },
   },
   methods: {
-      setFilter(filter) {
-      filter = JSON.parse(JSON.stringify(filter));
-      this.$store.dispatch({ type: "setFilterBy", filterBy: filter });
-    },
+    //   setFilter(filter) {
+    //   filter = JSON.parse(JSON.stringify(filter));
+    //   this.$store.dispatch({ type: "setFilterBy", filterBy: filter });
+    // },
   },
   components: {
     gigList,
-    appFilter,
+
     
   },
 }

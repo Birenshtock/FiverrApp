@@ -1,5 +1,36 @@
 .main-filter{
-    width: 100%;
+    flex-direction: column;
+    width: 42rem;
+    height: 12vh;
+
+    .input-container{
+        width: 100%;
+        height: 45%;
+    }
+    input{
+        width: 90%;
+        height: 100%;
+        float: left;
+    }
+    button{
+        float: right;
+        width: 10%;
+        height: 100%;
+        // padding: 10px;
+        background: #151616;
+        color: #e4e5e7;
+        text-align: center;
+        font-size: 17px;
+        border-left: none; 
+        border-right: none; 
+        cursor: pointer;
+
+        .i{
+            
+        }
+   
+    }
+
 }
 
 .filter-by-catagory{
