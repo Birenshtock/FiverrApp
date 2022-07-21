@@ -71,8 +71,6 @@
         </ul>
       </div>
     </div>
-<<<<<<< HEAD
-=======
     <div class="extended-owner-details">
       <ul>
         <li>From /n {{gig.owner.loc}}</li>
@@ -81,10 +79,8 @@
         <li>Last delivery /n {{gig.owner.lastDelivery}}</li>
       </ul>
     </div>
-  </div>
 
   <button @click="createOrder">continue</button>
->>>>>>> 95c56b298ef043d44fc0bdc7b89e2715d64c9c1b
   </section>
 
 
@@ -128,38 +124,35 @@ export default {
       var imgs = this.gig.imgs
       return +Object.keys(imgs).find((key) => imgs[key] === img)
     },
-<<<<<<< HEAD
     showBig(img) {
       console.log('big', img);
+    },
+    createOrder(){
+    const newOrder={
+      
+      "_id": "o1225",
+      "createdAt": 9898989,
+      "buyer": "mini-user",
+      "seller": "mini-user",
+      "gig": {
+        // "_id": this.gig._id,
+        "name": "DDDDDDDDD",
+        "price": 20
+      },
+      "status": "pending"
+    }
+
+    this.$store.dispatch({ type: 'addOrder', order: newOrder })
+
+    console.log('order')
+      this.$router.push(`/user`)
     },
   },
   components: {
     VueperSlides,
-    VueperSlide
-=======
-    createOrder(){
-      const newOrder={
-        
-        "_id": "o1225",
-        "createdAt": 9898989,
-        "buyer": "mini-user",
-        "seller": "mini-user",
-        "gig": {
-          // "_id": this.gig._id,
-          "name": "DDDDDDDDD",
-          "price": 20
-        },
-        "status": "pending"
-      }
-
-      this.$store.dispatch({ type: 'addOrder', order: newOrder })
-      
-
-      console.log('order')
-       this.$router.push(`/user`)
-    }
->>>>>>> 95c56b298ef043d44fc0bdc7b89e2715d64c9c1b
+    VueperSlide,
   },
+  
 }
 </script>
 <style>
