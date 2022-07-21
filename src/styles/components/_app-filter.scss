@@ -1,6 +1,6 @@
 .main-filter{
     flex-direction: column;
-    width: 42rem;
+    width: 27em;
     height: 12vh;
 
     .input-container{
@@ -16,7 +16,7 @@
         float: right;
         width: 10%;
         height: 100%;
-        // padding: 10px;
+        padding: 10px;
         background: #151616;
         color: #e4e5e7;
         text-align: center;
@@ -25,9 +25,9 @@
         border-right: none; 
         cursor: pointer;
 
-        .i{
+        // .i{
             
-        }
+        // }
    
     }
 

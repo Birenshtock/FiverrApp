@@ -18,7 +18,7 @@
       placeholder="What service are you looking for?"
       clearable
       size="large">
-    <button type="submit"><i class="fa fa-search"></i></button>
+    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
     </div>  
       <!-- <div class="filter-by-catagory">
   <div @click="setCatagory('')">All</div>

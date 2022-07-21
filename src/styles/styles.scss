@@ -1,25 +1,23 @@
 // setup
-// @import 'setup/typography';
-// @import 'setup/mixins';
-// @import 'setup/functions';
-// @import 'setup/variables';
+@import 'setup/typography';
+@import 'setup/mixins';
+@import 'setup/functions';
+@import 'setup/variables';
 
 // basics
-@import 'basics/_base.scss';
-@import 'basics/helpers.scss';
-@import 'basics/layout.scss';
+@import 'basics/base';
+@import 'basics/helpers';
+@import 'basics/layout';
 
 // components
-@import 'components/_header.scss';
-@import 'components/_footer.scss';
-@import 'components/_gig-preview.scss';
-@import 'components/_app-filter.scss';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/gig-preview';
+@import 'components/app-filter';
 
 //setup
-@import 'setup/typography.scss';
-@import 'setup/variables';
-@import 'setup/functions';
+
 
 // views
-@import 'views/_gig-details.scss';
+@import 'views/gig-details';
 

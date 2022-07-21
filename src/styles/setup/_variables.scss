@@ -2,8 +2,19 @@
 $clr1: #404145; //כותרות
 $clr2:  #62646a;
 $clr3: #347138;
-$clr4: rgb(251, 245, 245);
-$clr5: darken($clr3, 40%);
+$clr4:  #fff; // root app color
+// $clr7: darken($clr3, 40%);
+$clr5:rgb(122, 200, 122); // repetetive element color
+
+
 // LAYOUT
+$layoutPadding: 20px;
+
 
 // LAYOUT BREAKPOINTS
+
+// Header Breakpoints 
+$header-break-normal: 630px;
+$header-break-wide: 900px;
+$header-break-extra-wide: 1160px;
+$header-break-large-screen: 1564px;
