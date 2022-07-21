@@ -6,11 +6,11 @@
           <img :src="img" alt="">
         </el-carousel-item>
       </el-carousel> -->
-     <vueper-slides fade :touchable="true" height="160px">
-      <vueper-slide
-        v-for="img in gig.imgs" :key="img"  :image="img" />
-    </vueper-slides>
 
+      <vueper-slides ref="myVueperSlides" fixed-height="171px">
+          <vueper-slide v-for="img in gig.imgs" :key="img"  :image="img" width="290px" height="174px"/>
+      </vueper-slides>
+     
       <div class="seller-identifiers flex">
         <el-avatar :size="24" :src="gig.owner.imgUrl" />
         <a class="seller-name">{{ gig.owner.fullname }}</a>
