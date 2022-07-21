@@ -1,0 +1,30 @@
+
+
+
+
+//header layout mixins
+
+@mixin for-normal-header-layout {
+    @media (min-width: $header-break-normal) {
+      @content;
+    }
+  }
+  
+  @mixin for-wide-header-layout {
+    @media (min-width: $header-break-wide) {
+      @content;
+    }
+  }
+  
+  @mixin for-extra-wide-header-layout {
+    @media (min-width: $header-break-extra-wide) {
+      @content;
+    }
+  }
+  
+  @mixin for-large-screen-header-layout {
+    @media (min-width: $header-break-extra-wide) {
+      @content;
+    }
+  }
+  
