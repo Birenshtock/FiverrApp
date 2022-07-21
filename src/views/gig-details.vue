@@ -8,22 +8,7 @@
       <div class="stars"><span>&#9733;&#9733;&#9733;&#9733;&#9733; 4.9</span> (730)</div>
     </div>
     <div class="block text-center" m="t-4">
-      <!-- <el-carousel :autoplay="false" trigger="click" height="300px">
-        <el-carousel-item v-for="img in gig.imgs" :key="img" >
-          <img :src="img" alt="">
-        </el-carousel-item>
-      </el-carousel>
-    <div class="flex ">
-      <div class="demo-image__preview space1" v-for="img in gig.imgs" :key="img">
-      <el-image
-        style="width: 100px; height: 100px"
-        :src="img"
-        @click="showBig(img)"
-        :initial-index="findIdx(img)"
-        fit="cover"
-        />
-      </div>
-    </div> -->
+     
 
       <vueper-slides ref="vueperslides1" :touchable="false" fade :autoplay="false" :bullets="false"
         @slide="$refs.vueperslides2.goToSlide($event.currentSlide.index, { emit: false })" fixed-height="400px">
@@ -44,15 +29,16 @@
         <h2>What people loved about this seller</h2>
         <button>See all reviews</button>
       </div>
+
       <div class="about-gig">
         <h2>About This Gig</h2>
-
         <p> {{ gig.description }}</p>
         <!-- <p> {{gig.note}}</p> -->
         <ul v-for="note in gig.additionalNotes" :key="note">
           <li>{{ note }}</li>
         </ul>
       </div>
+
       <div class="about-seller">
         <img :src="gig.owner.imgUrl">
         <div class="owner-details">
@@ -62,6 +48,7 @@
           <button>Contact Me</button>
         </div>
       </div>
+
       <div class="extended-owner-details">
         <ul>
           <li>From /n {{ gig.owner.loc }}</li>
@@ -70,9 +57,8 @@
           <li>Last delivery /n {{ gig.owner.lastDelivery }}</li>
         </ul>
       </div>
-    </div>
-<<<<<<< HEAD
-=======
+
+    <!-- </div> -->
     <div class="extended-owner-details">
       <ul>
         <li>From /n {{gig.owner.loc}}</li>
@@ -84,7 +70,6 @@
   </div>
 
   <button @click="createOrder">continue</button>
->>>>>>> 95c56b298ef043d44fc0bdc7b89e2715d64c9c1b
   </section>
 
 
@@ -128,15 +113,9 @@ export default {
       var imgs = this.gig.imgs
       return +Object.keys(imgs).find((key) => imgs[key] === img)
     },
-<<<<<<< HEAD
     showBig(img) {
       console.log('big', img);
     },
-  },
-  components: {
-    VueperSlides,
-    VueperSlide
-=======
     createOrder(){
       const newOrder={
         
@@ -158,7 +137,11 @@ export default {
       console.log('order')
        this.$router.push(`/user`)
     }
->>>>>>> 95c56b298ef043d44fc0bdc7b89e2715d64c9c1b
+  },
+  components: {
+    VueperSlides,
+    VueperSlide,
+    
   },
 }
 </script>
