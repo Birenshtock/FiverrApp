@@ -1,6 +1,6 @@
 
 <template>
-  <header class="top-header" >
+  <header class="top-header full" :class="[altBackground ? 'header-black' : 'header-red']">
     <div class="header-row-container main-layout">
         <!-- <button class="menu-toggle">☰</button> -->
      <div class="main-logo-container"><router-link to="/"><h1 class="main-logo">binderr<span>.</span></h1></router-link></div>
@@ -43,6 +43,30 @@ export default {
       this.$store.dispatch({ type: "setFilterBy", filterBy: filter });
     },
   },
+  computed:{
+         altBackground() {
+          const path = this.$route.path.split('/')
+          console.log('path',path)
+          return path[path.length-1].toLowerCase() === ''
+      }
+  }
 
 }
-// </script>
+</script>
+
+<style>
+ .header-red {
+     /* opacity: 0; */
+     background-color: rgb(255, 255, 255);
+    
+ }
+  .header-black {
+
+    background-color: rgba(255, 0, 0, 0);
+   
+      position: sticky;
+      top: 0;
+      z-index: 99;
+      /* opacity: .1; */
+  }
+</style>

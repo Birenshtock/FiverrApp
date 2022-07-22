@@ -1,11 +1,7 @@
 
 <template>
 
-<<<<<<< HEAD
-  <section class="main-filter">
-=======
   <section class="main-filter flex">
->>>>>>> 998d8ae8a9147231cbab1da8b2cc43e4795efba8
     <div class="input-container">
     <input type="text" @input="setFilter"
       v-model="filterBy.title"
