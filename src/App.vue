@@ -7,7 +7,7 @@
 </template>
 
 <script>
-// import { RouterLink, RouterView } from "vue-router";
+import { RouterLink, RouterView } from "vue-router";
 import appHeader from "./cmps/app-header.cmp.vue";
 import appFooter from "./cmps/app-footer.cmp.vue";
 export default {
