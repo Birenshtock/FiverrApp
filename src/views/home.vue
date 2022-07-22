@@ -8,7 +8,6 @@
    <div class="img2"></div>
   </div>
    
-  
   <main class="home-page">
 
        <h1>Find the perfect <span>   &nbsp; freelance</span> </h1>
@@ -35,8 +34,21 @@
       <img src="../styles/imgs/paypal.png" alt="">
    </div>
   </div>
-   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum repellat, ipsa praesentium autem ea libero minima illum quasi quos molestias. Laborum, omnis adipisci non quis dicta mollitia quasi facilis suscipit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe unde similique praesentium quo quidem officiis corporis cupiditate non corrupti adipisci nulla, at quia numquam facere soluta voluptates laborum voluptatum voluptas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe unde similique praesentium quo quidem officiis corporis cupiditate non corrupti adipisci nulla, at quia numquam facere soluta voluptates laborum voluptatum voluptas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe unde similique praesentium quo quidem officiis corporis cupiditate non corrupti adipisci nulla, at quia numquam facere soluta voluptates laborum voluptatum voluptas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe unde similique praesentium quo quidem officiis corporis cupiditate non corrupti adipisci nulla, at quia numquam facere soluta voluptates laborum voluptatum voluptas.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe unde similique praesentium quo quidem officiis corporis cupiditate non corrupti adipisci nulla, at quia numquam facere soluta voluptates laborum voluptatum voluptas.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe unde similique praesentium quo quidem officiis corporis cupiditate non corrupti adipisci nulla, at quia numquam facere soluta voluptates laborum voluptatum voluptas.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe unde similique praesentium quo quidem officiis corporis cupiditate non corrupti adipisci nulla, at quia numquam facere soluta voluptates laborum voluptatum voluptas.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe unde similique praesentium quo quidem officiis corporis cupiditate non corrupti adipisci nulla, at quia numquam facere soluta voluptates laborum voluptatum voluptas.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe unde similique praesentium quo quidem officiis corporis cupiditate non corrupti adipisci nulla, at quia numquam facere soluta voluptates laborum voluptatum voluptas.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe unde similique praesentium quo quidem officiis corporis cupiditate non corrupti adipisci nulla, at quia numquam facere soluta voluptates laborum voluptatum voluptas.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe unde similique praesentium quo quidem officiis corporis cupiditate non corrupti adipisci nulla, at quia numquam facere soluta voluptates laborum voluptatum voluptas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe unde similique praesentium quo quidem officiis corporis cupiditate non corrupti adipisci nulla, at quia numquam facere soluta voluptates laborum voluptatum voluptas.</p>
-    
+
+
+
+      <h1 class="gallery-title">Popular professional services</h1>
+   <div class="gallery">
+      <div class="option"  v-for="opt in options"
+      :key="opt.name">
+         <p>{{opt.description}}</p>
+         <h1>{{opt.name}}</h1>
+      </div>
+      <button class="btn-left"><i class="fa-solid fa-angle-left"></i></button>
+      <button class="btn"><i class="fa-solid fa-angle-right"></i></button>
+   </div>
+
+   
 </template>
 
 <script>
@@ -47,11 +59,40 @@
     },
    data() {
    return {
-    // homeImgs: ['../styles/imgs/fiverr1.png','../styles/imgs/fiverr1.png','../styles/imgs/fiverr1.png','../styles/imgs/fiverr1.png','../styles/imgs/fiverr1.png'],
-    // currImg:''
+      options: [
+         {
+            description: 'Unlock growth online',
+            name: 'CEO'
+         },
+         {
+            description: 'Customize your site ',
+            name: 'WordPress'
+         },
+         {
+            description: 'Sare your message ',
+            name: 'Voice Over'
+         },
+         {
+            description: 'Engage your audience',
+            name: 'Video Explainer'
+         },
+         {
+            description: 'Level up your site',
+            name: 'Programming'
+         },
+         {
+            description: 'Color your dreams',
+            name: 'Illustration'
+         },
+         
+         
+      ]
+  
    };
    },
    created() {
+       
+
     
     // setInterval(()=>{
     //   for(var i=0; i<this.homeImgs.length; i++){
@@ -61,7 +102,10 @@
     // },1000000)
 
    },
-   methods: {},
+   methods: {
+    
+   
+   },
    computed: {},
    unmounted() {},
    };
