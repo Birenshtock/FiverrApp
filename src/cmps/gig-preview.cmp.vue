@@ -6,7 +6,6 @@
           <img :src="img" alt="">
         </el-carousel-item>
       </el-carousel> -->
-      <h2>heloooo</h2>
       <vueper-slides ref="myVueperSlides" fixed-height="171px">
         <vueper-slide v-for="img in gig.imgs" :key="img" :image="img" width="290px" height="174px" />
       </vueper-slides>
