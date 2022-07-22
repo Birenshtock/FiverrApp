@@ -17,7 +17,7 @@ export const storageService = {
 }
 
 function query(key) {
-  return Promise.resolve(JSON.parse(localStorage.getItem(key) )|| [
+  return Promise.resolve(JSON.parse(localStorage.getItem(key))|| [
     {
         "_id": "i101",
         "catagory": "Logo",
