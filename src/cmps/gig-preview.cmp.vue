@@ -1,11 +1,15 @@
 <template>
   <section v-if="gig" class="gig-preview" @click="goToDetail">
     <div class="inner-wrappers">
-      <el-carousel trigger="click" height="160px">
+      <!-- <el-carousel trigger="click" height="160px">
         <el-carousel-item v-for="img in gig.imgs" :key="img" >
           <img :src="img" alt="">
         </el-carousel-item>
-      </el-carousel>
+      </el-carousel> -->
+      <vueper-slides ref="myVueperSlides" fixed-height="171px">
+        <vueper-slide v-for="img in gig.imgs" :key="img" :image="img" width="290px" height="174px" />
+      </vueper-slides>
+
       <div class="seller-identifiers flex">
         <el-avatar :size="24" :src="gig.owner.imgUrl" />
         <a class="seller-name">{{ gig.owner.fullname }}</a>
@@ -23,16 +27,19 @@
         <span>{{ gig.price }}.99 $</span>
       </div>
     </footer>
-  
+
   </section>
 
 
-  
 
 
-  
+
+
 </template>
 <script>
+import { VueperSlides, VueperSlide } from 'vueperslides'
+import 'vueperslides/dist/vueperslides.css'
+
 export default {
   props: {
     gig: Object,
@@ -47,7 +54,8 @@ export default {
       console.log('testtt')
       this.like = !this.like
     },
-     goToDetail() {
+    goToDetail() {
+      console.log('goToDetail')
       this.$router.push(`/gig/${this.gig._id}`)
     },
 
@@ -58,7 +66,11 @@ export default {
       return { red: this.like }
     },
   },
-  created() { },
+  created() {
+    console.log('gig', this.gig)
+  },
   unmounted() { },
+  components: { VueperSlides, VueperSlide },
+
 };
 </script>

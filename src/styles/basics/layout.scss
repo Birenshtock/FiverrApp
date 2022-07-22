@@ -1,6 +1,10 @@
+
 .main-layout {
+    position: relative;
     display: grid;
-    grid-template-columns: $mainLayoutPadding 1fr $mainLayoutPadding;
+    grid-template-columns: $layoutPadding 1fr $layoutPadding;
+    // display: grid;
+    // grid-template-columns: $mainLayoutPadding 1fr $mainLayoutPadding;
     >* {
         grid-column: 2;
     }

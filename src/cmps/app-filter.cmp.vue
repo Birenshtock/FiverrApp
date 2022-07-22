@@ -1,7 +1,11 @@
 
 <template>
 
+<<<<<<< HEAD
   <section class="main-filter">
+=======
+  <section class="main-filter flex">
+>>>>>>> 998d8ae8a9147231cbab1da8b2cc43e4795efba8
     <div class="input-container">
     <input type="text" @input="setFilter"
       v-model="filterBy.title"
@@ -10,7 +14,8 @@
       size="large">
     <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
     </div>  
-      <!-- <div class="filter-by-catagory">
+<!-- 
+      <div class="filter-by-catagory">
   <div @click="setCatagory('')">All</div>
   <div @click="setCatagory('Logo')">Logo Design</div>
    <div @click="setCatagory('Wordpress')">Wordpress</div>
@@ -18,21 +23,12 @@
   <div  @click="setCatagory('VideoExplainer')">Video Explainer</div>
   <div  @click="setCatagory('Programming')">Programming</div>
   <div  @click="setCatagory('Illustration')">Illustration</div>
-</div> -->
-  
+</div> 
+   -->
     </section>
-
-
-
-
-
-
 </template>
 
-
-
 <script>
-
 export default {
   data() {
     return {

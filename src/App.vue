@@ -1,13 +1,13 @@
 <template>
   <section class="main-layout">
-    <app-header />
+    <app-header :class="[altBackground ? 'header-red' : 'header-black']" />
     <router-view />
     <app-footer />
   </section>
 </template>
 
 <script>
-// import { RouterLink, RouterView } from "vue-router";
+import { RouterLink, RouterView } from "vue-router";
 import appHeader from "./cmps/app-header.cmp.vue";
 import appFooter from "./cmps/app-footer.cmp.vue";
 export default {
@@ -21,6 +21,13 @@ export default {
     return {};
   },
   methods: {},
+  computed: {
+     altBackground() {
+          const path = this.$route.path.split('/')
+          console.log('path',path)
+          return path[path.length-1].toLowerCase() === ''
+      }
+  },
 
   created() {
      
@@ -29,5 +36,18 @@ export default {
   unmounted() {},
 };
 </script>
+<style>
+ .header-black {
+    background-color: rgb(255, 255, 255);
+  }
+  .header-red {
+     background-color: rgba(255, 0, 0, 0);
+   
+      position: sticky;
+       top: 0;
+       z-index: 99;
+  }
+ 
+</style>
 
 

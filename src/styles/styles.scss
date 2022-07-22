@@ -1,6 +1,6 @@
 // setup
 @import 'setup/typography';
-@import 'setup/mixins';
+// @import 'setup/mixins';
 @import 'setup/functions';
 @import 'setup/variables';
 
@@ -16,8 +16,11 @@
 @import 'components/app-filter';
 
 //setup
-
+// @import 'setup/typography';
+// @import 'setup/variables';
+// @import 'setup/functions';
 
 // views
 @import 'views/gig-details';
+@import 'views/home-page';
 

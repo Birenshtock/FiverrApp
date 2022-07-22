@@ -1,7 +1,7 @@
 <template>
   <section class="gig-list">
     <div class="grid">
-      <div v-for="gig in gigs" :key="gig._id">
+      <div class="card" v-for="gig in gigs" :key="gig._id">
         <gig-preview :gig="gig" />
       </div>
     </div>
