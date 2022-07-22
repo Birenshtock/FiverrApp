@@ -1,6 +1,7 @@
 <template>
   <section class="main-layout">
-    <app-header :class="[altBackground ? 'header-red' : 'header-black']" />
+   
+    <app-header />
     <router-view />
     <app-footer />
   </section>
@@ -22,11 +23,7 @@ export default {
   },
   methods: {},
   computed: {
-     altBackground() {
-          const path = this.$route.path.split('/')
-          console.log('path',path)
-          return path[path.length-1].toLowerCase() === ''
-      }
+
   },
 
   created() {
@@ -37,16 +34,7 @@ export default {
 };
 </script>
 <style>
- .header-black {
-    background-color: rgb(255, 255, 255);
-  }
-  .header-red {
-     background-color: rgba(255, 0, 0, 0);
-   
-      position: sticky;
-       top: 0;
-       z-index: 99;
-  }
+
  
 </style>
 
