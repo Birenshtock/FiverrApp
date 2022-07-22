@@ -6,11 +6,11 @@
           <img :src="img" alt="">
         </el-carousel-item>
       </el-carousel> -->
-
+      <h2>heloooo</h2>
       <vueper-slides ref="myVueperSlides" fixed-height="171px">
-          <vueper-slide v-for="img in gig.imgs" :key="img"  :image="img" width="290px" height="174px"/>
+        <vueper-slide v-for="img in gig.imgs" :key="img" :image="img" width="290px" height="174px" />
       </vueper-slides>
-     
+
       <div class="seller-identifiers flex">
         <el-avatar :size="24" :src="gig.owner.imgUrl" />
         <a class="seller-name">{{ gig.owner.fullname }}</a>
@@ -28,14 +28,14 @@
         <span>{{ gig.price }}.99 $</span>
       </div>
     </footer>
-  
+
   </section>
 
 
-  
 
 
-  
+
+
 </template>
 <script>
 import { VueperSlides, VueperSlide } from 'vueperslides'
@@ -55,7 +55,7 @@ export default {
       console.log('testtt')
       this.like = !this.like
     },
-     goToDetail() {
+    goToDetail() {
       console.log('goToDetail')
       this.$router.push(`/gig/${this.gig._id}`)
     },
@@ -67,11 +67,11 @@ export default {
       return { red: this.like }
     },
   },
-  created() { 
-    console.log('gig',this.gig)
+  created() {
+    console.log('gig', this.gig)
   },
   unmounted() { },
-   components: { VueperSlides, VueperSlide },
-  
+  components: { VueperSlides, VueperSlide },
+
 };
 </script>
