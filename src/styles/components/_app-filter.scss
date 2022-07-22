@@ -1,35 +1,99 @@
-.main-filter{
-    flex-direction: column;
-    width: 27em;
-    height: 12vh;
+// .main-filter{
+//     flex-direction: column;
+//     width: 27em;
+//     height: 12vh;
 
-    .input-container{
-        width: 100%;
-        height: 45%;
-    }
-    input{
-        width: 90%;
-        height: 100%;
-        float: left;
-    }
-    button{
-        float: right;
-        width: 10%;
-        height: 100%;
-        padding: 10px;
-        background: #151616;
-        color: #e4e5e7;
-        text-align: center;
-        font-size: 17px;
-        border-left: none; 
-        border-right: none; 
-        cursor: pointer;
+//     .input-container{
+//         width: 100%;
+//         height: 45%;
+//     }
+//     input{
+//         width: 90%;
+//         height: 100%;
+//         float: left;
+//     }
+//     button{
+//         float: right;
+//         width: 10%;
+//         height: 100%;
+//         padding: 10px;
+//         background: #151616;
+//         color: #e4e5e7;
+//         text-align: center;
+//         font-size: 17px;
+//         border-left: none; 
+//         border-right: none; 
+//         cursor: pointer;
 
-        // .i{
+//         // .i{
             
-        // }
+//         // }
    
+//     }
+
+// }
+
+// .filter-by-catagory{
+//     display: flex;
+//     color: #74767e;
+//     font-weight: 400;
+//     font-size: 16px;
+//     font-family: Arial, Helvetica, sans-serif;
+//     width: 100%;
+//     div{
+//         cursor: pointer;
+//         padding:  10px 8px 10px 8px;
+//         border-top: 1px solid  #e4e5e7;    }
+// }
+
+
+.main-filter{
+    
+    width: 32.6vw;
+    height: 4.4vh;
+    border-radius: 20px;
+    margin: 0 auto;
+    
+    .input-container{
+        display: flex;
+
+        width: 100%;
+        height: 100%;
+        padding: auto;
+        // border: 1px solid $clr2;
+        border-radius: 20px;
+
+
+        input{
+            width: 92%;
+            height: 100%;
+            // float: left;
+            font-size: 17px;
+            font-weight:100;
+            font-family:sans-serif;
+            letter-spacing: 1px;
+            color: $clr2;
+        }
+        button{
+            // float: right;
+            width: 8%;
+            height: 100%;
+            padding: 10px;
+            background: #151616;
+            color:$clr4;
+            text-align: center;
+            font-size: 17px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+    
+            i{
+                margin: 0;
+            }
+       
+        }
     }
+
 
 }
 
