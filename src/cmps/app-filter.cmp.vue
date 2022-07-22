@@ -1,21 +1,11 @@
 
-
-
-
 <template>
 
-  <section class="main-filter flex">
-    <!-- <input
-      @input="setFilter"
-      v-model="filterBy.title"
-      placeholder="What service are you looking for?"
-      clearable
-      size="large">
-    </input> -->
+  <section class="main-filter">
     <div class="input-container">
     <input type="text" @input="setFilter"
       v-model="filterBy.title"
-      placeholder="What service are you looking for?"
+      placeholder="  What service are you looking for today?"
       clearable
       size="large">
     <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>

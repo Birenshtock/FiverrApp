@@ -10,7 +10,7 @@ header.top-header{
         flex-wrap: nowrap;
         align-content:center;
         align-items: center;
-        height: 80px;
+        height: 6.4vh;
         margin: auto;
         
         // position: relative;
@@ -29,7 +29,7 @@ header.top-header{
 
 
         .nav-helper{
-            width: 30%;
+            // width: 1vw;
             flex-grow: 1;
         }
 
@@ -42,7 +42,7 @@ header.top-header{
          li a{
             font-family: Arial, Helvetica, sans-serif;
             display: flex;
-            color: #7a7d85;
+            color: $clr2;
             font-size: 1.1rem;
            
             
@@ -70,7 +70,7 @@ header.top-header{
 
     }
     .main-logo-container{
-        width:15%;
+        width: 6.5vw;
         height: 12vh;
     
         .main-logo{
@@ -79,7 +79,8 @@ header.top-header{
             font-weight: 900;
             font-size: 2rem;
             color: black;
-            letter-spacing: -2.3px;
+            letter-spacing: -2.6px;
+            
         
             span{
                 font-size: 1.5em;
@@ -104,44 +105,4 @@ header.top-header{
 
 
 
-//   .header-row-wrapper {
-//     width: 100%;
-//     flex-wrap: nowrap;
-//     .header-row {
-//       align-items: center;
-//       @include for-normal-max-layout {
-//         justify-content: space-between;
-//       }
-//       &.row-main {
-//         height: 80px;
-//         align-content: center;
-//         flex-wrap: nowrap;
-//       }
-//       .btn-nav {
-//         &.home-header-color {
-//           @include for-normal-header-layout {
-//             color: #fff;
-//           }
-//         }
-//         @include for-wide-header-layout {
-//           display: none;
-//         }
-//         cursor: pointer;
-//         background-color: inherit;
-//         border: 0;
-//         display: flex;
-//         align-items: center;
-//         .menu-icon {
-//           width: 50px;
-//           height: 30px;
-//           margin-left: -20px;
-//         }
-//       }
-//       & > .notification-dot {
-//       }
-//     }
 
-//     nav li {
-//       white-space: nowrap;
-//     }
-//   }
