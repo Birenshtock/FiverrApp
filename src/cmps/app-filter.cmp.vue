@@ -2,7 +2,7 @@
 <template>
   <section >
     <div class="input-container">
-    <input type="text" @input="setFilter"
+    <input class="header-input" type="text" @input="setFilter"
       v-model="filterBy.title"
       placeholder="  What service are you looking for today?"
       clearable

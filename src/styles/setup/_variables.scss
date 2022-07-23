@@ -12,8 +12,8 @@ $layoutPadding: 20px;
 // $clr7: darken($clr3, 40%);
 
 // borders 
-$borders1: 0.5px ridge rgba(191, 193, 193, 0.529);
-$borders2: 0.5px ridge rgba(215, 217, 218, 0.788);
+$borders1: 0.5px solid rgba(191, 193, 193, 0.802);
+$borders2: 0.5px solid rgba(215, 217, 218, 0.788);
 
 // LAYOUT
 // $layoutPadding: 259px;
@@ -24,7 +24,7 @@ $topLaout: 100%;
 
 // Padding
 // $layoutPadding: 32px;
-
+$relativePadding: 1rem 1rem;
 
 // LAYOUT BREAKPOINTS
 
