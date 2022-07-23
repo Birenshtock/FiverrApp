@@ -3,17 +3,26 @@ $clr1: #404145; //כותרות
 $clr2:  #62646a;
 $clr3: #347138;
 $clr4: rgb(251, 245, 245);
-// $clr5: darken($clr3, 40%);
+
+
 $layoutPadding: 20px;
 // $clr4:  #fff; // root app color
 // $clr7: darken($clr3, 40%);
-$clr5:rgb(122, 200, 122); // repetetive element color
+$clr5:rgb(100, 181, 100); // repetetive element color
 
+// borders 
+$boders1: 0.5px ridge rgba(191, 193, 193, 0.529);
+$boders2: 0.5px ridge rgba(215, 217, 218, 0.522);
 
 // LAYOUT
 // $layoutPadding: 259px;
 $mainLayoutPadding: 259px;
 
+//header layouts 
+$topLaout: 100%;
+
+// Padding
+$layoutPadding: 32px;
 
 
 // LAYOUT BREAKPOINTS

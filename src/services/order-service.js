@@ -38,7 +38,7 @@ async function saveOrder(order) {
   async function query() {
     try {
        
-      const orders = await storageService.query(KEY)
+      const orders = await storageService.queryOrder(KEY)
       return Promise.resolve(orders)
     } catch (err) {
       console.error(err)

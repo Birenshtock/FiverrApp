@@ -134,7 +134,8 @@ export default {
     this.$store.dispatch({ type: 'addOrder', order: newOrder })
 
     console.log('order')
-      this.$router.push(`/user`)
+      // this.$router.push(`/user`)
+      this.$router.push(`/order`)
     },
 
   },
