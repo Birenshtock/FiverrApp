@@ -1,7 +1,7 @@
 
 <template>
   <header class="top-header full" >
-    <div class="header-row-container main-layout">
+    <div class="header-row-container header-layout">
 
       <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button> 
      <div class="main-logo-container"><router-link to="/"><h1 class="main-logo">binderr<span>.</span></h1></router-link></div>
