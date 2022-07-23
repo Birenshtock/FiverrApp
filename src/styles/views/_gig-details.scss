@@ -78,22 +78,24 @@
     }
 
     .about-gig{
+        margin-top: 4rem;
         h2{
             font-size: 20px;
             line-height: 28px;
-            // padding-bottom: 25px;
         }
         
-        .limit{
-            display:flex;
-            width: 30rem;
-            height: auto;
-            word-wrap: break-word;
-        }
+        // .limit{
+        //     display:flex;
+        //     width: 30rem;
+        //     height: auto;
+        //     word-wrap: break-word;
+        // }
 
         pre{
+            margin-top: 0;
+            margin-bottom: 4rem;
             color: black;
-            margin-left:-45px;
+            margin-left:-50px;
             padding: 0;
             font-size: 1rem;
             color: $clr2;
@@ -101,9 +103,14 @@
             letter-spacing: 2px;
             display: inline-block;
             font-family:Helvetica, sans-serif;
+            text-overflow:inherit;
         }
     }
 
+    .aboutH2{
+        margin-top: 0;
+    }
+    
     .about-seller{
         display: flex;
         img{
