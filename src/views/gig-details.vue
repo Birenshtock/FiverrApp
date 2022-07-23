@@ -37,7 +37,7 @@
         </div>
       </div>
 
-      <h2>About This Seller</h2>
+      <h2 class="aboutH2">About This Seller</h2>
       <div class="about-seller">
         <img :src="gig.owner.imgUrl">
         <div class="owner-details">
