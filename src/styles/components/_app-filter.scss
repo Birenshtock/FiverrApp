@@ -1,25 +1,27 @@
-.main-filter{
+// .main-filter{
     
-    width: 32.6vw;
-    height: 4.4vh;
-    border-radius: 20px;
-    margin: 0 auto;
+ 
+    // margin: 0 auto;
+    // border: 5px solid blu;
+    // border-radius: 20px;
     
     .input-container{
         display: flex;
-
         width: 100%;
         height: 100%;
-        padding: auto;
-        // border: 1px solid $clr2;
+        width: 32em;
+        height: 3rem;
+        // border: 3px solid black;
+        // padding: 2em,1rem;
         border-radius: 20px;
+        
   
 
 
         input{
             width: 92%;
             height: 100%;
-            // float: left;
+            border: none;
             font-size: 17px;
             font-weight:100;
             font-family:sans-serif;
@@ -38,7 +40,7 @@
             font-size: 17px;
             text-decoration: none;
             border: none;
-            cursor: pointer;
+            
      
     
             i{
@@ -50,7 +52,7 @@
     }
 
 
-}
+// }
 
 .filter-by-catagory{
     display: flex;

@@ -53,19 +53,6 @@ export default {
 };
 </script>
 <style>
- .header-black {
-    background-color: rgb(255, 255, 255);
-  }
-  .header-red {
-     background-color: rgba(255, 0, 0, 0);
-   
-      position: sticky;
-       top: 0;
-       z-index: 99;
-  }
-  .bg-white{
-    background-color: rgb(255, 255, 255);
-  }
  
 </style>
 

@@ -3,7 +3,7 @@
 .main-layout {
     position: relative;
     display: grid;
-    grid-template-columns: $layoutPadding 1fr $layoutPadding;
+    grid-template-columns: $mainLayoutPadding 1fr $mainLayoutPadding;
     // display: grid;
     // grid-template-columns: $mainLayoutPadding 1fr $mainLayoutPadding;
     >* {
@@ -15,7 +15,7 @@
 }
 
 .header-layout {
-    /* box-sizing: content-box; */
+    display: flex;
     padding-inline-start: $mainLayoutPadding;
     padding-inline-end: $mainLayoutPadding
 }

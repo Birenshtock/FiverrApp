@@ -2,29 +2,26 @@
 
 
 
-//header layout mixins
 
-@mixin for-normal-header-layout {
-    @media (min-width: $header-break-normal) {
+//Media Queries Mixin
+
+@mixin for-small-layout {
+    @media (max-width: $break-small) {
       @content;
     }
   }
   
-  @mixin for-wide-header-layout {
-    @media (min-width: $header-break-wide) {
+  @mixin for-medium-layout {
+    @media (max-width: $break-medium) {
       @content;
     }
   }
   
-  @mixin for-extra-wide-header-layout {
-    @media (min-width: $header-break-extra-wide) {
+  @mixin for-larg-layout {
+    @media (max-width: $break-larg) {
       @content;
     }
   }
-  
-  @mixin for-large-screen-header-layout {
-    @media (min-width: $header-break-extra-wide) {
-      @content;
-    }
-  }
+
+
   
