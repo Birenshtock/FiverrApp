@@ -176,30 +176,130 @@
 .gallery{
     display: flex;
     font-family: Helvetica, sans-serif;
+    color: #fff;
     
     .option{
-        border: 1px solid pink;
+       
         border-radius: 4px;
-        margin: 5px;
-        width: 100%;
-        height: 345px;
-        transition: opacity .3s ease-in-out;
-        // background-image: url(/src/styles/imgs/opt1.webp);
-    //     position: absolute;
-    //   top: 0;
+        margin: 20px;
+        width: 245px;
+        height: 355px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        // margin-left: 10px;
+        // transition: opacity .3s ease-in-out;
+     
     }
-    .btn-left{
-        height: 40px;
-        width: 40px;
-        border-radius: 50px;
-        border: none;
-        box-shadow: 0 0 0.01px 0;
+    .option p {
+        margin-left: 20px;
+    }
+    .option h1 {
+        margin-left: 20px;
+        line-height: 5px;
+    }
+    .option.ceo{
+        background-image: url("https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/055f758c1f5b3a1ab38c047dce553860-1598561741668/seo-2x.png")
+    }
+    .option.wordPress{
+        background-image: url("https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/ae11e2d45410b0eded7fba0e46b09dbd-1598561917003/wordpress-2x.png");
+    }
+    .option.voice-over{
+        background-image: url("https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/055f758c1f5b3a1ab38c047dce553860-1598561741669/voiceover-2x.png");
+    }
+    .option.video{
+        background-image: url("https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/055f758c1f5b3a1ab38c047dce553860-1598561741663/animated-explainer-2x.png");
+    }
+    .option.programming{
+        background-image: url("https://fiverr-res.cloudinary.com/image/upload/w_600/f_auto,q_auto/v1/attachments/generic_asset/asset/767bc10a0c44b0a67be1a94aea270205-1609336032121/website%20development-min.jpg");
+    }
+    .option.illustration{
+        background-image: url("https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/055f758c1f5b3a1ab38c047dce553860-1598561741664/illustration-2x.png");
+    }
+    button{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
         position: relative;
         align-self: center;
+        border: none;
+        background-color: #ffffff;
+        z-index: 90;
+        position: absolute;
+        box-shadow: 0 2px 5px 0 rgb(0 0 0 / 15%);
+        border: 0;
+        font-size: 16px;
+        line-height: 100%;
+        cursor: pointer;
+    
+
+    }
+    .btn-left{
+        left: 25px;
+
+      
+    }
+    .btn-right{
+        right: 25px;
+       
+    }
+
+}
+
+.intro{
+    display: flex;
+    background-color: #e7f6ef;
+    font-family: Helvetica, sans-serif;
+    .check-list{
+        margin: 20px;
+        padding: 0px 150px 0px 8px;
+        h2{
+            color: #404145;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 40px;
+            svg{
+                color: #62646a;
+            }
+        }
+        h6{
+            color: #404145;
+            font-size: 18px;
+            line-height: 15px;
+        }
+        p{
+            color: #62646a;
+        }
+    }
+    img{
+        width: 100%;
+        height: auto;
+        border:0;
+        margin-right:20px;
+        cursor: pointer;
+        // background-color: ;
+        // frameBorder: opx;
+    }
+    .vid{
+        // display: none;
+        position: fixed;
+        top: 20vh;
+        left: 30vw;
+        width: 40vw;
+        z-index: 4;
+        border-radius: 4px;
+    }
+    .greyBg{
+        background-color: #000000b2;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 }
 
-$colors: darkslateblue mediumorchid seagreen steelblue;
 
 // loop!
 
