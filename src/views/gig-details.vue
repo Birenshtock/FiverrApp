@@ -25,14 +25,15 @@
         </vueper-slide>
       </vueper-slides>
 
-      <div class="reviews">
+      <!-- <div class="reviews">
         <h2>What people loved about this seller</h2>
         <button>See all reviews</button>
-      </div>
+      </div> -->
 
       <div class="about-gig">
         <h2>About This Gig</h2>
-        <p> {{ gig.description }}</p>
+        <div class="limit">
+        <pre> {{ gig.description }}</pre></div>
         <!-- <p> {{gig.note}}</p> -->
         <ul v-for="note in gig.additionalNotes" :key="note">
           <li>{{ note }}</li>
@@ -51,10 +52,10 @@
 
       <div class="extended-owner-details">
         <ul>
-          <li>From /n {{ gig.owner.loc }}</li>
-          <li>Avg. response time /n {{ gig.owner.avgResponceTime }}</li>
-          <li>Member since /n {{ gig.owner.memberSince }}</li>
-          <li>Last delivery /n {{ gig.owner.lastDelivery }}</li>
+          <li>From {{ gig.owner.loc }}</li>
+          <li>Avg. response time {{ gig.owner.avgResponceTime }}</li>
+          <li>Member since {{ gig.owner.memberSince }}</li>
+          <li>Last delivery {{ gig.owner.lastDelivery }}</li>
         </ul>
       </div>    
 
