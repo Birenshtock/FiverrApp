@@ -1,45 +1,40 @@
-// .main-filter{
-    
- 
-    // margin: 0 auto;
-    // border: 5px solid blu;
-    // border-radius: 20px;
+
     
     .input-container{
         display: flex;
-        width: 100%;
-        height: 100%;
-        width: 32em;
-        height: 3rem;
-        // border: 3px solid black;
-        // padding: 2em,1rem;
-        border-radius: 20px;
+        height: 2.625rem;
+        width: 39.435rem;
+        border: $borders1;
+        border-radius: 5px;
+        text-align: center;
         
   
 
 
-        input{
+        .header-input{
             width: 92%;
             height: 100%;
-            border: none;
             font-size: 17px;
             font-weight:100;
             font-family:sans-serif;
             letter-spacing: 1px;
             color: $clr2;
+            border: none;
+            
      
         }
         button{
             // float: right;
             width: 8%;
             height: 100%;
-            padding: 10px;
+            
             background: #151616;
             color:$clr4;
             text-align: center;
             font-size: 17px;
-            text-decoration: none;
+            // text-decoration: none;
             border: none;
+            
             
      
     
@@ -52,7 +47,7 @@
     }
 
 
-// }
+
 
 .filter-by-catagory{
    

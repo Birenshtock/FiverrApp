@@ -9,13 +9,13 @@
      <app-filter to="/app-filter" @setFilter="setFilter"></app-filter>
      
     <nav class="top-header-nav-bar-container" >
-      <div class="nav-helper"></div>
+      <!-- <div class="nav-helper"></div> -->
      
     <ul class="nav-bar clean-list flex">
       <li><router-link to="/gig">Explore</router-link></li>
       <li><router-link to="/">Become a Seller</router-link></li>
       <li><router-link to="/">Sign In</router-link></li>
-      <!-- <li><button class="join-btn"><router-link to="/"></router-link>Join</button></li> -->
+      
        <button class="join-btn">Join</button>
       
       <!-- <li><router-link to="/"><el-button type="success" plain class="join-btn">Join</el-button></router-link></li> -->
