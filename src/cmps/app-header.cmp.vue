@@ -10,10 +10,10 @@
      
     <nav class="top-header-nav-bar-container" >
       <div class="nav-helper"></div>
-      <!-- ref="nav" v-bind:style="{ position: stickyNav ? 'fixed' : 'static' }" -->
+     
     <ul class="nav-bar clean-list flex">
       <li><router-link to="/gig">Explore</router-link></li>
-      <!-- <li><i class="fa-light fa-globe"></i></li> -->
+      
       <li><router-link to="/">Become a Seller</router-link></li>
       <li><router-link to="/">Sign In</router-link></li>
       <!-- <li><button class="join-btn"><router-link to="/"></router-link>Join</button></li> -->
@@ -25,17 +25,21 @@
  </ul>
     </nav>
     </div>
-    
   <hr class="header-line full">
+
+    <catagory-filter class="catagory-filter"></catagory-filter>
+
   </header>
 </template>
 
 <script>
 import appFilter from "../cmps/app-filter.cmp.vue";
+import catagoryFilter from "../cmps/catagory-filter.cmp.vue";
 export default {
   tempalte: ``,
   components:{
     appFilter,
+    catagoryFilter
   },
   data: () => {
   return {
