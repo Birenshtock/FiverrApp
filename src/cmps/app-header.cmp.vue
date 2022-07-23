@@ -86,6 +86,7 @@ export default {
 }
 </script>
 <style>
+
 .displayFilter{
   display: flex;
   position: fixed;
@@ -122,6 +123,4 @@ export default {
     border-top: 1px solid rgb(202, 202, 202);
 
 }
-
- 
 </style>
