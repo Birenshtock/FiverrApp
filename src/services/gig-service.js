@@ -3,16 +3,6 @@ import { utilService } from "./util-service.js"
 
 const KEY = "gigs_db"
 
-// const labels = [
-//   "On wheels",
-//   "Box game",
-//   "Art",
-//   "Baby",
-//   "Doll",
-//   "Puzzle",
-//   "Outdoor",
-// ]
-
 _createGigs()
 
 export const gigService = {

@@ -1,6 +1,5 @@
 
 <template>
-
   <section class="main-filter flex">
     <div class="input-container">
     <input type="text" @input="setFilter"
