@@ -60,19 +60,21 @@
 
     </div>
 
-  <button @click="createOrder">continue</button>
   </div>
-  <div class="side-details">
+  <div class="side-details sticky">
+    <div class="side-price">{{gig.price}} $</div>
     <div class="side-title">{{gig.catagory}}</div>
     <div class="side-subtitle">{{gig.title}}</div>
-    <div class="side-price">{{gig.price}} $</div>
-    <div class="side-price flex">
+    <div class="side-delivery flex">
       <img src="/clock.png.png"/>
       <div>{{gig.daysToMake}} Days Delivery</div>
     </div>
-    <ul class="side-delivery clean-list" v-for="feats in gig.orderFeats" :key="feats">
-      <li>&#10003; {{feats}}</li>
+    <ul class="order-features clean-list" v-for="feats in gig.orderFeats" :key="feats">
+      <li><i class="checkMark">&#10003;</i>{{feats}}</li>
     </ul>
+    <footer>
+    <el-button class="side-btn" @click="createOrder" type="success">Continue ({{gig.price}} $)</el-button>
+    </footer>
 
   </div>
 </section>

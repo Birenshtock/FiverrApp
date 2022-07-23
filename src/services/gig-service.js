@@ -153,7 +153,7 @@ function _createGigs() {
               "accessible"
             ],
             "likedByUsers" : ["mini-user"],
-            "orderFeats": ["2 concepts included","Logo transparency","Printable file","3D mockup"]
+            "orderFeats": ["2 concepts included","Logo transparency","Printable file","3D mockup","Stationery designs"]
            
           },
         {
@@ -187,7 +187,7 @@ function _createGigs() {
               "accessible"
             ],
             "likedByUsers" : ["mini-user"],
-            "orderFeats": ["1 concept included","Logo transparency","Printable file"]
+            "orderFeats": ["1 concept included","Logo transparency","Printable file","Social media kit"]
            
           },
         {
@@ -221,7 +221,7 @@ function _createGigs() {
               "accessible"
             ],
             "likedByUsers" : ["mini-user"],
-            "orderFeats": ["1 concept included","Logo transparency","Printable file"]
+            "orderFeats": ["1 concept included","Logo transparency","Printable file","Social media kit"]
            
           },
         {
@@ -353,7 +353,7 @@ function _createGigs() {
               "accessible"
             ],
             "likedByUsers" : ["mini-user"],
-            "orderFeats": ["2 concepts included","Logo transparency","3D mockup"]
+            "orderFeats": ["2 concepts included","Logo transparency","3D mockup","Vector file"]
     
            
           }
