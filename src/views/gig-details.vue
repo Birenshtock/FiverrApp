@@ -1,15 +1,15 @@
-<template>
-  <section class="gig-detalis" v-if="gig">
+<template >
+<section class="details-page flex">
+  <div class="gig-details" v-if="gig">
     <h1>{{ gig.title }}</h1>
     <div class="owner-details">
       <img :src="gig.owner.imgUrl">
       <div class="owner-fullname">{{ gig.owner.fullname }}</div>
+      <div>&nbsp;{{gig.owner.level}}</div>
       <div class="space">&nbsp;|&nbsp;</div>
       <div class="stars"><span>&#9733;&#9733;&#9733;&#9733;&#9733; 4.9</span> (730)</div>
     </div>
     <div class="block text-center" m="t-4">
-     
-
       <vueper-slides ref="vueperslides1" :touchable="false" fade :autoplay="false" :bullets="false"
         @slide="$refs.vueperslides2.goToSlide($event.currentSlide.index, { emit: false })" fixed-height="400px">
         <vueper-slide v-for="(img, i) in gig.imgs" :key="i" :image="img">
@@ -60,19 +60,22 @@
 
     </div>
 
-    <div class="extended-owner-details">
-      <ul>
-        <li>From /n {{gig.owner.loc}}</li>
-        <li>Avg. response time /n {{gig.owner.avgResponceTime}}</li>
-        <li>Member since /n {{gig.owner.memberSince}}</li>
-        <li>Last delivery /n {{gig.owner.lastDelivery}}</li>
-      </ul>
-    </div>
-
   <button @click="createOrder">continue</button>
-  </section>
+  </div>
+  <div class="side-details">
+    <div class="side-title">{{gig.catagory}}</div>
+    <div class="side-subtitle">{{gig.title}}</div>
+    <div class="side-price">{{gig.price}} $</div>
+    <div class="side-price flex">
+      <img src="/clock.png.png"/>
+      <div>{{gig.daysToMake}} Days Delivery</div>
+    </div>
+    <ul class="side-delivery clean-list" v-for="feats in gig.orderFeats" :key="feats">
+      <li>&#10003; {{feats}}</li>
+    </ul>
 
-
+  </div>
+</section>
 </template>
 
 <script>
@@ -95,16 +98,7 @@ export default {
     const { gigId } = this.$route.params
     this.gig = await gigService.getById(gigId)
 
-
-    // if (gigId) gigService.getById(gigId)
-    // .then((currToy) => {
-    // this.gig = currToy
-    // })
-    // console.log('gig',this.gig)
     console.log('gig s only.\n✔ 100% ')
-
-
-
   },
   computed: {
   },

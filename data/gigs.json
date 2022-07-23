@@ -31,7 +31,8 @@
           "proffesional",
           "accessible"
         ],
-        "likedByUsers" : ["mini-user"]
+        "likedByUsers" : ["mini-user"],
+        "order-feat": ["2 concepts included","Logo transparency","Printable file","3D mockup"]
        
       },
     {
@@ -64,7 +65,8 @@
           "proffesional",
           "accessible"
         ],
-        "likedByUsers" : ["mini-user"]
+        "likedByUsers" : ["mini-user"],
+        "order-feat": ["1 concept included","Logo transparency","Printable file"]
        
       },
     {
@@ -97,7 +99,8 @@
           "proffesional",
           "accessible"
         ],
-        "likedByUsers" : ["mini-user"]
+        "likedByUsers" : ["mini-user"],
+        "order-feat": ["1 concept included","Logo transparency","Printable file"]
        
       },
     {
@@ -131,7 +134,8 @@
           "proffesional",
           "accessible"
         ],
-        "likedByUsers" : ["mini-user"]
+        "likedByUsers" : ["mini-user"],
+        "order-feat": ["2 concepts included","Logo transparency","Printable file","3D mockup"]
        
       },
     {
@@ -162,7 +166,9 @@
           "proffesional",
           "accessible"
         ],
-        "likedByUsers" : ["mini-user"]
+        "likedByUsers" : ["mini-user"],
+        "order-feat": ["2 concepts included","Logo transparency","Printable file","3D mockup"]
+
        
       },
     {
@@ -193,7 +199,8 @@
           "proffesional",
           "accessible"
         ],
-        "likedByUsers" : ["mini-user"]
+        "likedByUsers" : ["mini-user"],
+        "order-feat": ["2 concepts included","Logo transparency","Printable file","3D mockup"]
        
       },
     {
@@ -224,7 +231,9 @@
           "proffesional",
           "accessible"
         ],
-        "likedByUsers" : ["mini-user"]
+        "likedByUsers" : ["mini-user"],
+        "order-feat": ["2 concepts included","Logo transparency","3D mockup"]
+
        
       }
     ]

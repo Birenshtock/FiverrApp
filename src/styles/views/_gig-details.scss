@@ -1,20 +1,31 @@
-.gig-detalis{
+.details-page{
+    font-family: work-sans;
+    max-width: 81rem;
+    min-width: 18.125rem;
+    margin: 0 auto;
+    padding: 32px 24px 0;
+}
+
+.gig-details{
     border: 1px black solid;
     color: $clr1;
-  
-    width: 60vw;
-    font-family: Arial, Helvetica, sans-serif;
+    width: 57%;
+    // font-family: Arial, Helvetica, sans-serif;
     h1{
-        font-size: 28px;
         padding-bottom: 16px;
-      
+        margin: 0;
+        font-size: 28px;
     }
   
+    
     .owner-details{
         display: flex;
         align-items: center;
         font-size: 14px;
         line-height: 21px;
+        margin-bottom: 20px;
+        
+        
         img{
             border-radius: 50%;
             width: 30px;
@@ -30,11 +41,21 @@
         }
         .stars{
             span{
-
+                
                 color: #ffbe5b;
                 font-weight: 700;
             }
         }
+    }
+
+    .vueperslide__content-wrapper{
+        position: relative;
+        border: 1px solid #efeff0;
+        // background-color: #1dbf73;
+    }
+
+    .vueperslides--fixed-height.vueperslides--bullets-outside {
+        margin-bottom: 1.4em;
     }
 
     .block text-center{
@@ -47,7 +68,7 @@
         justify-content: space-between;
         align-items: center;
         h2{
-            font-size: 20px;
+            font-size: 1.13rem;
         }
         
         button{
@@ -97,4 +118,62 @@
     }
 
 
+}
+
+.side-details{
+    border: 1px solid #e4e5e7;
+    padding: 2em 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    margin-bottom: 40px;
+
+    .side-title {
+        font-size: 1.1rem;
+    }
+
+    .side-subtitle {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .side-price {
+    font-size: 1em;
+
+        img{
+            width: 15px;
+            height: 15px;
+            margin-top: 2px;
+            margin-right: 5px;
+        }
+    }
+
+    .side-delivery {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-block-end: 8px;
+    }
+
+    .clock-icon {
+        transform: scale(0.8);
+        color: $clr2;
+    }
+
+    .side-btn {
+        width: 100%;
+        font-weight: 600;
+    }
+
+    .order-features {
+        margin-block-end: 10px;
+        li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            .check-icon {
+            transform: scale(0.8);
+            color: $clr1;
+            }
+        }
+    }
 }
