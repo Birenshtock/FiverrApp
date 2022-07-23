@@ -3,16 +3,17 @@ $clr1: #404145; //כותרות
 $clr2:  #62646a;
 $clr3: #347138;
 $clr4: rgb(251, 245, 245);
+$clr5:rgb(100, 181, 100); // repetetive element color
+$clr6: rgba(127, 129, 130, 0.638);
 
 
 $layoutPadding: 20px;
 // $clr4:  #fff; // root app color
 // $clr7: darken($clr3, 40%);
-$clr5:rgb(100, 181, 100); // repetetive element color
 
 // borders 
-$boders1: 0.5px ridge rgba(191, 193, 193, 0.529);
-$boders2: 0.5px ridge rgba(215, 217, 218, 0.522);
+$borders1: 0.5px ridge rgba(191, 193, 193, 0.529);
+$borders2: 0.5px ridge rgba(215, 217, 218, 0.788);
 
 // LAYOUT
 // $layoutPadding: 259px;

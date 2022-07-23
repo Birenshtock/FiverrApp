@@ -10,16 +10,6 @@
     <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
     </div>  
 
-      <!-- <div class="filter-by-catagory">
-  <div @click="setCatagory('')">All</div>
-  <div @click="setCatagory('Logo')">Logo Design</div>
-   <div @click="setCatagory('Wordpress')">Wordpress</div>
-  <div  @click="setCatagory('VoiceOver')" >Voice Over</div>
-  <div  @click="setCatagory('VideoExplainer')">Video Explainer</div>
-  <div  @click="setCatagory('Programming')">Programming</div>
-  <div  @click="setCatagory('Illustration')">Illustration</div>
-</div>  -->
-  
     </section>
 </template>
 
@@ -42,23 +32,16 @@ export default {
     }
   },
   methods: {
-    setFilter() {
-      console.log('ff')
+    async setFilter() {
+      await  this.$route.query.catagory
+      console.log('ff', this.$route.query.catagory)
       
       this.$emit('setFilter', {
         ...this.filterBy,
         catagory: this.$route.query.catagory,
       })
     },
-    setCatagory(catagory){
-      // this.filterBy.catagory=catagory
-      this.$router.push({query: {catagory: catagory}})
-      //  const { } = this.$route.params
-      //  console.log('hi',this.$route.query.catagory)
-      
-
-
-    },
+  
   },
   computed: {},
   mounted() {},

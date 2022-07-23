@@ -18,15 +18,15 @@
     <div class="order-details-container">
       <div class="head">
     <h1>Orde Details</h1>
-        
+       
       </div>
       <ul class="clean-list">
-      <li><i class="fa-solid fa-check"></i>{Include Source Code}</li>
-      <li><i class="fa-solid fa-check"></i>Database Integration</li>
-      <li><i class="fa-solid fa-check"></i>Setup File</li>
-      <li><i class="fa-solid fa-check"></i>Detailed Code Comments</li>
-      <li><i class="fa-solid fa-check"></i>3D Mockup</li>
-      <li><i class="fa-solid fa-check"></i>Source File</li>
+      <li><i class="checkMark">&#10003;</i>Include Source Code</li>
+      <li><i class="checkMark">&#10003;</i>Database Integration</li>
+      <li><i class="checkMark">&#10003;</i>Setup File</li>
+      <li><i class="checkMark">&#10003;</i>Detailed Code Comments</li>
+      <li><i class="checkMark">&#10003;</i>3D Mockup</li>
+      <li><i class="checkMark">&#10003;</i>Source File</li>
       </ul>
     </div>
   </div>   
@@ -35,7 +35,7 @@
 
   <div class="chckout-box">
 
-    <div class="coulc">
+    <div class="calc">
     <h1>Price summary</h1>
     <ul class="clean-list">
       <li>Subtotal<span>$200.00</span></li>
@@ -53,7 +53,8 @@
     </div>
 
         <!-- <el-button type="checkout-btn">Checkout</el-button> -->
-        <el-button type="success">Checkout</el-button>
+        <!-- <el-button type="success">Checkout</el-button> -->
+        <button class="checkout-btn">Chackout</button>
 
   </div>
   
