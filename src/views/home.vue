@@ -1,14 +1,7 @@
-
 <template>
-<!-- <h1>rrrrrrrrrrrrrr Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus suscipit ab itaque repudiandae iste. Dolorem sit at enim ratione, nulla repellat odio repudiandae, reiciendis quos, similique animi fugiat facilis nobis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo recusandae quod consectetur natus consequatur laborum eaque debitis possimus atque cupiditate nemo maiores modi totam, unde veritatis, repudiandae cum perspiciatis quaerat?</h1> -->
-  <!-- <catagory-filter class="catagory-filter"/> -->
+
  <div id='mydiv' class="full"></div>
-    <!-- <img class="home-page-image full" src="../styles/imgs/fiverr1.png" alt=""> -->
-  <!-- <div class="hero-wrapper full">
-     <div class="img1"></div>
-   <div class="img2"></div>
-  </div> -->
-   
+    
   <main class="home-page">
      
      <h1>Find the perfect <span>   &nbsp; freelance</span> </h1>
@@ -37,7 +30,7 @@
   </div>
 
 
-      <h1 class="gallery-title">Popular professional services</h1>
+   <h1 class="gallery-title">Popular professional services</h1>
    <div class="gallery">
       <button class="btn-left" @click="onSetPage"><i class="fa-solid fa-angle-left"></i></button>
     
