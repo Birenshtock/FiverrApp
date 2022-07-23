@@ -4,6 +4,7 @@ import about from "../views/about.vue"
 import gigApp from "../views/gig-app.vue"
 import gigDetails from "../views/gig-details.vue"
 import userDetails from "../views/user-details.vue"
+import orderDetails from "../views/order-details.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -33,10 +34,15 @@ const router = createRouter({
       name: 'about',
       component: about,
     },
+    // {
+    //   path: '/user',
+    //   name: 'user-details',
+    //   component: userDetails
+    // },
     {
-      path: '/user',
-      name: 'user-details',
-      component: userDetails
+      path: '/order',
+      name: 'order-details',
+      component: orderDetails
     },
 
   ]

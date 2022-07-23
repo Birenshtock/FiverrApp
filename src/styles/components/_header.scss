@@ -1,6 +1,9 @@
 header.top-header{
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     width: 100%;
+    padding: 1em 1rem;
+    
+    
     // border-bottom: 1px solid black;
     .header-row-container {
 
@@ -12,6 +15,8 @@ header.top-header{
         align-items: center;
         height: 6.4vh;
         margin: auto;
+       
+
         
         // position: relative;
         
@@ -53,9 +58,9 @@ header.top-header{
             align-items: center;
             width: 62.55px;
             height:36px ;
-
             border-radius: 5px;
-            border-color: $clr5;;
+            background-color: $clr4;
+            border-color: $clr4;;
             color: $clr5;
             &:hover{
                 background-color:$clr5 ;
@@ -91,8 +96,13 @@ header.top-header{
         }
      
     }
+   
 
 
+}
+.header-line {
+    width: 100%;
+   
 }
 
 .header-filter {

@@ -1,7 +1,7 @@
 
 <template>
-  <header class="top-header full" :class="[altBackground ? 'header-black' : 'header-red']">
-    <div class="header-row-container main-layout">
+  <header class="top-header" :class="[altBackground ? 'header-black' : 'header-red']" >
+    <div class="header-row-container main-layout" >
         <!-- <button class="menu-toggle">☰</button> -->
      <div class="main-logo-container"><router-link to="/"><h1 class="main-logo">binderr<span>.</span></h1></router-link></div>
  <app-filter to="/app-filter" class="header-filter"  @setFilter="setFilter"></app-filter>
@@ -21,6 +21,7 @@
     </nav>
     </div>
     
+  <hr class="header-line full">
   </header>
 </template>
 
