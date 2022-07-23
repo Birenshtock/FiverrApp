@@ -123,4 +123,5 @@ export default {
     border-top: 1px solid rgb(202, 202, 202);
 
 }
+
 </style>
