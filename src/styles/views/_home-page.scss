@@ -1,20 +1,20 @@
 
-.hero-wrapper{
-    .img1{
-        position: relative;
-        top: -100px;
-        background-size: cover;
-        width: 100%;
-        height: 600px;
-        background-size: auto 100%;
-        -webkit-box-pack: end;
-        background-image: url("https://fiverr-res.cloudinary.com/image/upload/q_auto,f_auto/v1/attachments/generic_asset/asset/bb5958e41c91bb37f4afe2a318b71599-1599344049970/bg-hero-5-1792-x1.png");
+// .hero-wrapper{
+//     .img1{
+//         position: relative;
+//         top: -100px;
+//         background-size: cover;
+//         width: 100%;
+//         height: 600px;
+//         background-size: auto 100%;
+//         -webkit-box-pack: end;
+//         background-image: url("https://fiverr-res.cloudinary.com/image/upload/q_auto,f_auto/v1/attachments/generic_asset/asset/bb5958e41c91bb37f4afe2a318b71599-1599344049970/bg-hero-5-1792-x1.png");
 
-        @media (max-width: 1100px){
-            background-image: url("https://fiverr-res.cloudinary.com/image/upload/q_auto,f_auto/v1/attachments/generic_asset/asset/bb5958e41c91bb37f4afe2a318b71599-1599344049961/bg-hero-5-900-x1.png");
-        }
-    }
-}    
+//         @media (max-width: 1100px){
+//             background-image: url("https://fiverr-res.cloudinary.com/image/upload/q_auto,f_auto/v1/attachments/generic_asset/asset/bb5958e41c91bb37f4afe2a318b71599-1599344049961/bg-hero-5-900-x1.png");
+//         }
+//     }
+// }    
 
 
 
@@ -45,12 +45,12 @@
 //     }    
 // }
 
-
+// position: relative; top: -150px; left: 9px;
 // width:1730px; height: 680px; position: relative; top: -100px; left: -100px;
-#mydiv{ animation: changeBg 20s infinite; width:100vw; height: 90vh; position: relative; top: -150px; left: 9px; margin: 0px;  }
+#mydiv{ animation: changeBg 20s infinite; width:100%; height: rem(700px); position: relative; top: -100px;   margin: 0px; background-size: cover;  }
 @keyframes changeBg{
-   0%,100%  {background-image: url("/src/styles/imgs/fiverr1.png");}
-   20% {background-image: url("/src/styles/imgs/fiverr2.png") ;}
+   0%,100%  {background-image: url("https://fiverr-res.cloudinary.com/image/upload/q_auto,f_auto/v1/attachments/generic_asset/asset/2413b8415dda9dbd7756d02cb87cd4b1-1599595203045/bg-hero-2-1792-x1.png");}
+   20% {background-image: url("https://fiverr-res.cloudinary.com/image/upload/q_auto,f_auto/v1/attachments/generic_asset/asset/d14871e2d118f46db2c18ad882619ea8-1599835783966/bg-hero-3-1792-x1.png") ;}
    40% {background-image: url("/src/styles/imgs/fiverr3.png");}
    60% {background-image: url("/src/styles/imgs/fiverr4.png");}
    80% {background-image: url("/src/styles/imgs/fiverr5.png");}
@@ -58,15 +58,15 @@
 
 
 .home-page{
-    margin-left: 67px;
+    margin-left: rem(67px);
     position: absolute;
     top: 200px;
     // z-index: 100;
     
     font-family:  Helvetica, sans-serif;
     h1{
-        font-size: 48px;
-    line-height: 16px;
+        font-size: rem(48px);
+    line-height: rem(16px);
         color: #fff;
 
         span{
@@ -75,33 +75,33 @@
         }
     }
     .search-input{
-        margin-top: 52px;
+        margin-top: rem(52px);
         display: flex;
         align-items: center;
         // background-color: #816d7d;
         // padding: 2px;
-        border-radius: 5px;
-        height: 47px;
+        border-radius: rem(5px);
+        height: rem(47px);
         .search{
             height: 100%;
             // margin: 10px;
             align-self: center;
             text-align: center;
             // line-height: 47px;
-            padding: 14px;
+            padding: rem(14px);
             background-color: rgb(255, 255, 255);
             color: #62646a;
-            border-radius: 5px  0 0  5px;
+            border-radius: rem(5px) 0 0  rem(5px);
             border: none;
 
         }
         .input{
             height: 100%;
             border: none;
-            width: 526px;
+            width: rem(526px);
             border: none;
             border-radius: 0;
-            font-size: 20px;
+            font-size: rem(20px);
             color: #62646a; 
         }
         .input:focus{
@@ -109,11 +109,11 @@
         }
         .button{
             height: 100%;
-            width: 110px;
+            width: rem(110px);
             color: #fff;
             font-size: 20px;
             background-color: #1daf6b;
-            border-radius: 0  5px  5px 0 ;
+            border-radius: 0  rem(5px) rem(5px) 0 ;
             border: none;
             cursor: pointer;
         }
@@ -125,7 +125,7 @@
     background-color: #f9f6f6e7;
     display: flex;
     justify-content: center;
-    height: 100px;
+    height: rem(100px);
     position: relative;
     top: -150px;
     .imgs{
@@ -133,7 +133,7 @@
         align-items: center;
         .trusted{
 
-            width: 150px;
+            width: rem(150px);
             // padding: 10px;
             // margin-right: 10px;
             font-family: Helvetica, sans-serif;
@@ -141,9 +141,9 @@
         }
         
         img {
-            width: 100px;
-            padding: 10px;
-            margin-right: 20px;
+            width: rem(100px);
+            padding: rem(10px);
+            margin-right: rem(20px);
         }
 
     }
@@ -152,27 +152,27 @@
 .gallery-title{
     font-family: Helvetica, sans-serif;
 }
-@for $i from 1 through 2 {
+// @for $i from 1 through 2 {
 
-    .gallery:nth-child(#{$i}) {
+//     .gallery:nth-child(#{$i}) {
                
-          background-image: url(/src/styles/imgs/opt-#{$i}.webp);
+//           background-image: url(/src/styles/imgs/opt-#{$i}.webp);
           
       
-    } 
-}
+//     } 
+// }
 .gallery{
     display: flex;
     font-family: Helvetica, sans-serif;
     color: #fff;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     
     .option{
        
         border-radius: 4px;
-        margin: 20px;
-        width: 245px;
-        height: 355px;
+        margin: rem(20px);
+        min-width: rem(245px);
+        height: rem(355px);
         background-repeat: no-repeat;
         background-size: cover;
         // margin-left: 10px;
@@ -180,10 +180,10 @@
      
     }
     .option p {
-        margin-left: 20px;
+        margin-left: rem(20px);
     }
     .option h1 {
-        margin-left: 20px;
+        margin-left: rem(20px);
         line-height: 5px;
     }
     .option.logo{
@@ -205,8 +205,8 @@
         background-image: url("https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/055f758c1f5b3a1ab38c047dce553860-1598561741664/illustration-2x.png");
     }
     button{
-        height: 50px;
-        width: 50px;
+        height: rem(50px);
+        width: rem(50px);
         border-radius: 50%;
         position: relative;
         align-self: center;
@@ -223,12 +223,12 @@
 
     }
     .btn-left{
-        left: 25px;
+        left: rem(25px);
 
       
     }
     .btn-right{
-        right: 25px;
+        right: rem(25px);
        
     }
 
@@ -239,21 +239,21 @@
     background-color: #e7f6ef;
     font-family: Helvetica, sans-serif;
     .check-list{
-        margin: 20px;
-        padding: 0px 150px 0px 8px;
+        margin: rem(20px);
+        padding: 0px rem(150px) 0px 8px;
         h2{
             color: #404145;
             font-weight: 700;
-            font-size: 30px;
-            line-height: 40px;
+            font-size: rem(30px);
+            line-height: rem(40px);
             svg{
                 color: #62646a;
             }
         }
         h6{
             color: #404145;
-            font-size: 18px;
-            line-height: 15px;
+            font-size: rem(18px);
+            line-height: rem(15px);
         }
         p{
             color: #62646a;
@@ -270,18 +270,18 @@
         width: 100%;
         height: auto;
         border:0;
-        margin-right:20px;
+        margin-right:rem(20px);
         cursor: pointer;
 
         .play{
-            height: 100px;
-            width: 100px;
-            font-size: 35px;
+            height: rem(100px);
+            width:rem(100px);
+            font-size: rem(35px);
             border-radius: 50%;
             background-color: #00000088;
             text-align: center;
             // align-self: center;
-            line-height: 100px;
+            line-height: rem(100px);
             color: #fff;
             position: relative;
             left: 45%;
@@ -296,9 +296,9 @@
     .vid{
         // display: none;
         position: fixed;
-        top: 20vh;
-        left: 30vw;
-        width: 40vw;
+        top: 20%;
+        left: 30%;
+        width: 40%;
         z-index: 4;
         border-radius: 4px;
     }
