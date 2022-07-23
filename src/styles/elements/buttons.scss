@@ -1,0 +1,40 @@
+.join-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 62.55px;
+    height:36px ;
+    border-radius: 5px;
+    background-color: $clr4;
+    border-color: $clr4;;
+    color: $clr5;
+    &:hover{
+        background-color:$clr5 ;
+        color: $clr4;
+    }
+
+    
+}
+
+.checkout-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height:36px ;
+    border-radius: 5px;
+    background-color: $clr5;
+    border-color: $clr4;
+    color: $clr4;
+
+    outline: invert;
+    box-shadow: none;
+    &:hover{
+        border-color: $clr5;
+        background-color: $clr5;
+        cursor: pointer;
+        filter: brightness(110%);
+    }
+
+}
+

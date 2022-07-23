@@ -9,7 +9,7 @@
       size="large">
     <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
     </div>  
-<!-- 
+
       <div class="filter-by-catagory">
   <div @click="setCatagory('')">All</div>
   <div @click="setCatagory('Logo')">Logo Design</div>
@@ -19,7 +19,7 @@
   <div  @click="setCatagory('Programming')">Programming</div>
   <div  @click="setCatagory('Illustration')">Illustration</div>
 </div> 
-   -->
+  
     </section>
 </template>
 
@@ -29,7 +29,7 @@ export default {
     return {
       filterBy: {
         title: '',
-        catagory:''
+        // catagory: this.$route.query.catagory
         // byCatagories: [],
       },
       tags: [
@@ -43,16 +43,29 @@ export default {
   },
   methods: {
     setFilter() {
+      console.log('ff')
       
-      this.$emit('setFilter', this.filterBy)
+      this.$emit('setFilter', {
+        ...this.filterBy,
+        catagory: this.$route.query.catagory,
+      })
     },
     setCatagory(catagory){
-      this.filterBy.catagory=catagory
-      this.setFilter()
+      // this.filterBy.catagory=catagory
+      this.$router.push({query: {catagory: catagory}})
+      //  const { } = this.$route.params
+      //  console.log('hi',this.$route.query.catagory)
+      
+
 
     },
   },
   computed: {},
-  created() {},
+  mounted() {},
+  watch: {
+    '$route.query.catagory'(){
+      this.setFilter()
+    }
+  }
 }
 </script>

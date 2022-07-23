@@ -1,6 +1,6 @@
 <template>
   <section class="main-layout">
-    <app-header :class="[altBackground ? 'header-red' : 'header-black']" />
+    <app-header :class="[altBackground ? 'header-red' : 'header-black',altBackground&& isHeaderWhite? 'bg-white' :'']"  />
     <router-view />
     <app-footer />
   </section>
@@ -18,13 +18,22 @@ export default {
     appFooter,
   },
   data() {
-    return {};
+    return {
+      isHeaderWhite: false,
+    };
   },
-  methods: {},
+  methods: {
+     handleScroll(ev){
+       this.isHeaderWhite= true
+        //  console.log('i am scrolling', window.scrollY)
+         if (window.scrollY===0)  this.isHeaderWhite= false
+      }
+    
+  },
   computed: {
      altBackground() {
           const path = this.$route.path.split('/')
-          console.log('path',path)
+          // console.log('path',path)
           return path[path.length-1].toLowerCase() === ''
       }
   },
@@ -32,6 +41,13 @@ export default {
   created() {
      
     this.$store.dispatch({ type: 'loadGigs' })
+    window.addEventListener("scroll", this.handleScroll)
+
+    
+  },
+  destroyed() {
+    
+    window.removeEventListener("scroll", this.handleScroll);
   },
   unmounted() {},
 };
@@ -46,6 +62,9 @@ export default {
       position: sticky;
        top: 0;
        z-index: 99;
+  }
+  .bg-white{
+    background-color: rgb(255, 255, 255);
   }
  
 </style>

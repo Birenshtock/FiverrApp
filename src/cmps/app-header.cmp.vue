@@ -21,6 +21,7 @@
     </nav>
     </div>
     
+  <hr class="header-line full">
   </header>
 </template>
 

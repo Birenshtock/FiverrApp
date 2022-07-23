@@ -51,23 +51,23 @@ export default {
   },
   methods: {
     test() {
-      console.log('testtt')
+      // console.log('testtt')
       this.like = !this.like
     },
     goToDetail() {
-      console.log('goToDetail')
+      // console.log('goToDetail')
       this.$router.push(`/gig/${this.gig._id}`)
     },
 
   },
   computed: {
     liked() {
-      console.log('ike')
+      // console.log('ike')
       return { red: this.like }
     },
   },
   created() {
-    console.log('gig', this.gig)
+    // console.log('gig', this.gig)
   },
   unmounted() { },
   components: { VueperSlides, VueperSlide },

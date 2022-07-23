@@ -13,6 +13,7 @@
         padding: auto;
         // border: 1px solid $clr2;
         border-radius: 20px;
+  
 
 
         input{
@@ -24,6 +25,7 @@
             font-family:sans-serif;
             letter-spacing: 1px;
             color: $clr2;
+     
         }
         button{
             // float: right;
@@ -37,9 +39,11 @@
             text-decoration: none;
             border: none;
             cursor: pointer;
+     
     
             i{
                 margin: 0;
+               
             }
        
         }
