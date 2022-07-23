@@ -8,6 +8,7 @@
       <div class="rate">
          <div class="raters">
             <h3>I will teach you js</h3>
+            <h3>{{orders.title}}</h3>
             <div class="stars"><span>&#9733;&#9733;&#9733;&#9733;&#9733; 4.9</span> (730)</div>
          </div>
       </div>  
@@ -20,7 +21,7 @@
         
       </div>
       <ul class="clean-list">
-      <li><i class="fa-solid fa-check"></i>Include Source Code</li>
+      <li><i class="fa-solid fa-check"></i>{Include Source Code}</li>
       <li><i class="fa-solid fa-check"></i>Database Integration</li>
       <li><i class="fa-solid fa-check"></i>Setup File</li>
       <li><i class="fa-solid fa-check"></i>Detailed Code Comments</li>
@@ -51,7 +52,8 @@
     </ul>
     </div>
 
-        <el-button type="checkout-btn">Checkout</el-button>
+        <!-- <el-button type="checkout-btn">Checkout</el-button> -->
+        <el-button type="success">Checkout</el-button>
 
   </div>
   
