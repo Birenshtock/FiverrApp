@@ -40,27 +40,27 @@
    <div class="gallery">
       <button class="btn-left" @click="onSetPage"><i class="fa-solid fa-angle-left"></i></button>
     
-      <div class="option ceo" :class="[display5 ? 'display5' : 'display1']" >
-          <p>Unlock growth online</p>
-         <h1>CEO</h1>
+      <div @click="moveToExploreFilter('Logo')" class="option logo" :class="[display5 ? 'display5' : 'display1']" >
+          <p>Build your brand</p>
+         <h1>Logo Design</h1>
       </div>
       <div @click="moveToExploreFilter('Wordpress')" class="option wordPress " :class="[display5 ? 'display5' : 'display1']">
           <p>Customize your site</p>
          <h1>WordPress</h1>
       </div>
-      <div class="option voice-over" :class="[display5 ? 'display5' : 'display1']">
+      <div @click="moveToExploreFilter('VoiceOver')" class="option voice-over" :class="[display5 ? 'display5' : 'display1']">
           <p>Sare your message</p>
          <h1>Voice Over</h1>
       </div>
-      <div class="option video" :class="[display5 ? 'display5' : 'display1']">
+      <div @click="moveToExploreFilter('VideoExplainer')" class="option video" :class="[display5 ? 'display5' : 'display1']">
           <p>Engage your audience</p>
          <h1>Video Explainer</h1>
       </div>
-      <div class="option programming" :class="[display5 ? 'display5' : 'display1']">
+      <div  @click="moveToExploreFilter('Programming')" class="option programming" :class="[display5 ? 'display5' : 'display1']">
           <p>Level up your site</p>
          <h1>Programming</h1>
       </div>
-      <div class="option illustration" :class="[display5 ? 'display1' : 'display5']">
+      <div @click="moveToExploreFilter('Illustration')" class="option illustration" :class="[display5 ? 'display1' : 'display5']">
           <p>Color your dreams</p>
          <h1>Illustration</h1>
       </div>
@@ -85,7 +85,14 @@
       <h6><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8 1.75C4.54822 1.75 1.75 4.54822 1.75 8C1.75 11.4518 4.54822 14.25 8 14.25C11.4518 14.25 14.25 11.4518 14.25 8C14.25 4.54822 11.4518 1.75 8 1.75ZM0.25 8C0.25 3.71979 3.71979 0.25 8 0.25C12.2802 0.25 15.75 3.71979 15.75 8C15.75 12.2802 12.2802 15.75 8 15.75C3.71979 15.75 0.25 12.2802 0.25 8Z"></path><path d="M11.5303 5.46967C11.8232 5.76256 11.8232 6.23744 11.5303 6.53033L7.53033 10.5303C7.23744 10.8232 6.76256 10.8232 6.46967 10.5303L4.46967 8.53033C4.17678 8.23744 4.17678 7.76256 4.46967 7.46967C4.76256 7.17678 5.23744 7.17678 5.53033 7.46967L7 8.93934L10.4697 5.46967C10.7626 5.17678 11.2374 5.17678 11.5303 5.46967Z"></path></svg> 24/7 support</h6>
       <p>Questions? Our round-the-clock support team is available to help anytime, anywhere.</p>
    </div>
-   <img @click="openVidModal" src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_900,dpr_1.0/v1/attachments/generic_asset/asset/089e3bb9352f90802ad07ad9f6a4a450-1599517407052/selling-proposition-still-1400-x1.png" alt="">
+
+   <div class="img-container">
+
+      <img @click="openVidModal" src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_900,dpr_1.0/v1/attachments/generic_asset/asset/089e3bb9352f90802ad07ad9f6a4a450-1599517407052/selling-proposition-still-1400-x1.png" alt="">
+      <div class="play">&nbsp;<i class="fa-solid fa-play"></i></div>
+
+
+   </div>
    
    <video v-if="displayVid" @blur="openVidModal" class="vid" autoplay="" controls="" poster="" preload="metadata" crossorigin="anonymous"><source src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/vmvv3czyk2ifedefkau7" type="video/mp4"><track label="EN" srclang="en-US" src="https://npm-assets.fiverrcdn.com/assets/@fiverr/logged_out_homepage_perseus/apps/fiverr_lohp_video_en-US.00c8c11.vtt" default="" kind="subtitles"><track label="DE" srclang="de-DE" src="https://npm-assets.fiverrcdn.com/assets/@fiverr/logged_out_homepage_perseus/apps/fiverr_lohp_video_de-DE.479343e.vtt" kind="subtitles"><track label="ES" srclang="es" src="https://npm-assets.fiverrcdn.com/assets/@fiverr/logged_out_homepage_perseus/apps/fiverr_lohp_video_es.0e7d9ce.vtt" kind="subtitles"><track label="FR" srclang="fr-FR" src="https://npm-assets.fiverrcdn.com/assets/@fiverr/logged_out_homepage_perseus/apps/fiverr_lohp_video_fr-FR.62936b3.vtt" kind="subtitles"><track label="IT" srclang="it-IT" src="https://npm-assets.fiverrcdn.com/assets/@fiverr/logged_out_homepage_perseus/apps/fiverr_lohp_video_it-IT.15d2b21.vtt" kind="subtitles"><track label="NL" srclang="nl-NL" src="https://npm-assets.fiverrcdn.com/assets/@fiverr/logged_out_homepage_perseus/apps/fiverr_lohp_video_nl-NL.23e247e.vtt" kind="subtitles"><track label="PT" srclang="pt-BR" src="https://npm-assets.fiverrcdn.com/assets/@fiverr/logged_out_homepage_perseus/apps/fiverr_lohp_video_pt-BR.b8ba68e.vtt" kind="subtitles">
    </video>
@@ -136,8 +143,8 @@
          this.displayVid=!this.displayVid
       },
       async moveToExploreFilter(filterCatagory){
+         this.$router.push({ path:'/gig', query:{ catagory: filterCatagory}})
          await this.$router.isReady()
-        this.$router.push({ path:'/gig', query:{ catagory: filterCatagory}})
          // this.$router.push(`/user`)
          
          // this.$router.push(`/gig?catagory=${filterCatagory}`)
