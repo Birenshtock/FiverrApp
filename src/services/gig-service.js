@@ -150,13 +150,9 @@ function _createGigs() {
         description: `
         hi welcome to my gig..
 
-
-
         If you are looking for an amazing custom logo design with vintage, 
         classic, retro, engraving style, hand drawn style for your brand 
         project or business then I am ready to help you with ORIGINAL work.
-        
-        
         
         - My work is always ORIGINAL!
         - Don't use stock art or templates!
@@ -165,7 +161,6 @@ function _createGigs() {
         - Quick turnaround.
         - 100% money back guarantee if you're not satisfied! 
       
-        
         Thank you so much!
         
         Have a great day`,
@@ -204,7 +199,47 @@ function _createGigs() {
           'https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs2/116971341/original/fbd666528b27171dc8d52a949a8c36144b4211ad.png',
         ],
         description:
-          "Hi there ! Thanks for stopping by !!\nA Team of Talented Graphic Designer with 8+ years of experience in Graphic Industry, expertise as Logo Maker, You'll get creative & AWESOME logo design for your business.\nMy portfolio : https://www.fiverr.com/users/design_desk/portfolio/NjFiYjE4NmMwZTgwMDUwMDAxZTMzMjJh\n★ Why Us? ★\nTalented Logo Maker Team\nFully custom made, creative, original, UNIQUE and AWESOME designs\nProfessional customer support 24/7\nHigh Quality work\n100% money back policy if not satisfied\n★ WHAT DO YOU GET? ★\n✔ Highly Professional, UNIQUE & High Quality designs\n✔ UNLIMITED revisions until u r 100% satisfied\n✔ Fast turn around time 24 to 48 hours only.\n✔ 100% original & unique vector design from Adobe Illustrator\n✔ Vector Source Files (scalable without any quality loss) (AI, EPS, PDF) for the final design ✔ PROFESSIONAL Communication & Outstanding Customer Support ✔ Guaranteed High Quality work\nIf you have any question,\nFeel free to★ Contact Me! ★I'll be happy to help !\nLet's get started!\n-Your Logo Maker",
+        `
+        Hi there ! Thanks for stopping by !!
+
+        A Team of Talented Graphic Designer with 8+ years of experience in 
+        Graphic Industry, expertise as Logo Maker,You'll get creative & 
+        AWESOME logo design for your business.
+
+        ★ Why Us? ★
+
+        - Talented Logo Maker Team
+        - Fully custom made, creative, original, UNIQUE and AWESOME
+          designs
+        - Professional customer support 24/7
+        - High Quality work
+        - 100% money back policy if not satisfied
+
+        ★ WHAT DO YOU GET? ★
+
+        ✔ Highly Professional, UNIQUE & High Quality designs
+
+        ✔ UNLIMITED revisions until u r 100% satisfied
+
+        ✔ Fast turn around time 24 to 48 hours only.
+
+        ✔ 100% original & unique vector design from Adobe Illustrator
+
+        ✔ Vector Source Files (scalable without any quality loss)
+          (AI, EPS, PDF) for the final design 
+        
+        ✔ PROFESSIONAL Communication & Outstanding Customer Support 
+        
+        ✔ Guaranteed High Quality work
+
+
+        If you have any question, 
+
+        Feel free to★ Contact Me! ★I'll be happy to help !
+
+
+        Let's get started!
+        `,
         tags: ['logo-design', 'artisitic', 'proffesional', 'accessible'],
         likedByUsers: ['mini-user'],
         orderFeats: [

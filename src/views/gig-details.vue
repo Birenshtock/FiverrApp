@@ -33,13 +33,11 @@
       <div class="about-gig">
         <h2>About This Gig</h2>
         <div class="limit">
-        <pre> {{ gig.description }}</pre></div>
-        <!-- <p> {{gig.note}}</p> -->
-        <ul v-for="note in gig.additionalNotes" :key="note">
-          <li>{{ note }}</li>
-        </ul>
+          <pre> {{ gig.description }}</pre>
+        </div>
       </div>
 
+      <h2>About This Seller</h2>
       <div class="about-seller">
         <img :src="gig.owner.imgUrl">
         <div class="owner-details">

@@ -78,26 +78,29 @@
     }
 
     .about-gig{
-        // .limit{
-        //     width: 30rem;
-        //     word-wrap: break-word;
-        // }
         h2{
             font-size: 20px;
             line-height: 28px;
             // padding-bottom: 25px;
         }
         
+        .limit{
+            display:flex;
+            width: 30rem;
+            height: auto;
+            word-wrap: break-word;
+        }
+
         pre{
             color: black;
-            margin-left:-50px;
+            margin-left:-45px;
             padding: 0;
             font-size: 1rem;
             color: $clr2;
             // word-wrap: break-word;
             letter-spacing: 2px;
             display: inline-block;
-            font-family:word-sans;
+            font-family:Helvetica, sans-serif;
         }
     }
 
