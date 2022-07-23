@@ -1,42 +1,24 @@
-.join-btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 62.55px;
-    height:36px ;
-    border-radius: 5px;
-    background-color: $clr4;
-    border-color: $clr5;;
-    color: $clr5;
-    &:hover{
-        background-color:$clr5 ;
-        color: $clr4;
-    }
-
-    
+button{
+  &:hover{
+      cursor: pointer;
+  }
 }
 
-// .checkout-btn{
-//     // display: flex;
-//     // justify-content: center;
-//     // align-items: center;
-//     width: 95%;
-//     height:36px ;
-//     border-radius: 5px;
-//     background-color: $clr5;
-//     border-color: $clr4;
-//     color: $clr4;
+.join-btn{
+  width: 62.55px;
+  height:36px ;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 5px;
+  border: 2px solid $clr5;
+  color: $clr5;
+  &:hover{
+      background-color:$clr5 ;
+      color: $clr4;
+  }
 
-//     outline: invert;
-//     box-shadow: none;
-//     &:hover{
-//         border-color: $clr5;
-//         background-color: $clr5;
-//         cursor: pointer;
-//         filter: brightness(110%);
-//     }
+  
+}
 
-// }
 
 .checkout-btn {
     align-self: center;
@@ -48,7 +30,6 @@
     color: $clr4;
     
     &:hover{
-      cursor: pointer;
       filter: brightness(110%);  
       &:active{
         filter: brightness(85%);

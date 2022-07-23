@@ -1,6 +1,6 @@
 
 <template>
-  <section class="main-filter flex">
+  <section >
     <div class="input-container">
     <input type="text" @input="setFilter"
       v-model="filterBy.title"
@@ -8,6 +8,7 @@
       clearable
       size="large">
     <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    
     </div>  
 
     </section>

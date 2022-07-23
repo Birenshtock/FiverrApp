@@ -1,6 +1,6 @@
 // setup
 @import 'setup/typography';
-// @import 'setup/mixins';
+@import 'setup/mixins';
 @import 'setup/functions';
 @import 'setup/variables';
 
@@ -10,7 +10,8 @@
 @import 'basics/layout';
 
 // components
-@import 'components/header';
+@import 'components/header/header';
+@import 'components/header/header-scrolling';
 @import 'components/footer';
 @import 'components/gig-preview';
 @import 'components/app-filter';

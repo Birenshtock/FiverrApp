@@ -3,7 +3,7 @@ $clr1: #404145; //כותרות
 $clr2:  #62646a;
 $clr3: #347138;
 $clr4: rgb(251, 245, 245);
-$clr5:rgb(100, 181, 100); // repetetive element color
+$clr5:#1ea968; // repetetive element color
 $clr6: rgba(127, 129, 130, 0.638);
 
 
@@ -23,13 +23,12 @@ $mainLayoutPadding: 259px;
 $topLaout: 100%;
 
 // Padding
-$layoutPadding: 32px;
+// $layoutPadding: 32px;
 
 
 // LAYOUT BREAKPOINTS
 
 // Header Breakpoints 
-$header-break-normal: 630px;
-$header-break-wide: 900px;
-$header-break-extra-wide: 1160px;
-$header-break-large-screen: 1564px;
+$break-small: 600px;
+$break-medium: 900px;
+$break-larg: 1100px;

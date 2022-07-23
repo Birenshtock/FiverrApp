@@ -25,14 +25,15 @@
         </vueper-slide>
       </vueper-slides>
 
-      <div class="reviews">
+      <!-- <div class="reviews">
         <h2>What people loved about this seller</h2>
         <button>See all reviews</button>
-      </div>
+      </div> -->
 
       <div class="about-gig">
         <h2>About This Gig</h2>
-        <p> {{ gig.description }}</p>
+        <div class="limit">
+        <pre> {{ gig.description }}</pre></div>
         <!-- <p> {{gig.note}}</p> -->
         <ul v-for="note in gig.additionalNotes" :key="note">
           <li>{{ note }}</li>
@@ -51,28 +52,30 @@
 
       <div class="extended-owner-details">
         <ul>
-          <li>From /n {{ gig.owner.loc }}</li>
-          <li>Avg. response time /n {{ gig.owner.avgResponceTime }}</li>
-          <li>Member since /n {{ gig.owner.memberSince }}</li>
-          <li>Last delivery /n {{ gig.owner.lastDelivery }}</li>
+          <li>From {{ gig.owner.loc }}</li>
+          <li>Avg. response time {{ gig.owner.avgResponceTime }}</li>
+          <li>Member since {{ gig.owner.memberSince }}</li>
+          <li>Last delivery {{ gig.owner.lastDelivery }}</li>
         </ul>
       </div>    
 
     </div>
 
-  <button @click="createOrder">continue</button>
   </div>
-  <div class="side-details">
+  <div class="side-details sticky">
+    <div class="side-price">{{gig.price}} $</div>
     <div class="side-title">{{gig.catagory}}</div>
     <div class="side-subtitle">{{gig.title}}</div>
-    <div class="side-price">{{gig.price}} $</div>
-    <div class="side-price flex">
+    <div class="side-delivery flex">
       <img src="/clock.png.png"/>
       <div>{{gig.daysToMake}} Days Delivery</div>
     </div>
-    <ul class="side-delivery clean-list" v-for="feats in gig.orderFeats" :key="feats">
-      <li>&#10003; {{feats}}</li>
+    <ul class="order-features clean-list" v-for="feats in gig.orderFeats" :key="feats">
+      <li><i class="checkMark">&#10003;</i>{{feats}}</li>
     </ul>
+    <footer>
+    <el-button class="side-btn" @click="createOrder" type="success">Continue ({{gig.price}} $)</el-button>
+    </footer>
 
   </div>
 </section>
