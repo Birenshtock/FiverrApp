@@ -1,7 +1,5 @@
 
 <template>
-
-
       <div class="filter-by-catagory">
   <div @click="setCatagory('')">All</div>
   <div @click="setCatagory('Logo')">Logo Design</div>
@@ -18,7 +16,7 @@
 <script>
 
 export default {
-  tempalte: ``,
+  
   components:{
    
   },

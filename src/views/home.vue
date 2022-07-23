@@ -1,11 +1,13 @@
 
 <template>
- <!-- <div id='mydiv' class="full"></div> -->
+<!-- <h1>rrrrrrrrrrrrrr Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus suscipit ab itaque repudiandae iste. Dolorem sit at enim ratione, nulla repellat odio repudiandae, reiciendis quos, similique animi fugiat facilis nobis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo recusandae quod consectetur natus consequatur laborum eaque debitis possimus atque cupiditate nemo maiores modi totam, unde veritatis, repudiandae cum perspiciatis quaerat?</h1> -->
+  <!-- <catagory-filter class="catagory-filter"/> -->
+ <div id='mydiv' class="full"></div>
     <!-- <img class="home-page-image full" src="../styles/imgs/fiverr1.png" alt=""> -->
-  <div class="hero-wrapper full">
+  <!-- <div class="hero-wrapper full">
      <div class="img1"></div>
    <div class="img2"></div>
-  </div>
+  </div> -->
    
   <main class="home-page">
      
@@ -14,7 +16,6 @@
 
        <div class="search-input">
           <div class="search"><i class="fa-solid fa-magnifying-glass"></i></div>
-         <!-- <el-input class="input" placeholder='Try "building mobile app"'/> -->
          <input  class="input" type="text" placeholder='Try "building mobile app"'>
        
         <button class="button">Search</button>
@@ -109,11 +110,15 @@
 </template>
 
 <script>
-// import appFilter from "../cmps/app-filter.cmp.vue";
+import catagoryFilter from "../cmps/catagory-filter.cmp.vue";
    export default {
     comments:{
       // appFilter,
     },
+     components: {
+    
+    catagoryFilter,
+  },
    data() {
    return {
       display5: false,
@@ -150,9 +155,8 @@
          // this.$router.push(`/gig?catagory=${filterCatagory}`)
 
       }
-     
-   
    },
+
    computed: {},
    unmounted() {},
    };

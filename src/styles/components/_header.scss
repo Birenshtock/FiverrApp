@@ -1,20 +1,52 @@
-header.top-header{
-    flex-wrap: wrap;
+.top-header{
+    // flex-wrap: wrap;
     width: 100%;
     padding: 1em 1rem;
+    z-index: 100;
+    top: 0;
     
     
     // border-bottom: 1px solid black;
     .header-row-container {
+        margin-left: $layoutPadding;
+        margin-right: $layoutPadding;
 
         display: flex;
-        flex-direction: row;
+        // flex-direction: row;
         justify-content: space-between;
         flex-wrap: nowrap;
-        align-content:center;
         align-items: center;
         height: 6.4vh;
-        margin: auto;
+        // margin: auto;
+        .header-filter{
+            align-self: center;
+            margin-left: 30px;
+        }
+        .main-logo-container{
+            position: relative;
+            top: -15px;
+            // width: 6.5vw;
+            height: 12vh;
+            align-self: center;
+            .main-logo{
+           
+                font-family: Helvetica, sans-serif;
+                font-weight: 900;
+                font-size: 2rem;
+                color: black;
+                letter-spacing: -2.6px;
+                
+            
+                span{
+                    font-size: 1.5em;
+                    color: $clr5;
+                    font-family:'Times New Roman', Times, serif;
+                
+                }
+            }
+         
+        }
+       
        
 
         
@@ -74,29 +106,7 @@ header.top-header{
 
 
     }
-    .main-logo-container{
-        width: 6.5vw;
-        height: 12vh;
     
-        .main-logo{
-       
-            font-family: Helvetica, sans-serif;
-            font-weight: 900;
-            font-size: 2rem;
-            color: black;
-            letter-spacing: -2.6px;
-            
-        
-            span{
-                font-size: 1.5em;
-                color: $clr5;
-                font-family:'Times New Roman', Times, serif;
-            
-            }
-        }
-     
-    }
-   
 
 
 }
@@ -105,10 +115,10 @@ header.top-header{
    
 }
 
-.header-filter {
-    width: 8em;
-    justify-content: center;
-}
+// .header-filter {
+//     width: 8em;
+//     justify-content: center;
+// }
 
 
 

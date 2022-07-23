@@ -1,6 +1,7 @@
 <template>
   <section class="main-layout">
     <app-header :class="[altBackground ? 'header-red' : 'header-black',altBackground&& isHeaderWhite? 'bg-white' :'']"  />
+   
     <router-view />
     <app-footer />
   </section>
@@ -10,12 +11,14 @@
 import { RouterLink, RouterView } from "vue-router";
 import appHeader from "./cmps/app-header.cmp.vue";
 import appFooter from "./cmps/app-footer.cmp.vue";
+// import catagoryFilter from "./cmps/catagory-filter.cmp.vue";
 export default {
   name: "main-app",
   props: [],
   components: {
     appHeader,
     appFooter,
+    // catagoryFilter,
   },
   data() {
     return {
@@ -61,10 +64,11 @@ export default {
    
       position: sticky;
        top: 0;
-       z-index: 99;
+       z-index: 1050;
   }
   .bg-white{
     background-color: rgb(255, 255, 255);
+   
   }
  
 </style>

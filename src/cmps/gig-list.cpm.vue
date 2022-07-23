@@ -1,4 +1,5 @@
 <template>
+<catagory-filter  class="full" />
   <section class="gig-list">
     <div class="grid">
       <div class="card" v-for="gig in gigs" :key="gig._id">
