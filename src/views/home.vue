@@ -4,7 +4,7 @@
     
   <main class="home-page">
      
-     <h1>Find the perfect <span>   &nbsp; freelance</span> </h1>
+       <h1>Find the perfect <span>   &nbsp; freelance</span> </h1>
        <h1> services for your business</h1>
 
        <div class="search-input">

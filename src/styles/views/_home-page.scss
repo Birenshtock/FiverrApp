@@ -58,7 +58,7 @@
 
 
 .home-page{
-    margin-left: rem(67px);
+    // margin-left: rem(67px);
     position: absolute;
     top: 200px;
     // z-index: 100;
@@ -127,7 +127,7 @@
     justify-content: center;
     height: rem(100px);
     position: relative;
-    top: -150px;
+    top: -100px;
     .imgs{
         display: flex;
         align-items: center;
@@ -170,7 +170,7 @@
     .option{
        
         border-radius: 4px;
-        margin: rem(20px);
+        margin-right: rem(20px);
         min-width: rem(245px);
         height: rem(355px);
         background-repeat: no-repeat;
@@ -208,7 +208,7 @@
         height: rem(50px);
         width: rem(50px);
         border-radius: 50%;
-        position: relative;
+        // position: relative;
         align-self: center;
         border: none;
         background-color: #ffffff;
@@ -216,31 +216,40 @@
         position: absolute;
         box-shadow: 0 2px 5px 0 rgb(0 0 0 / 15%);
         border: 0;
-        font-size: 16px;
+        font-size: rem(16px);
         line-height: 100%;
         cursor: pointer;
     
 
     }
     .btn-left{
-        left: rem(25px);
+        left: rem(70px);
 
       
     }
     .btn-right{
-        right: rem(25px);
+        right: rem(80px);
        
     }
 
 }
 
 .intro{
-    display: flex;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr  41.25rem 41.25rem 1fr;
+        
+    
+ 
+  
     background-color: #e7f6ef;
     font-family: Helvetica, sans-serif;
+    margin-top: rem(100px);
     .check-list{
-        margin: rem(20px);
-        padding: 0px rem(150px) 0px 8px;
+        grid-column: 2;
+        width: 80%;
+        // margin: rem(20px);
+        // margin: 0px rem(400px) 0px 8px;
         h2{
             color: #404145;
             font-weight: 700;
@@ -259,19 +268,21 @@
             color: #62646a;
         }
     }
-    img{
-        width: 100%;
-        height: 100%;
-        
-        // background-color: ;
-        // frameBorder: opx;
-    }
+    
     .img-container{
+        grid-column: 3;
         width: 100%;
         height: auto;
         border:0;
         margin-right:rem(20px);
         cursor: pointer;
+        img{
+            width: 100%;
+            height: 100%;
+            
+            // background-color: ;
+            // frameBorder: opx;
+        }
 
         .play{
             height: rem(100px);
