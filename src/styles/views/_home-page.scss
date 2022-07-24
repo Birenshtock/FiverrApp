@@ -347,17 +347,21 @@
 }
 
 .founders{
+    display: flex;
     .img{
         border-radius: 4px;
         margin-right: rem(20px);
         // min-width: rem(245px);
         // height: rem(355px);
-        width: 200px;
+        width: 40%;
         height: auto;
         background-repeat: no-repeat;
         background-size: cover;
         cursor: pointer;
-        background-image:url(https://fiverr-res.cloudinary.com/q_auto,f_auto,w_560,dpr_1.0/v1/attachments/generic_asset/asset/42a6fd208670a0361b38bd72b47b9317-1599519173396/testimonial-video-still-lavender.jpg) ;
+        background-image:url("https://fiverr-res.cloudinary.com/q_auto,f_auto,w_560,dpr_1.0/v1/attachments/generic_asset/asset/42a6fd208670a0361b38bd72b47b9317-1599519173396/testimonial-video-still-lavender.jpg");
+    }
+    .description{
+        width: 60%;
     }
 
 }

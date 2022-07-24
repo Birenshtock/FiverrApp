@@ -174,11 +174,12 @@
 
    <div class="founders">
       <div class="img"></div>
-      <div class="list">
+      <div class="description">
+         <p>Brighid Gannon (DNP,PMHNP-BC),Co-Founder | Lavender</p>
+         <h3>"We used Fiverr for SEO, our logo, website, copy, animated videos- literally everything. It was like
+            working with a human right next to you versus being across thr world."</h3>
 
       </div>
-
-
    </div>
 
 

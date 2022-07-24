@@ -1,11 +1,9 @@
 
 <template>
   <section>
-    <div class="input-container">
-      <input class="header-input" type="text" @input="setFilter" v-model="filterBy.title"
-        placeholder="  What service are you looking for today?" clearable size="large">
-      <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-
+    <div class="filter-container">
+      <input class="filter-input" type="text" placeholder="  What service are you looking for today?">
+      <button class="filter-search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
     </div>
 
   </section>
