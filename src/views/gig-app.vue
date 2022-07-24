@@ -1,5 +1,7 @@
 <template>
   <section >
+    <h1>{{headerCatagory}}</h1>
+
 
     <!-- <div class="app-filter"> -->
         <!-- <app-filter to="/app-filter" class="main-filter"  @setFilter="setFilter"></app-filter> -->
@@ -22,14 +24,23 @@ import gigList from '../cmps/gig-list.cpm.vue'
 
 export default {
   name: 'gig-app',
+    data() {
+   return {
+    // headerCatagory: '',
+
+   }},
   created() {
     //  console.log('gigs',gigs)
     this.$store.dispatch({ type: 'loadGigs' })
+    this.headerCatagory = this.$route.query.catagory
   },
   computed: {
     gigs() {
       return this.$store.getters.gigs
     },
+    headerCatagory(){
+      return this.$route.query.catagory
+    }
   },
   methods: {
     //   setFilter(filter) {
