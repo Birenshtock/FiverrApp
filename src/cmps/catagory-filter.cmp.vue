@@ -1,13 +1,13 @@
 
 <template>
       <div class="filter-by-catagory">
-  <div @click="setCatagory('')">All</div>
-  <div @click="setCatagory('Logo')">Logo Design</div>
-   <div @click="setCatagory('Wordpress')">Wordpress</div>
-  <div  @click="setCatagory('VoiceOver')" >Voice Over</div>
-  <div  @click="setCatagory('VideoExplainer')">Video Explainer</div>
-  <div  @click="setCatagory('Programming')">Programming</div>
-  <div  @click="setCatagory('Illustration')">Illustration</div>
+  <div class="catagory " @click="setCatagory('')">All</div>
+  <div class="catagory" @click="setCatagory('Logo')">Logo Design</div>
+   <div class="catagory" @click="setCatagory('Wordpress')">Wordpress</div>
+  <div class="catagory" @click="setCatagory('VoiceOver')" >Voice Over</div>
+  <div  class="catagory" @click="setCatagory('VideoExplainer')">Video Explainer</div>
+  <div  class="catagory" @click="setCatagory('Programming')">Programming</div>
+  <div  class="catagory" @click="setCatagory('Illustration')">Illustration</div>
 </div> 
   
  

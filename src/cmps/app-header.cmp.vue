@@ -103,6 +103,7 @@ export default {
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     border-top: 1px solid rgb(202, 202, 202);
+    
 }
 
 .displayFilterNone{
@@ -124,4 +125,5 @@ export default {
     border-top: 1px solid rgb(202, 202, 202);
 
 }
+
 </style>

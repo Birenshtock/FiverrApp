@@ -33,30 +33,30 @@
       <div class="about-gig">
         <h2>About This Gig</h2>
         <div class="limit">
-        <pre> {{ gig.description }}</pre></div>
-        <!-- <p> {{gig.note}}</p> -->
-        <ul v-for="note in gig.additionalNotes" :key="note">
-          <li>{{ note }}</li>
-        </ul>
+          <pre> {{ gig.description }}</pre>
+        </div>
       </div>
 
+      <h2 class="aboutH2">About The Seller</h2>
       <div class="about-seller">
         <img :src="gig.owner.imgUrl">
         <div class="owner-details">
           <div class="owner-fullname">{{ gig.owner.fullname }}</div>
-          <div>{{ gig.owner.level }}</div>
-          <div class="stars">⭐⭐⭐⭐⭐5(73)</div>
-          <button>Contact Me</button>
+          <div class="stars"><span>&#9733;&#9733;&#9733;&#9733;&#9733; 5</span> (730)</div>
+          <el-button class="btn-contact" type="info" plain>Contact Me</el-button>
+
         </div>
       </div>
 
       <div class="extended-owner-details">
-        <ul>
-          <li>From {{ gig.owner.loc }}</li>
-          <li>Avg. response time {{ gig.owner.avgResponceTime }}</li>
-          <li>Member since {{ gig.owner.memberSince }}</li>
-          <li>Last delivery {{ gig.owner.lastDelivery }}</li>
+        <ul class="user-state flex clean-list">
+          <li>From <br><strong>{{ gig.owner.loc }}</strong></li>
+          <li>Avg. response time <br><strong>{{ gig.owner.avgResponceTime }}</strong></li>
+          <li>Member since <br><strong>{{ gig.owner.memberSince }}</strong></li>
+          <li>Last delivery <br><strong>{{ gig.owner.lastDelivery }}</strong></li>
         </ul>
+        <hr>
+        <pre>{{gig.owner.about}}</pre>
       </div>    
 
     </div>

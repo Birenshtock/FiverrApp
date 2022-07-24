@@ -137,7 +137,15 @@ function _createGigs() {
           avgResponceTime: '2 hours',
           lastDelivery: 'about 3 hours',
           about:
-            "Hello! My name is VD. I am a connoisseur of art and music. I love being around nature and my pets. I have a team of professional graphic designers with an experience of 8+ years. We specialize in logo designing. We're available exclusively on fiverr to rock your world with our designing skills. Come and experience it for yourself!",
+            `
+            Hello! My name is VD. 
+            I am a connoisseur of art and music. 
+            I love being around nature and my pets. 
+            I have a team of professional graphic designers with an 
+            experience of 8+ years. 
+            We specialize in logo designing. We're available exclusively
+            on fiverr to rock your world with our designing skills.
+            Come and experience it for yourself!`,
         },
         daysToMake: 3,
         imgs: [
@@ -150,13 +158,9 @@ function _createGigs() {
         description: `
         hi welcome to my gig..
 
-
-
         If you are looking for an amazing custom logo design with vintage, 
         classic, retro, engraving style, hand drawn style for your brand 
         project or business then I am ready to help you with ORIGINAL work.
-        
-        
         
         - My work is always ORIGINAL!
         - Don't use stock art or templates!
@@ -165,7 +169,6 @@ function _createGigs() {
         - Quick turnaround.
         - 100% money back guarantee if you're not satisfied! 
       
-        
         Thank you so much!
         
         Have a great day`,
@@ -195,7 +198,15 @@ function _createGigs() {
           avgResponceTime: '2 hours',
           lastDelivery: 'about 3 hours',
           about:
-            "Hello! My name is VD. I am a connoisseur of art and music. I love being around nature and my pets. I have a team of professional graphic designers with an experience of 8+ years. We specialize in logo designing. We're available exclusively on fiverr to rock your world with our designing skills. Come and experience it for yourself!",
+            `
+            Hello! My name is VD. 
+            I am a connoisseur of art and music. 
+            I love being around nature and my pets. 
+            I have a team of professional graphic designers with an 
+            experience of 8+ years. 
+            We specialize in logo designing. We're available exclusively
+            on fiverr to rock your world with our designing skills.
+            Come and experience it for yourself!`,
         },
         daysToMake: 3,
         imgs: [
@@ -204,7 +215,47 @@ function _createGigs() {
           'https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs2/116971341/original/fbd666528b27171dc8d52a949a8c36144b4211ad.png',
         ],
         description:
-          "Hi there ! Thanks for stopping by !!\nA Team of Talented Graphic Designer with 8+ years of experience in Graphic Industry, expertise as Logo Maker, You'll get creative & AWESOME logo design for your business.\nMy portfolio : https://www.fiverr.com/users/design_desk/portfolio/NjFiYjE4NmMwZTgwMDUwMDAxZTMzMjJh\n★ Why Us? ★\nTalented Logo Maker Team\nFully custom made, creative, original, UNIQUE and AWESOME designs\nProfessional customer support 24/7\nHigh Quality work\n100% money back policy if not satisfied\n★ WHAT DO YOU GET? ★\n✔ Highly Professional, UNIQUE & High Quality designs\n✔ UNLIMITED revisions until u r 100% satisfied\n✔ Fast turn around time 24 to 48 hours only.\n✔ 100% original & unique vector design from Adobe Illustrator\n✔ Vector Source Files (scalable without any quality loss) (AI, EPS, PDF) for the final design ✔ PROFESSIONAL Communication & Outstanding Customer Support ✔ Guaranteed High Quality work\nIf you have any question,\nFeel free to★ Contact Me! ★I'll be happy to help !\nLet's get started!\n-Your Logo Maker",
+        `
+        Hi there ! Thanks for stopping by !!
+
+        A Team of Talented Graphic Designer with 8+ years of experience in 
+        Graphic Industry, expertise as Logo Maker,You'll get creative & 
+        AWESOME logo design for your business.
+
+        ★ Why Us? ★
+
+        - Talented Logo Maker Team
+        - Fully custom made, creative, original, UNIQUE and AWESOME
+          designs
+        - Professional customer support 24/7
+        - High Quality work
+        - 100% money back policy if not satisfied
+
+        ★ WHAT DO YOU GET? ★
+
+        ✔ Highly Professional, UNIQUE & High Quality designs
+
+        ✔ UNLIMITED revisions until u r 100% satisfied
+
+        ✔ Fast turn around time 24 to 48 hours only.
+
+        ✔ 100% original & unique vector design from Adobe Illustrator
+
+        ✔ Vector Source Files (scalable without any quality loss)
+          (AI, EPS, PDF) for the final design 
+        
+        ✔ PROFESSIONAL Communication & Outstanding Customer Support 
+        
+        ✔ Guaranteed High Quality work
+
+
+        If you have any question, 
+
+        Feel free to★ Contact Me! ★I'll be happy to help !
+
+
+        Let's get started!
+        `,
         tags: ['logo-design', 'artisitic', 'proffesional', 'accessible'],
         likedByUsers: ['mini-user'],
         orderFeats: [
@@ -231,7 +282,15 @@ function _createGigs() {
           avgResponceTime: '2 hours',
           lastDelivery: 'about 3 hours',
           about:
-            "Hello! My name is VD. I am a connoisseur of art and music. I love being around nature and my pets. I have a team of professional graphic designers with an experience of 8+ years. We specialize in logo designing. We're available exclusively on fiverr to rock your world with our designing skills. Come and experience it for yourself!",
+            `
+            Hello! My name is VD. 
+            I am a connoisseur of art and music. 
+            I love being around nature and my pets. 
+            I have a team of professional graphic designers with an 
+            experience of 8+ years. 
+            We specialize in logo designing. We're available exclusively
+            on fiverr to rock your world with our designing skills.
+            Come and experience it for yourself!`,
         },
         daysToMake: 3,
         imgs: [
@@ -239,8 +298,38 @@ function _createGigs() {
           'https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs2/123756949/original/7fe3439d117c631119a75788d38e953d0f2b6fb0.jpg',
           'https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/attachments/delivery/asset/7686e433debd21405b14fc435f3ad664-1658178919/upwood-01.jpg',
         ],
-        description:
-          "Hi there ! Thanks for stopping by !!\nA Team of Talented Graphic Designer with 8+ years of experience in Graphic Industry, expertise as Logo Maker, You'll get creative & AWESOME logo design for your business.\nMy portfolio : https://www.fiverr.com/users/design_desk/portfolio/NjFiYjE4NmMwZTgwMDUwMDAxZTMzMjJh\n★ Why Us? ★\nTalented Logo Maker Team\nFully custom made, creative, original, UNIQUE and AWESOME designs\nProfessional customer support 24/7\nHigh Quality work\n100% money back policy if not satisfied\n★ WHAT DO YOU GET? ★\n✔ Highly Professional, UNIQUE & High Quality designs\n✔ UNLIMITED revisions until u r 100% satisfied\n✔ Fast turn around time 24 to 48 hours only.\n✔ 100% original & unique vector design from Adobe Illustrator\n✔ Vector Source Files (scalable without any quality loss) (AI, EPS, PDF) for the final design ✔ PROFESSIONAL Communication & Outstanding Customer Support ✔ Guaranteed High Quality work\nIf you have any question,\nFeel free to★ Contact Me! ★I'll be happy to help !\nLet's get started!\n-Your Logo Maker",
+        description:`
+        Welcome To My Professional Gig:
+
+        Do you want to Create YouTube Channel or Already Have A Channel
+        created and Want to Grow and Make your Channel professional,
+        so you are at the right place. In this gig, I will create, setup
+        your channel. I will also give you tips n tricks because you
+        must know all about channel growth. It will help you in the
+        future and also give you the lifetime support.
+
+        What I Will Do:
+
+        - Create YouTube Channel
+        - Professional Channel
+        - SEO (Improve Rankings)
+        - Design Channel
+        - Setup Channel
+        - Organic Promotion
+        - Logo, Banner
+        - Unlimited Revision
+        - Money-Back Guaranteed
+        - Short Videos
+        And Much More.
+
+        Why Me:
+
+        - 100% Satisfaction
+        - 24/7 Support
+        - Guide You for Future Channel Growth
+
+        If you have any Questions, Feel Free to ask.
+        `,
         tags: ['logo-design', 'artisitic', 'proffesional', 'accessible'],
         likedByUsers: ['mini-user'],
         orderFeats: [
@@ -267,7 +356,15 @@ function _createGigs() {
           avgResponceTime: '2 hours',
           lastDelivery: 'about 3 hours',
           about:
-            "Hello! My name is VD. I am a connoisseur of art and music. I love being around nature and my pets. I have a team of professional graphic designers with an experience of 8+ years. We specialize in logo designing. We're available exclusively on fiverr to rock your world with our designing skills. Come and experience it for yourself!",
+            `
+            Hello! My name is VD. 
+            I am a connoisseur of art and music. 
+            I love being around nature and my pets. 
+            I have a team of professional graphic designers with an 
+            experience of 8+ years. 
+            We specialize in logo designing. We're available exclusively
+            on fiverr to rock your world with our designing skills.
+            Come and experience it for yourself!`,
         },
         daysToMake: 3,
         imgs: [
@@ -277,8 +374,23 @@ function _createGigs() {
           'https://fiverr-res.cloudinary.com/images/t_smartwm/t_main1,q_auto,f_auto,q_auto,f_auto/attachments/delivery/asset/e9f0e0b70347b7de2934b68bada4a8e3-1658276904/Mortgage%20by%20Matranga%2002/design-a-flat-modern-luxury-elegant-minimalist-logo.jpg',
           'https://fiverr-res.cloudinary.com/images/t_smartwm/t_main1,q_auto,f_auto,q_auto,f_auto/attachments/delivery/asset/c4cd6e4322e21031559f7ab5c899a8c1-1658280635/01/design-a-flat-modern-luxury-elegant-minimalist-logo.jpg',
         ],
-        description:
-          'Welcome to my Professional Minimalist logo design gig. You should probably thank yourself that you have landed on the right gig. Do yourself a favor by getting your work done by the most professional designer here on this planet earth. Why only Me? 100% Original work. Hundreds of Satisfied clients globally Fluent English Fast and high-quality professional service. Reliable and Quick communication.Printable and HQ File size.  Minimalist Logo and Flat Logo. Unlimited revisions. TOP NOTCH QUALITY. Source and editable files with hig. quality. (Depending on the package you purchase).Multiple Styles that I am an expert in minimalist. logo | luxury | professional | modern logo | hand-drawn | feminine | signature | professional | minimal | unique | modern | creative | flat | luxury | company | business | luxury | modern | minimalist | brand identity | branding | flat minimalist | modern minimalist  Still, Have queries? Contact me inbox anytime!Placed the order with full confidence!!',
+        description: `
+        hi welcome to my gig..
+
+        If you are looking for an amazing custom logo design with vintage, 
+        classic, retro, engraving style, hand drawn style for your brand 
+        project or business then I am ready to help you with ORIGINAL work.
+        
+        - My work is always ORIGINAL!
+        - Don't use stock art or templates!
+        - Do not reuse works that have been purchased by the client.
+        - Real quality, using original work in the portfolio. No fake samples.
+        - Quick turnaround.
+        - 100% money back guarantee if you're not satisfied! 
+      
+        Thank you so much!
+        
+        Have a great day`,
         tags: ['logo-design', 'artisitic', 'proffesional', 'accessible'],
         likedByUsers: ['mini-user'],
         orderFeats: [
@@ -305,7 +417,15 @@ function _createGigs() {
           avgResponceTime: '1 hour',
           lastDelivery: 'about 13 hours',
           about:
-            'I am Muhammad umar , a WordPress Developer, system administrator and cyber security expert . I will help you in wide range of services including malware hunting , website security , Network security and system security. Feel free to reach out to me so we can start planning your next project!',
+            `
+            Hello! My name is VD. 
+            I am a connoisseur of art and music. 
+            I love being around nature and my pets. 
+            I have a team of professional graphic designers with an 
+            experience of 8+ years. 
+            We specialize in logo designing. We're available exclusively
+            on fiverr to rock your world with our designing skills.
+            Come and experience it for yourself!`,
         },
         daysToMake: 3,
         imgs: [
@@ -315,7 +435,47 @@ function _createGigs() {
           'https://fiverr-res.cloudinary.com/images/t_smartwm/t_main1,q_auto,f_auto,q_auto,f_auto/attachments/delivery/asset/4f38f7e55c01be0df8ab7df3eb182972-1657921024/12/remove-malware-and-viruses.PNG',
         ],
         description:
-          'A hacked site will cause serious harm to your business revenue. Hackers will steal user info, passwords and install malicious code. \n I will clean/ delete or remove Malware or any obfuscated code from your WordPress site. \n Guarantee and Proof of Clean Website \n Detailed Scan of all Files \n Removal of all Infected Files \n This Gig is per one domain, So please, if you have more than 1 domain affected order more Gigs or contact me. \n I PROMISE YOU WILL GET QUALITY WORK.',
+        `
+        Hi there ! Thanks for stopping by !!
+
+        A Team of Talented Graphic Designer with 8+ years of experience in 
+        Graphic Industry, expertise as Logo Maker,You'll get creative & 
+        AWESOME logo design for your business.
+
+        ★ Why Us? ★
+
+        - Talented Logo Maker Team
+        - Fully custom made, creative, original, UNIQUE and AWESOME
+          designs
+        - Professional customer support 24/7
+        - High Quality work
+        - 100% money back policy if not satisfied
+
+        ★ WHAT DO YOU GET? ★
+
+        ✔ Highly Professional, UNIQUE & High Quality designs
+
+        ✔ UNLIMITED revisions until u r 100% satisfied
+
+        ✔ Fast turn around time 24 to 48 hours only.
+
+        ✔ 100% original & unique vector design from Adobe Illustrator
+
+        ✔ Vector Source Files (scalable without any quality loss)
+          (AI, EPS, PDF) for the final design 
+        
+        ✔ PROFESSIONAL Communication & Outstanding Customer Support 
+        
+        ✔ Guaranteed High Quality work
+
+
+        If you have any question, 
+
+        Feel free to★ Contact Me! ★I'll be happy to help !
+
+
+        Let's get started!
+        `,
         tags: ['logo-design', 'artisitic', 'proffesional', 'accessible'],
         likedByUsers: ['mini-user'],
         orderFeats: [
@@ -342,7 +502,13 @@ function _createGigs() {
           avgResponceTime: '5 hours',
           lastDelivery: '1 day',
           about:
-            'I am a passionate software developer. I am always eager to learn new skills and I strive to provide an excellent experience for all my customers. I have 5 years of experience, and I can make programs and online apps for any use. I am friendly and very communicative, and I would love to hear from you!',
+          `
+          I am Muhammad umar , a WordPress Developer, system 
+          administrator and cyber security expert . I will help 
+          you in wide range of services including malware 
+          hunting , website security , Network security and system 
+          security. Feel free to reach out to me so we can start 
+          planning your next project!`,
         },
         daysToMake: 3,
         imgs: [
@@ -351,8 +517,38 @@ function _createGigs() {
           'https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs3/32345315/original/ca4b83d2f8ef7b2f2da4da2b6fdb877cd08c4827/create-a-useful-windows-program.png',
           'https://fiverr-res.cloudinary.com/images/t_smartwm/t_gig_pdf_gallery_view_ver4,q_auto,f_auto/attachments/delivery/asset/bc306a54ff22d666e16d3fcd543b2efc-1591547072/User%20Guide/create-a-useful-windows-program.pdf',
         ],
-        description:
-          'I offer general-purpose software development for all sorts of uses, and I can handle quite complex projects.Some of my specialties include Windows API integration, security, data management, and some light reverse engineering / debugging. I can provide more technical details and examples of previous work \n if needed.Feel free to contact me even if you just need an opinion. I am always happy to give advice or help however I can. Also, check out my other gigs for more specialized services, including other platforms. Some examples of projects that I can work on include: Windows utilities of various complexity. Data keeping tools.Business solutions (record keeping, billing/invoicing, data management. Professional commercial software, fully branded and ready for selling.*Please contact me before placing an order. I will reply fast and it will help me understand exactly what you need. Thank you!',
+        description:`
+        Welcome To My Professional Gig:
+
+        Do you want to Create YouTube Channel or Already Have A Channel
+        created and Want to Grow and Make your Channel professional,
+        so you are at the right place. In this gig, I will create, setup
+        your channel. I will also give you tips n tricks because you
+        must know all about channel growth. It will help you in the
+        future and also give you the lifetime support.
+
+        What I Will Do:
+
+        - Create YouTube Channel
+        - Professional Channel
+        - SEO (Improve Rankings)
+        - Design Channel
+        - Setup Channel
+        - Organic Promotion
+        - Logo, Banner
+        - Unlimited Revision
+        - Money-Back Guaranteed
+        - Short Videos
+        And Much More.
+
+        Why Me:
+
+        - 100% Satisfaction
+        - 24/7 Support
+        - Guide You for Future Channel Growth
+
+        If you have any Questions, Feel Free to ask.
+        `,
         tags: ['logo-design', 'artisitic', 'proffesional', 'accessible'],
         likedByUsers: ['mini-user'],
         orderFeats: [
@@ -379,7 +575,13 @@ function _createGigs() {
           avgResponceTime: '1 hour',
           lastDelivery: 'about 13 hours',
           about:
-            'I am Muhammad umar , a WordPress Developer, system administrator and cyber security expert . I will help you in wide range of services including malware hunting , website security , Network security and system security. Feel free to reach out to me so we can start planning your next project!',
+            `
+            I am Muhammad umar , a WordPress Developer, system 
+            administrator and cyber security expert . I will help 
+            you in wide range of services including malware 
+            hunting , website security , Network security and system 
+            security. Feel free to reach out to me so we can start 
+            planning your next project!`,
         },
         daysToMake: 3,
         imgs: [
@@ -388,8 +590,38 @@ function _createGigs() {
           'https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs3/210774935/original/759c920bcde8222581109e71b22c8b571cf5c0c5/create-digital-illustration-for-web.jpg',
           'https://fiverr-res.cloudinary.com/images/t_smartwm/t_main1,q_auto,f_auto,q_auto,f_auto/attachments/delivery/asset/a2df864ea81f6613751a560dc4ee196a-1652254601/house%20cover/create-digital-illustration-for-web.jpg',
         ],
-        description:
-          "Hi guys, my name is Ira! I want to design unique illustrations and styles for you. I would like to get new experience and will be glad to cooperate with you.If you need a customized quote, you can always write me so we can agree on a convenient price per illustration What will you get it? ★ High-quality unique illustration ★ 5 source file format to choose from: PDF, AI, SVG, EPS, JPEG Where can you use: ★ Mobile app ★ Website ★ landing page ★ Social Media ★ Any digital product Don't hesitate to message me, we can discuss your ideas to find the best solution for you.",
+        description:`
+        Welcome To My Professional Gig:
+
+        Do you want to Create YouTube Channel or Already Have A Channel
+        created and Want to Grow and Make your Channel professional,
+        so you are at the right place. In this gig, I will create, setup
+        your channel. I will also give you tips n tricks because you
+        must know all about channel growth. It will help you in the
+        future and also give you the lifetime support.
+
+        What I Will Do:
+
+        - Create YouTube Channel
+        - Professional Channel
+        - SEO (Improve Rankings)
+        - Design Channel
+        - Setup Channel
+        - Organic Promotion
+        - Logo, Banner
+        - Unlimited Revision
+        - Money-Back Guaranteed
+        - Short Videos
+        And Much More.
+
+        Why Me:
+
+        - 100% Satisfaction
+        - 24/7 Support
+        - Guide You for Future Channel Growth
+
+        If you have any Questions, Feel Free to ask.
+        `,
         tags: ['logo-design', 'artisitic', 'proffesional', 'accessible'],
         likedByUsers: ['mini-user'],
         orderFeats: [
