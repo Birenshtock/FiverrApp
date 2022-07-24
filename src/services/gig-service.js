@@ -139,12 +139,19 @@ function _createGigs() {
           about:
             `
             Hello! My name is VD. 
-            I am a connoisseur of art and music. 
+
+            I am a connoisseur of art and music.
+
             I love being around nature and my pets. 
+
             I have a team of professional graphic designers with an 
             experience of 8+ years. 
-            We specialize in logo designing. We're available exclusively
-            on fiverr to rock your world with our designing skills.
+
+            We specialize in logo designing. 
+            
+            We're available exclusively on fiverr to rock your world 
+            with our designing skills.
+
             Come and experience it for yourself!`,
         },
         daysToMake: 3,
@@ -200,12 +207,19 @@ function _createGigs() {
           about:
             `
             Hello! My name is VD. 
+
             I am a connoisseur of art and music. 
+
             I love being around nature and my pets. 
+
             I have a team of professional graphic designers with an 
             experience of 8+ years. 
-            We specialize in logo designing. We're available exclusively
-            on fiverr to rock your world with our designing skills.
+
+            We specialize in logo designing. 
+            
+            We're available exclusively on fiverr to rock your world
+            with our designing skills.
+
             Come and experience it for yourself!`,
         },
         daysToMake: 3,
@@ -284,12 +298,19 @@ function _createGigs() {
           about:
             `
             Hello! My name is VD. 
+
             I am a connoisseur of art and music. 
+
             I love being around nature and my pets. 
+
             I have a team of professional graphic designers with an 
             experience of 8+ years. 
-            We specialize in logo designing. We're available exclusively
-            on fiverr to rock your world with our designing skills.
+
+            We specialize in logo designing. 
+            
+            We're available exclusively on fiverr to rock your world 
+            with our designing skills.
+
             Come and experience it for yourself!`,
         },
         daysToMake: 3,
@@ -358,12 +379,17 @@ function _createGigs() {
           about:
             `
             Hello! My name is VD. 
+
             I am a connoisseur of art and music. 
+
             I love being around nature and my pets. 
+
             I have a team of professional graphic designers with an 
             experience of 8+ years. 
+
             We specialize in logo designing. We're available exclusively
             on fiverr to rock your world with our designing skills.
+
             Come and experience it for yourself!`,
         },
         daysToMake: 3,
@@ -419,12 +445,19 @@ function _createGigs() {
           about:
             `
             Hello! My name is VD. 
-            I am a connoisseur of art and music. 
+
+            I am a connoisseur of art and music.
+
             I love being around nature and my pets. 
+
             I have a team of professional graphic designers with an 
             experience of 8+ years. 
-            We specialize in logo designing. We're available exclusively
-            on fiverr to rock your world with our designing skills.
+
+            We specialize in logo designing. 
+            
+            We're available exclusively on fiverr to rock your world 
+            with our designing skills.
+
             Come and experience it for yourself!`,
         },
         daysToMake: 3,
@@ -504,10 +537,13 @@ function _createGigs() {
           about:
           `
           I am Muhammad umar , a WordPress Developer, system 
-          administrator and cyber security expert . I will help 
-          you in wide range of services including malware 
-          hunting , website security , Network security and system 
-          security. Feel free to reach out to me so we can start 
+          administrator and cyber security expert . 
+          
+          I will help you in wide range of services including 
+          malware hunting , website security , Network security 
+          and system security. 
+          
+          Feel free to reach out to me so we can start 
           planning your next project!`,
         },
         daysToMake: 3,
@@ -577,10 +613,13 @@ function _createGigs() {
           about:
             `
             I am Muhammad umar , a WordPress Developer, system 
-            administrator and cyber security expert . I will help 
-            you in wide range of services including malware 
-            hunting , website security , Network security and system 
-            security. Feel free to reach out to me so we can start 
+            administrator and cyber security expert . 
+            
+            I will help you in wide range of services including 
+            malware hunting , website security , Network security 
+            and system security. 
+            
+            Feel free to reach out to me so we can start 
             planning your next project!`,
         },
         daysToMake: 3,
