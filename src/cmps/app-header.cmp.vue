@@ -1,13 +1,14 @@
 
 <template>
   <header class="top-header full" >
-    <div class="header-row-container ">
+    <div class="header-row-container">
       <div class="main-logo-container">
       <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button> 
        <router-link to="/"><h1 class="main-logo">binderr<span>.</span></h1></router-link>
       </div>
      
-     <app-filter to="/app-filter" @setFilter="setFilter"></app-filter>
+     <app-filter to="/app-filter" @setFilter="setFilter" :class="[isFilterDisplayed&&altBackground ? 'displaySearch' : '', !isFilterDisplayed&&altBackground? 'display':'',
+!altBackground?'filter-catagory':'']"></app-filter>
      
     <nav class="top-header-nav-bar-container" >
     <ul class="nav-bar clean-list flex">
@@ -79,6 +80,14 @@ export default {
 }
 </script>
 <style>
+
+.displaySearch{
+  display: block
+}
+
+.dontDisplaySearch{
+  display: none;
+}
 
 
 </style>

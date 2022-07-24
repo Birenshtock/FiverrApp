@@ -187,11 +187,13 @@
         height: rem(355px);
         background-repeat: no-repeat;
         background-size: cover;
+        cursor: pointer;
         // margin-left: 10px;
         // transition: opacity .3s ease-in-out;
      
     }
     .option p {
+        padding-top: rem(20px);
         margin-left: rem(20px);
     }
     .option h1 {
