@@ -19,19 +19,18 @@
       <vueper-slides class="no-shadow thumbnails" ref="vueperslides2"
         @slide="$refs.vueperslides1.goToSlide($event.currentSlide.index, { emit: false })"
         :visible-slides="gig.imgs.length" fixed-height="75px" :bullets="false" :touchable="false" :gap="2.5"
-        :arrows="false">
+        :arrows="true">
         <vueper-slide v-for="(img, i) in gig.imgs" :key="i" :image="img"
           @click.native="$refs.vueperslides2.goToSlide(i)">
         </vueper-slide>
       </vueper-slides>
 
-      <!-- <div class="reviews">
-        <h2>What people loved about this seller</h2>
-        <button>See all reviews</button>
-      </div> -->
 
       <div class="about-gig">
-        <h2>About This Gig</h2>
+        <div class="reviews">
+          <button>See all reviews</button>
+        </div>
+          <h2>About This Gig</h2>
         <div class="limit">
           <pre> {{ gig.description }}</pre>
         </div>
@@ -70,6 +69,18 @@
       <img src="/clock.png.png"/>
       <div>{{gig.daysToMake}} Days Delivery</div>
     </div>
+
+    <!-- <vs-collapse>
+     <vs-collapse-item>
+       <div slot="header">
+          What's Included <span>arrow</span>
+       </div>
+       <ul class="order-features clean-list" v-for="feats in gig.orderFeats" :key="feats">
+          <li><i class="checkMark">&#10003;</i>{{feats}}</li>
+        </ul>
+     </vs-collapse-item>
+     </vs-collapse> -->
+
     <ul class="order-features clean-list" v-for="feats in gig.orderFeats" :key="feats">
       <li><i class="checkMark">&#10003;</i>{{feats}}</li>
     </ul>
