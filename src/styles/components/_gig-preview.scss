@@ -32,7 +32,13 @@
         overflow: hidden;
     }
     
-    
+    svg{
+        margin-top: -15px;
+        // margin-left: -10px;
+        // display: none;
+        // color:$clr1;
+    }
+
     .default{
         background-color: #efeff0;
         height: 5px;
