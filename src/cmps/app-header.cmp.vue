@@ -10,7 +10,7 @@
      <app-filter to="/app-filter" @setFilter="setFilter" :class="[isFilterDisplayed&&altBackground ? 'displaySearch' : '', !isFilterDisplayed&&altBackground? 'display':'',
 !altBackground?'filter-catagory':'']"></app-filter>
      
-    <nav class="top-header-nav-bar-container" >
+    <nav class="top-header-nav-bar-container">
     <ul class="nav-bar clean-list flex">
       <li class="move"><router-link to="/gig">Explore</router-link></li>
       <li class="move"><router-link to="/">Become a Seller</router-link></li>
