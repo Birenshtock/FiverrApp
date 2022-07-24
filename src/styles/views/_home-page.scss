@@ -249,19 +249,26 @@
 }
 
 .intro{
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr  41.25rem 41.25rem 1fr;
+    .list-img-container{
+         width: 100%;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr  2.5fr 2.5fr 1fr;
+        background-color: #e7f6ef;
+        font-family: Helvetica, sans-serif;
+        margin-top: rem(100px);
         
-    
- 
-  
-    background-color: #e7f6ef;
-    font-family: Helvetica, sans-serif;
-    margin-top: rem(100px);
+    }
+    // position: relative;
+    // display: grid;
+    // grid-template-columns: 1fr  2.5fr 2.5fr 1fr;
+    // background-color: #e7f6ef;
+    // font-family: Helvetica, sans-serif;
+    // margin-top: rem(100px);
     .check-list{
         grid-column: 2;
         width: 80%;
+        // background-color: #1daf6b;
         // margin: rem(20px);
         // margin: 0px rem(400px) 0px 8px;
         h2{
@@ -299,8 +306,8 @@
         }
 
         .play{
-            height: rem(100px);
-            width:rem(100px);
+            height: 10%;
+            width:10%;
             font-size: rem(35px);
             border-radius: 50%;
             background-color: #00000088;
@@ -339,6 +346,21 @@
     }
 }
 
+.founders{
+    .img{
+        border-radius: 4px;
+        margin-right: rem(20px);
+        // min-width: rem(245px);
+        // height: rem(355px);
+        width: 200px;
+        height: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
+        background-image:url(https://fiverr-res.cloudinary.com/q_auto,f_auto,w_560,dpr_1.0/v1/attachments/generic_asset/asset/42a6fd208670a0361b38bd72b47b9317-1599519173396/testimonial-video-still-lavender.jpg) ;
+    }
+
+}
 
 // loop!
 
