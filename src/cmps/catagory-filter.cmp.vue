@@ -10,6 +10,8 @@
   <div  class="catagory" @click="setCatagory('Illustration')">Illustration</div>
 </div> 
   
+
+<!-- </div> -->
  
 </template>
 

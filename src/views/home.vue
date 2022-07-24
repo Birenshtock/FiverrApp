@@ -31,7 +31,7 @@
 
 
    <h1 class="gallery-title">Popular professional services</h1>
-   <div class="gallery">
+   <!-- <div class="gallery">
       <button class="btn-left" @click="onSetPage"><i class="fa-solid fa-angle-left"></i></button>
     
       <div @click="moveToExploreFilter('Logo')" class="option logo" :class="[display5 ? 'display5' : 'display1']" >
@@ -59,7 +59,22 @@
          <h1>Illustration</h1>
       </div>
       <button class="btn-right" @click="onSetPage"><i class="fa-solid fa-angle-right"></i></button>
+   </div> -->
+
+ 
+   <div class="gallery">
+        <button class="btn-left" @click="onSetPages(-1)"><i class="fa-solid fa-angle-left"></i></button>
+
+      <div v-for="catagoryCard in this.cardsToDisplay[pageIdx]" :key="catagoryCard">
+         <div class="option" :class="catagoryCard.imgUrlClass" @click="moveToExploreFilter(catagoryCard.catagoryParams)">
+            <p>{{catagoryCard.title}}</p>
+            <h1>{{catagoryCard.catagoryDisplayName}}</h1>
+         </div>
+      </div>
+      <button class="btn-right" @click="onSetPages(1)"><i class="fa-solid fa-angle-right"></i></button>
+
    </div>
+   
 
 <div class="intro full ">
    <div class="check-list">
@@ -116,23 +131,72 @@ import catagoryFilter from "../cmps/catagory-filter.cmp.vue";
    return {
       display5: false,
       displayVid: false,
+      pageIdx: 0,
+      cardsNumInPage: 5,
+
+      catagories:[
+         
+         
       
+          
+            {catagoryDisplayName: 'Logo Design', title: 'Build your brand', catagoryParams: 'Logo', imgUrlClass: 'logo'},
+            {catagoryDisplayName: 'WordPress', title: 'Customize your site', catagoryParams: 'Wordpress', imgUrlClass: 'wordPress'},
+            {catagoryDisplayName: 'VoiceOver', title: 'Share your message', catagoryParams: 'VoiceOver', imgUrlClass: 'voice-over'},
+            {catagoryDisplayName: 'Video Explainer', title: 'Engage your audience', catagoryParams: 'VideoExplainer', imgUrlClass: 'video'},
+            {catagoryDisplayName: 'Programming', title: 'Level up your site', catagoryParams: 'Programming', imgUrlClass: 'programming'},
+            {catagoryDisplayName: 'Illustration', title: 'Color your dreams', catagoryParams: 'Illustration', imgUrlClass: 'illustration'},     
+         ],
    };
    },
-   created() {
-       
-       
+   computed:{
+        cardsToDisplay(){
 
-    
-    // setInterval(()=>{
-    //   for(var i=0; i<this.homeImgs.length; i++){
-    //     this.currImg=homeImgs[i]
-    //     i+1
-    //   }
-    // },1000000)
+           return this.getCardsToDisplay(this.catagories,this.cardsNumInPage)
+        } 
 
    },
+   created() {
+      
+       window.addEventListener("resize", this.myEventHandler);
+
+   },
+   destroyed() {
+   window.removeEventListener("resize", this.myEventHandler);
+   },
    methods: {
+        myEventHandler(e) {
+         if(e.target.innerWidth<650) {this.cardsNumInPage=1} else if
+         (e.target.innerWidth<900){this.cardsNumInPage=2}  else if
+         (e.target.innerWidth<1100) {this.cardsNumInPage=3} else if 
+         (e.target.innerWidth<1400) {this.cardsNumInPage=4} else if
+         (e.target.innerWidth<1800) {this.cardsNumInPage=5}
+
+         // console.log('this.cardsNumInPage',this.cardsNumInPage)
+       
+        
+  },
+      getCardsToDisplay(array, size){
+         const newArray = []
+
+         for (let i = 0; i < array.length; i += size) {
+         const chunk = array.slice(i, i + size);
+      
+         newArray.push(chunk)
+          
+          }
+          return newArray
+      //   this.carrArray= newArray
+        
+      },
+      onSetPages(dir){
+        
+         let size = this.cardsToDisplay.length
+          this.pageIdx += dir
+           if (this.pageIdx < 0) this.pageIdx = size-1
+            if (this.pageIdx > size-1 ) this.pageIdx = 0
+
+         
+      },
       onSetPage(){
          this.display5=!this.display5
          console.log('display5',this.display5)
@@ -150,7 +214,7 @@ import catagoryFilter from "../cmps/catagory-filter.cmp.vue";
       }
    },
 
-   computed: {},
+  
    unmounted() {},
    };
 

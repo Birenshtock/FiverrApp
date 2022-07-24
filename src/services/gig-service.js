@@ -136,15 +136,21 @@ function _createGigs() {
           memberSince: 'Jun 2014',
           avgResponceTime: '2 hours',
           lastDelivery: 'about 3 hours',
-          about:
-            `
+          about: `
             Hello! My name is VD. 
-            I am a connoisseur of art and music. 
+
+            I am a connoisseur of art and music.
+
             I love being around nature and my pets. 
+
             I have a team of professional graphic designers with an 
             experience of 8+ years. 
-            We specialize in logo designing. We're available exclusively
-            on fiverr to rock your world with our designing skills.
+
+            We specialize in logo designing. 
+            
+            We're available exclusively on fiverr to rock your world 
+            with our designing skills.
+
             Come and experience it for yourself!`,
         },
         daysToMake: 3,
@@ -197,15 +203,21 @@ function _createGigs() {
           memberSince: 'Jun 2014',
           avgResponceTime: '2 hours',
           lastDelivery: 'about 3 hours',
-          about:
-            `
+          about: `
             Hello! My name is VD. 
+
             I am a connoisseur of art and music. 
+
             I love being around nature and my pets. 
+
             I have a team of professional graphic designers with an 
             experience of 8+ years. 
-            We specialize in logo designing. We're available exclusively
-            on fiverr to rock your world with our designing skills.
+
+            We specialize in logo designing. 
+            
+            We're available exclusively on fiverr to rock your world
+            with our designing skills.
+
             Come and experience it for yourself!`,
         },
         daysToMake: 3,
@@ -214,8 +226,7 @@ function _createGigs() {
           'https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/263784167/original/df20da13ef7bddf0ec6f7d12ab615ed62d879ff2.jpg',
           'https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs2/116971341/original/fbd666528b27171dc8d52a949a8c36144b4211ad.png',
         ],
-        description:
-        `
+        description: `
         Hi there ! Thanks for stopping by !!
 
         A Team of Talented Graphic Designer with 8+ years of experience in 
@@ -281,15 +292,21 @@ function _createGigs() {
           memberSince: 'Jun 2014',
           avgResponceTime: '2 hours',
           lastDelivery: 'about 3 hours',
-          about:
-            `
+          about: `
             Hello! My name is VD. 
+
             I am a connoisseur of art and music. 
+
             I love being around nature and my pets. 
+
             I have a team of professional graphic designers with an 
             experience of 8+ years. 
-            We specialize in logo designing. We're available exclusively
-            on fiverr to rock your world with our designing skills.
+
+            We specialize in logo designing. 
+            
+            We're available exclusively on fiverr to rock your world 
+            with our designing skills.
+
             Come and experience it for yourself!`,
         },
         daysToMake: 3,
@@ -298,7 +315,7 @@ function _createGigs() {
           'https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs2/123756949/original/7fe3439d117c631119a75788d38e953d0f2b6fb0.jpg',
           'https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/attachments/delivery/asset/7686e433debd21405b14fc435f3ad664-1658178919/upwood-01.jpg',
         ],
-        description:`
+        description: `
         Welcome To My Professional Gig:
 
         Do you want to Create YouTube Channel or Already Have A Channel
@@ -355,15 +372,21 @@ function _createGigs() {
           memberSince: 'Jun 2014',
           avgResponceTime: '2 hours',
           lastDelivery: 'about 3 hours',
-          about:
-            `
+          about: `
             Hello! My name is VD. 
+
             I am a connoisseur of art and music. 
+
             I love being around nature and my pets. 
+
             I have a team of professional graphic designers with an 
             experience of 8+ years. 
-            We specialize in logo designing. We're available exclusively
-            on fiverr to rock your world with our designing skills.
+
+            We specialize in logo designing. 
+            
+            We're available exclusivelyon fiverr to rock your world 
+            with our designing skills.
+
             Come and experience it for yourself!`,
         },
         daysToMake: 3,
@@ -416,15 +439,21 @@ function _createGigs() {
           memberSince: 'Oct 2020',
           avgResponceTime: '1 hour',
           lastDelivery: 'about 13 hours',
-          about:
-            `
+          about: `
             Hello! My name is VD. 
-            I am a connoisseur of art and music. 
+
+            I am a connoisseur of art and music.
+
             I love being around nature and my pets. 
+
             I have a team of professional graphic designers with an 
             experience of 8+ years. 
-            We specialize in logo designing. We're available exclusively
-            on fiverr to rock your world with our designing skills.
+
+            We specialize in logo designing. 
+            
+            We're available exclusively on fiverr to rock your world 
+            with our designing skills.
+
             Come and experience it for yourself!`,
         },
         daysToMake: 3,
@@ -434,8 +463,7 @@ function _createGigs() {
           'https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs3/177849864/original/ae0018bb76e4e4e42d9973c93861fbc29e246990/remove-malware-and-viruses.png',
           'https://fiverr-res.cloudinary.com/images/t_smartwm/t_main1,q_auto,f_auto,q_auto,f_auto/attachments/delivery/asset/4f38f7e55c01be0df8ab7df3eb182972-1657921024/12/remove-malware-and-viruses.PNG',
         ],
-        description:
-        `
+        description: `
         Hi there ! Thanks for stopping by !!
 
         A Team of Talented Graphic Designer with 8+ years of experience in 
@@ -501,14 +529,22 @@ function _createGigs() {
           memberSince: 'Mar 2016',
           avgResponceTime: '5 hours',
           lastDelivery: '1 day',
-          about:
-          `
-          I am Muhammad umar , a WordPress Developer, system 
-          administrator and cyber security expert . I will help 
-          you in wide range of services including malware 
-          hunting , website security , Network security and system 
-          security. Feel free to reach out to me so we can start 
-          planning your next project!`,
+          about: `
+            Hello! My name is VD. 
+
+            I am a connoisseur of art and music. 
+
+            I love being around nature and my pets. 
+
+            I have a team of professional graphic designers with an 
+            experience of 8+ years. 
+
+            We specialize in logo designing. 
+            
+            We're available exclusivelyon fiverr to rock your world 
+            with our designing skills.
+
+            Come and experience it for yourself!`,
         },
         daysToMake: 3,
         imgs: [
@@ -517,7 +553,7 @@ function _createGigs() {
           'https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs3/32345315/original/ca4b83d2f8ef7b2f2da4da2b6fdb877cd08c4827/create-a-useful-windows-program.png',
           'https://fiverr-res.cloudinary.com/images/t_smartwm/t_gig_pdf_gallery_view_ver4,q_auto,f_auto/attachments/delivery/asset/bc306a54ff22d666e16d3fcd543b2efc-1591547072/User%20Guide/create-a-useful-windows-program.pdf',
         ],
-        description:`
+        description: `
         Welcome To My Professional Gig:
 
         Do you want to Create YouTube Channel or Already Have A Channel
@@ -574,14 +610,22 @@ function _createGigs() {
           memberSince: 'Oct 2020',
           avgResponceTime: '1 hour',
           lastDelivery: 'about 13 hours',
-          about:
-            `
-            I am Muhammad umar , a WordPress Developer, system 
-            administrator and cyber security expert . I will help 
-            you in wide range of services including malware 
-            hunting , website security , Network security and system 
-            security. Feel free to reach out to me so we can start 
-            planning your next project!`,
+          about: `
+            Hello! My name is VD. 
+
+            I am a connoisseur of art and music. 
+
+            I love being around nature and my pets. 
+
+            I have a team of professional graphic designers with an 
+            experience of 8+ years. 
+
+            We specialize in logo designing. 
+            
+            We're available exclusivelyon fiverr to rock your world 
+            with our designing skills.
+
+            Come and experience it for yourself!`,
         },
         daysToMake: 3,
         imgs: [
@@ -590,7 +634,7 @@ function _createGigs() {
           'https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs3/210774935/original/759c920bcde8222581109e71b22c8b571cf5c0c5/create-digital-illustration-for-web.jpg',
           'https://fiverr-res.cloudinary.com/images/t_smartwm/t_main1,q_auto,f_auto,q_auto,f_auto/attachments/delivery/asset/a2df864ea81f6613751a560dc4ee196a-1652254601/house%20cover/create-digital-illustration-for-web.jpg',
         ],
-        description:`
+        description: `
         Welcome To My Professional Gig:
 
         Do you want to Create YouTube Channel or Already Have A Channel

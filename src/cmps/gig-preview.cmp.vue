@@ -1,5 +1,5 @@
 <template>
-  <section v-if="gig" class="gig-preview" @click="goToDetail">
+  <section v-if="gig" class="gig-preview" >
     <div class="inner-wrappers">
       <!-- <el-carousel trigger="click" height="160px">
         <el-carousel-item v-for="img in gig.imgs" :key="img" >
@@ -10,14 +10,14 @@
         <vueper-slide v-for="img in gig.imgs" :key="img" :image="img" width="290px" height="174px" />
       </vueper-slides>
 
-      <div class="seller-identifiers flex">
+      <div class="seller-identifiers flex " @click="goToDetail">
         <el-avatar :size="24" :src="gig.owner.imgUrl" />
         <a class="seller-name">{{ gig.owner.fullname }}</a>
         <!-- <span class="seller-rate">Seller Rate</span> -->
       </div>
     </div>
-    <p class="gig-title">{{ gig.title }}</p>
-    <div class="content-info">
+    <p class="gig-title" @click="goToDetail">{{ gig.title }}</p>
+    <div class="content-info" @click="goToDetail">
       <a>&#9733; 5.0<span>(1K+)</span></a>
     </div>
     <footer class="previw-footer flex">
