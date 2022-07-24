@@ -56,6 +56,33 @@
    80% {background-image: url("/src/styles/imgs/fiverr5.png");}
 }
 
+#Moon { animation: displayMoon 20s infinite; }
+@keyframes displayMoon{
+    0%,100% {opacity:1; display: block;}
+    20%{opacity: 0; display: none;}
+    // 100% {opacity: 0; display: none;}
+}
+#Rikita { animation: displayMoon 4s infinite; animation-delay: 4s; }
+@keyframes displayMoon{
+    0%,100% {opacity: 0; display: none;}
+    40%,60%{opacity:1; display: block;}
+}
+#Zack { animation: displayMoon 20s infinite; }
+@keyframes displayMoon{
+    0%,100% {opacity: 0; display: none;}
+    60%,80%{opacity:1; display: block;}
+}
+#Andrea { animation: displayMoon 20s infinite; }
+@keyframes displayMoon{
+    0%,100% {opacity: 0; display: none;}
+    80%,100%{opacity:1; display: block;}
+}
+// #Moon { animation: displayMoon 20s infinite; }
+// @keyframes displayMoon{
+//     0%,100% {opacity: 0; display: none;}
+//     20%{opacity:1; display: block;}
+// }
+
 // @media (max-width: 900px){
 //     #mydiv{ animation: changeBg 20s infinite; width:100%; height: rem(700px); position: relative; top: -100px;   margin: 0px; background-size: cover;   }
 // @keyframes changeBg{
@@ -83,6 +110,8 @@
 
         span{
             font-family: 'Domaine';
+            font-style: italic;
+            font-weight: 600;
             
         }
     }
@@ -129,6 +158,28 @@
             border: none;
             cursor: pointer;
         }
+    }
+    .popular-searches{
+        color: #fff;
+        font-size: 14px;
+        font-family:  Helvetica, sans-serif;
+        margin-top: 20px;
+        font-weight: 600;
+        button{
+            background-color: #1daf6b00;
+            color: #fff;
+            border: 1.5px solid white;
+            border-radius: 15px;
+            padding: 5px 10px 5px 10px;
+            margin-left: 10px;
+            font-weight: 600;
+        }
+        button:hover{
+            color: #62646a;;
+            background-color: #fff;
+
+        }
+
     }
 }
 
@@ -266,6 +317,7 @@
     // font-family: Helvetica, sans-serif;
     // margin-top: rem(100px);
     .check-list{
+        margin-top: 100px;
         grid-column: 2;
         width: 80%;
         // background-color: #1daf6b;

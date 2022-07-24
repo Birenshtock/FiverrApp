@@ -8,6 +8,18 @@
           <h1 class="main-logo">binderr<span>.</span></h1>
         </router-link>
       </div>
+     
+     <app-filter to="/app-filter" @setFilter="setFilter" :class="[isFilterDisplayed&&altBackground ? 'displaySearch' : '', !isFilterDisplayed&&altBackground? 'displaySearchNone':'',
+!altBackground?'filter-catagory':'']"></app-filter>
+     
+    <nav class="top-header-nav-bar-container" >
+      <!-- <div class="nav-helper"></div> -->
+     
+    <ul class="nav-bar clean-list flex">
+      <li class="move"><router-link to="/gig">Explore</router-link></li>
+      <li class="move"><router-link to="/">Become a Seller</router-link></li>
+       </ul>
+      </nav>
 
       <!-- <app-filter to="/app-filter" @setFilter="setFilter" :class="[isFilterDisplayed && altBackground ? 'displaySearch' : '', !isFilterDisplayed && altBackground ? 'display' : '',
       !altBackground ? 'filter-category' : '']"></app-filter>
@@ -126,10 +138,16 @@ export default {
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     border-top: 1px solid rgb(202, 202, 202);
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in;
+
 }
 
 .displayFilterNone{
   display: none;
+  opacity: 0;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
 }
 .filter-catagory{
    display: flex;
@@ -148,4 +166,10 @@ export default {
 
 }
 
+.displaySearch{
+  display: block;
+}
+.displaySearchNone{
+  display: none;
+}
 </style>

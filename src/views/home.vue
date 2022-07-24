@@ -6,6 +6,38 @@
 
       <h1>Find the perfect <span> &nbsp; freelance</span> </h1>
       <h1> services for your business</h1>
+       <div class="popular-searches">
+         Popular: 
+         <button  @click="moveToExploreFilter('Wordpress')">WordPress</button>
+         <button @click="moveToExploreFilter('Logo')">Logo Design</button>
+         <button @click="moveToExploreFilter('VideoExplainer')">Video Explainer</button>
+         <button @click="moveToExploreFilter('programming')">programming</button>
+       </div>
+
+
+       <div class="heroes">
+         <div id="Moon">
+            <p>&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            <p>Moon, Marketing Export</p>
+         </div>
+         <div id="Rikita">
+            <p>Rikita, Shoemaker and Designer</p>
+         </div>
+         <div id="Zack">
+            <p>Zack, Bar Owner</p>
+         </div>
+         <div id="Andrea">
+            <p>Andrea, Fashion Designer</p>
+         </div>
+         <div id="Gabrielle">
+            <p>&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            <p>Gabrielle, Video Editor</p>
+         </div>
+       </div>
+
+    <!-- <app-filter to="/app-filter" class="main-filter"  @setFilter="setFilter"></app-filter> -->
+  </main>
+         
 
       <div class="search-input">
          <div class="search"><i class="fa-solid fa-magnifying-glass"></i></div>
