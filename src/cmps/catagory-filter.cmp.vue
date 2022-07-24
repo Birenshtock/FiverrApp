@@ -1,6 +1,6 @@
 
 <template>
-      <div class="filter-by-catagory">
+      <div class="filter-by-catagory header-layout">
   <div class="catagory " @click="setCatagory('')">All</div>
   <div class="catagory" @click="setCatagory('Logo')">Logo Design</div>
    <div class="catagory" @click="setCatagory('Wordpress')">Wordpress</div>

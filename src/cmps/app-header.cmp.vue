@@ -18,10 +18,6 @@
 
       <li><router-link to="/">Sign In</router-link></li>
        <button class="join-btn">Join</button>
-      
-      <!-- <li><router-link to="/"><el-button type="success" plain class="join-btn">Join</el-button></router-link></li> -->
-      <!-- <li></li><button class="join-btn"></button> -->
-      <!-- <li><router-link to="/about">About</router-link></li> -->
  </ul>
     </nav>
     </div>
@@ -103,7 +99,6 @@ export default {
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     border-top: 1px solid rgb(202, 202, 202);
-    
 }
 
 .displayFilterNone{
@@ -125,5 +120,4 @@ export default {
     border-top: 1px solid rgb(202, 202, 202);
 
 }
-
 </style>

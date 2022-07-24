@@ -4,9 +4,9 @@
     position: relative;
     display: grid;
     // grid-template-columns: $mainLayoutPadding 1fr $mainLayoutPadding;
-    grid-template-columns: 1fr 82.5rem 1fr;
+    // grid-template-columns: 1fr 82.5rem 1fr;
     // display: grid;
-    // grid-template-columns: $mainLayoutPadding 1fr $mainLayoutPadding;
+    grid-template-columns: $mainLayoutPadding 1fr $mainLayoutPadding;
     >* {
         grid-column: 2;
     }
@@ -15,10 +15,11 @@
     }
 }
 
+
 .header-layout {
     display: flex;
     padding-inline-start: $mainLayoutPadding;
-    padding-inline-end: $mainLayoutPadding
+    padding-inline-end: $mainLayoutPadding;
 }
 
 // .main-layout {
