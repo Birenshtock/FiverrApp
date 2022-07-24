@@ -47,7 +47,7 @@
 
 // position: relative; top: -150px; left: 9px;
 // width:1730px; height: 680px; position: relative; top: -100px; left: -100px;
-#mydiv{ animation: changeBg 20s infinite; width:100%; height: rem(700px); position: relative; top: -100px;   margin: 0px; background-size: cover;  }
+#mydiv{ animation: changeBg 20s infinite; width:auto; height: rem(700px); position: relative; top: -100px;   margin: 0px; background-size: cover; display: flex; justify-content: flex-end;}
 @keyframes changeBg{
    0%,100%  {background-image: url("https://fiverr-res.cloudinary.com/image/upload/q_auto,f_auto/v1/attachments/generic_asset/asset/2413b8415dda9dbd7756d02cb87cd4b1-1599595203045/bg-hero-2-1792-x1.png");}
    20% {background-image: url("https://fiverr-res.cloudinary.com/image/upload/q_auto,f_auto/v1/attachments/generic_asset/asset/d14871e2d118f46db2c18ad882619ea8-1599835783966/bg-hero-3-1792-x1.png") ;}
@@ -55,6 +55,18 @@
    60% {background-image: url("/src/styles/imgs/fiverr4.png");}
    80% {background-image: url("/src/styles/imgs/fiverr5.png");}
 }
+
+// @media (max-width: 900px){
+//     #mydiv{ animation: changeBg 20s infinite; width:100%; height: rem(700px); position: relative; top: -100px;   margin: 0px; background-size: cover;   }
+// @keyframes changeBg{
+//    0%,100%  {background-image: url("https://fiverr-res.cloudinary.com/image/upload/q_auto,f_auto/v1/attachments/generic_asset/asset/bb5958e41c91bb37f4afe2a318b71599-1599344049961/bg-hero-1-900-x1.png");}
+//    20% {background-image: url("https://fiverr-res.cloudinary.com/image/upload/q_auto,f_auto/v1/attachments/generic_asset/asset/2413b8415dda9dbd7756d02cb87cd4b1-1599595203043/bg-hero-2-900-x1.png") ;}
+//    40% {background-image: url("https://fiverr-res.cloudinary.com/image/upload/q_auto,f_auto/v1/attachments/generic_asset/asset/d14871e2d118f46db2c18ad882619ea8-1599835783973/bg-hero-3-900-x1.png");}
+//    60% {background-image: url("https://fiverr-res.cloudinary.com/image/upload/q_auto,f_auto/v1/attachments/generic_asset/asset/bb5958e41c91bb37f4afe2a318b71599-1599344049964/bg-hero-4-900-x1.png");}
+//    80% {background-image: url("https://fiverr-res.cloudinary.com/image/upload/q_auto,f_auto/v1/attachments/generic_asset/asset/bb5958e41c91bb37f4afe2a318b71599-1599344049961/bg-hero-5-900-x1.pngg");}
+// }
+
+// }
 
 
 .home-page{

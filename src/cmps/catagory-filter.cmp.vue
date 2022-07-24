@@ -1,6 +1,8 @@
 
 <template>
-      <div class="filter-by-catagory">
+<!-- <div class="catagory-filter"> -->
+
+  <div class="filter-by-catagory">
   <div class="catagory " @click="setCatagory('')">All</div>
   <div class="catagory" @click="setCatagory('Logo')">Logo Design</div>
    <div class="catagory" @click="setCatagory('Wordpress')">Wordpress</div>
@@ -10,6 +12,8 @@
   <div  class="catagory" @click="setCatagory('Illustration')">Illustration</div>
 </div> 
   
+
+<!-- </div> -->
  
 </template>
 

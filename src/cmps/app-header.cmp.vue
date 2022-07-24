@@ -1,7 +1,7 @@
 
 <template>
   <header class="top-header full" >
-    <div class="header-row-container header-layout">
+    <div class="header-row-container ">
       <div class="main-logo-container">
       <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button> 
        <router-link to="/"><h1 class="main-logo">binderr<span>.</span></h1></router-link>
@@ -10,27 +10,19 @@
      <app-filter to="/app-filter" @setFilter="setFilter"></app-filter>
      
     <nav class="top-header-nav-bar-container" >
-      <!-- <div class="nav-helper"></div> -->
-     
     <ul class="nav-bar clean-list flex">
       <li class="move"><router-link to="/gig">Explore</router-link></li>
       <li class="move"><router-link to="/">Become a Seller</router-link></li>
-
       <li><router-link to="/">Sign In</router-link></li>
        <button class="join-btn">Join</button>
-      
-      <!-- <li><router-link to="/"><el-button type="success" plain class="join-btn">Join</el-button></router-link></li> -->
-      <!-- <li></li><button class="join-btn"></button> -->
-      <!-- <li><router-link to="/about">About</router-link></li> -->
- </ul>
+    </ul>
     </nav>
     </div>
-  <!-- <hr class="header-line full"> -->
-<catagory-filter  class="full" 
+
+
+<catagory-filter  
 :class="[isFilterDisplayed&&altBackground ? 'displayFilter' : '', !isFilterDisplayed&&altBackground? 'displayFilterNone':'',
-!altBackground?'filter-catagory':'']"
-/>
-<!-- :class="[isFilterDisplayed&&altBackground ? 'displayFilter' : 'displayFilterNone']" -->
+!altBackground?'filter-catagory':'']"/>
   </header>
 </template>
 
@@ -88,42 +80,5 @@ export default {
 </script>
 <style>
 
-.displayFilter{
-  display: flex;
-  position: fixed;
-  top: 78px;
-  /* padding-left:200px; */
-  
-  background-color: rgb(255, 255, 255);
-  z-index: 1000;
-  
-    color: #74767e;
-    font-weight: 400;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
-    border-top: 1px solid rgb(202, 202, 202);
-    
-}
-
-.displayFilterNone{
-  display: none;
-}
-.filter-catagory{
-   display: flex;
- 
-  /* padding-left:200px; */
-  
-  background-color: rgb(255, 255, 255);
-
-  
-    color: #74767e;
-    font-weight: 400;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
-    border-top: 1px solid rgb(202, 202, 202);
-
-}
 
 </style>
