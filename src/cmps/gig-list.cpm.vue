@@ -1,35 +1,33 @@
 <template>
-<catagory-filter  class="full" />
-<br>
-<br>
-  <section class="gig-list">
-    <div class="grid">
-      <div class="card" v-for="gig in gigs" :key="gig._id">
-        <gig-preview :gig="gig" />
-      </div>
+  <category-filter class="full" />
+  <br>
+  <br>
+  <section class="gig-list grid">
+    <div class="card" v-for="gig in gigs" :key="gig._id">
+      <gig-preview :gig="gig" />
     </div>
   </section>
 </template>
 
 <script>
-  import gigPreview from './gig-preview.cmp.vue';
+import gigPreview from './gig-preview.cmp.vue';
 
-  export default {
-    name: 'gigList',
-    props: {
-      gigs: Array,
-    },
-    components: {
-      gigPreview,
-    },
-    data() {
-      return {};
-    },
-    created() {},
-    methods: {
+export default {
+  name: 'gigList',
+  props: {
+    gigs: Array,
+  },
+  components: {
+    gigPreview,
+  },
+  data() {
+    return {};
+  },
+  created() { },
+  methods: {
 
-    },
-    computed: {},
-    unmounted() {},
-  };
+  },
+  computed: {},
+  unmounted() { },
+};
 </script>

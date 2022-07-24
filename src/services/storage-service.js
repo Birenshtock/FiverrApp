@@ -6,7 +6,6 @@ import { gigService } from '../services/gig-service.js'
 // import gigs from '../../data/gigs.json'
 // import orders from '../../data/orders.json'
 
-
 export const storageService = {
   query,
   queryOrder,
@@ -17,12 +16,13 @@ export const storageService = {
   postMany,
 }
 
-function queryOrder (key) {
-  return Promise.resolve(JSON.parse(localStorage.getItem(key))||_createDefaultOrders())
+function queryOrder(key) {
+  return Promise.resolve(
+    JSON.parse(localStorage.getItem(key)) || _createDefaultOrders()
+  )
 }
 
-function _createDefaultOrders (){
-
+function _createDefaultOrders() {
   return [
     {
       _id: 'b101',
@@ -47,7 +47,7 @@ function _createDefaultOrders (){
 //   [
 //     {
 //       "_id":"o101",
-//       "catagory": "Logo",
+//       "category": "Logo",
 //       "title": "I will do superb, unique and modern business logo design",
 //       "owner": {
 //         "_id": "u101",
@@ -62,7 +62,7 @@ function _createDefaultOrders (){
 //       "about": "Hello! My name is VD. I am a connoisseur of art and music. I love being around nature and my pets. I have a team of professional graphic designers with an experience of 8+ years. We specialize in logo designing. We're available exclusively on fiverr to rock your world with our designing skills. Come and experience it for yourself!"
 //       },
 //       "daysToMake": 3,
-//       "img": 
+//       "img":
 //         "https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/116971341/original/609e515ad8fb3f361fcd5c7de44544d56815e0af.png",
 
 //       "description": "Hi there ! Thanks for stopping by !!\nA Team of Talented Graphic Designer with 8+ years of experience in Graphic Industry, expertise as Logo Maker, You'll get creative & AWESOME logo design for your business.\nMy portfolio : https://www.fiverr.com/users/design_desk/portfolio/NjFiYjE4NmMwZTgwMDUwMDAxZTMzMjJh\n★ Why Us? ★\nTalented Logo Maker Team\nFully custom made, creative, original, UNIQUE and AWESOME designs\nProfessional customer support 24/7\nHigh Quality work\n100% money back policy if not satisfied\n★ WHAT DO YOU GET? ★\n✔ Highly Professional, UNIQUE & High Quality designs\n✔ UNLIMITED revisions until u r 100% satisfied\n✔ Fast turn around time 24 to 48 hours only.\n✔ 100% original & unique vector design from Adobe Illustrator\n✔ Vector Source Files (scalable without any quality loss) (AI, EPS, PDF) for the final design ✔ PROFESSIONAL Communication & Outstanding Customer Support ✔ Guaranteed High Quality work\nIf you have any question,\nFeel free to★ Contact Me! ★I'll be happy to help !\nLet's get started!\n-Your Logo Maker",
@@ -80,25 +80,21 @@ function _createDefaultOrders (){
 //   )
 // }
 
-
-
 function query(key) {
   return Promise.resolve(JSON.parse(localStorage.getItem(key)))
-
-
 }
 
 function get(entityType, entityId) {
   console.log(entityId)
-  return query(entityType).then(entities =>
-    entities.find(entity => entity._id === entityId)
+  return query(entityType).then((entities) =>
+    entities.find((entity) => entity._id === entityId)
   )
 }
 
 function post(entityType, newEntity) {
   console.log('ggggggggggggggggggggggg')
   newEntity._id = _makeId()
-  return query(entityType).then(entities => {
+  return query(entityType).then((entities) => {
     entities.push(newEntity)
     _save(entityType, entities)
     return newEntity
@@ -106,7 +102,7 @@ function post(entityType, newEntity) {
 }
 
 function postMany(entityType, newEntities) {
-  return query(entityType).then(entities => {
+  return query(entityType).then((entities) => {
     entities.push(...newEntities)
     _save(entityType, entities)
     return entities
@@ -114,8 +110,8 @@ function postMany(entityType, newEntities) {
 }
 
 function put(entityType, updatedEntity) {
-  return query(entityType).then(entities => {
-    const idx = entities.findIndex(entity => entity._id === updatedEntity._id)
+  return query(entityType).then((entities) => {
+    const idx = entities.findIndex((entity) => entity._id === updatedEntity._id)
     entities.splice(idx, 1, updatedEntity)
     _save(entityType, entities)
     return updatedEntity
@@ -123,8 +119,8 @@ function put(entityType, updatedEntity) {
 }
 
 function remove(entityType, entityId) {
-  return query(entityType).then(entities => {
-    const idx = entities.findIndex(entity => entity._id === entityId)
+  return query(entityType).then((entities) => {
+    const idx = entities.findIndex((entity) => entity._id === entityId)
     entities.splice(idx, 1)
     _save(entityType, entities)
   })

@@ -25,18 +25,18 @@ async function query(filterBy) {
 
     const gigs = await storageService.query(KEY)
 
-    const { title, catagory } = filterBy
+    const { title, category } = filterBy
     const regex = new RegExp(title, 'i')
     console.log('ata mefager')
     let filteredGigs
-    if (!catagory) {
+    if (!category) {
       filteredGigs = gigs.filter((gig) => regex.test(gig.title))
       return Promise.resolve(filteredGigs)
     }
 
     filteredGigs = gigs
       .filter((gig) => regex.test(gig.title))
-      .filter((gig) => gig.catagory === catagory)
+      .filter((gig) => gig.category === category)
 
     return Promise.resolve(filteredGigs)
   } catch (err) {
@@ -122,7 +122,7 @@ function _createGigs() {
     gigs = [
       {
         _id: 'i101',
-        catagory: 'Logo',
+        category: 'Logo',
         title: 'I will do superb, unique and modern business logo design',
         price: 12,
         owner: {
@@ -189,7 +189,7 @@ function _createGigs() {
       },
       {
         _id: 'i102',
-        catagory: 'Wordpress',
+        category: 'Wordpress',
         title: 'I will design your logo',
         price: 12,
         owner: {
@@ -278,7 +278,7 @@ function _createGigs() {
       },
       {
         _id: 'i103',
-        catagory: 'VoiceOver',
+        category: 'VoiceOver',
         title: 'I will design your logo',
         price: 12,
         owner: {
@@ -358,7 +358,7 @@ function _createGigs() {
       },
       {
         _id: 'i104',
-        catagory: 'Logo',
+        category: 'Logo',
         title: 'I will do professional minimalist logo design',
         price: 40,
         owner: {
@@ -425,7 +425,7 @@ function _createGigs() {
       },
       {
         _id: 'i105',
-        catagory: 'Wordpress',
+        category: 'Wordpress',
         title: 'I will do wordpress malware removal within 1hour',
         price: 50,
         owner: {
@@ -515,7 +515,7 @@ function _createGigs() {
       },
       {
         _id: 'i107',
-        catagory: 'Programming',
+        category: 'Programming',
         title: 'I will create a useful windows program',
         price: 164,
         owner: {
@@ -596,7 +596,7 @@ function _createGigs() {
       },
       {
         _id: 'i107',
-        catagory: 'Illustration',
+        category: 'Illustration',
         title: 'I will draw, modern, flat illustrations, for your business',
         price: 34,
         owner: {

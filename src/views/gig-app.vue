@@ -1,10 +1,10 @@
 <template>
-  <section >
-    <h1>{{headerCatagory}}</h1>
+  <section>
+    <h1 class="hcategory">{{ headercategory }}</h1>
 
 
     <!-- <div class="app-filter"> -->
-        <!-- <app-filter to="/app-filter" class="main-filter"  @setFilter="setFilter"></app-filter> -->
+    <!-- <app-filter to="/app-filter" class="main-filter"  @setFilter="setFilter"></app-filter> -->
     <!-- </div> -->
     <div class="gig-list">
       <gig-list :gigs="gigs" />
@@ -24,22 +24,24 @@ import gigList from '../cmps/gig-list.cpm.vue'
 
 export default {
   name: 'gig-app',
-    data() {
-   return {
-    // headerCatagory: '',
+  data() {
+    return {
+      // headercategory: '',
 
-   }},
+    }
+  },
   created() {
     //  console.log('gigs',gigs)
     this.$store.dispatch({ type: 'loadGigs' })
-    this.headerCatagory = this.$route.query.catagory
+    this.headercategory = this.$route.query.category
   },
   computed: {
     gigs() {
       return this.$store.getters.gigs
     },
-    headerCatagory(){
-      return this.$route.query.catagory
+    headercategory() {
+
+      return this.$route.query.category || "All category"
     }
   },
   methods: {
@@ -51,9 +53,10 @@ export default {
   components: {
     gigList,
 
-    
+
   },
 }
 </script>
 
-<style></style>
+<style>
+</style>

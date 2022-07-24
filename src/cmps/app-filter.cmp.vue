@@ -1,17 +1,14 @@
 
 <template>
-  <section >
+  <section>
     <div class="input-container">
-    <input class="header-input" type="text" @input="setFilter"
-      v-model="filterBy.title"
-      placeholder="  What service are you looking for today?"
-      clearable
-      size="large">
-    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-    
-    </div>  
+      <input class="header-input" type="text" @input="setFilter" v-model="filterBy.title"
+        placeholder="  What service are you looking for today?" clearable size="large">
+      <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
 
-    </section>
+    </div>
+
+  </section>
 </template>
 
 <script>
@@ -20,34 +17,34 @@ export default {
     return {
       filterBy: {
         title: '',
-        // catagory: this.$route.query.catagory
+        // category: this.$route.query.category
         // byCatagories: [],
       },
       tags: [
-          "logo-design",
-          "artisitic",
-          "proffesional",
-          "accessible"
+        "logo-design",
+        "artisitic",
+        "proffesional",
+        "accessible"
       ],
 
     }
   },
   methods: {
     async setFilter() {
-      await  this.$route.query.catagory
-      console.log('ff', this.$route.query.catagory)
-      
+      await this.$route.query.category
+      console.log('ff', this.$route.query.category)
+
       this.$emit('setFilter', {
         ...this.filterBy,
-        catagory: this.$route.query.catagory,
+        category: this.$route.query.category,
       })
     },
-  
+
   },
   computed: {},
-  mounted() {},
+  mounted() { },
   watch: {
-    '$route.query.catagory'(){
+    '$route.query.category'() {
       this.setFilter()
     }
   }

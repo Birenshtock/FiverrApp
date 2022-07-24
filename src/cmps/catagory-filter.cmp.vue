@@ -1,40 +1,40 @@
 
 <template>
-<!-- <div class="catagory-filter"> -->
+  <!-- <div class="category-filter"> -->
 
-  <div class="filter-by-catagory">
-  <div class="catagory " @click="setCatagory('')">All</div>
-  <div class="catagory" @click="setCatagory('Logo')">Logo Design</div>
-   <div class="catagory" @click="setCatagory('Wordpress')">Wordpress</div>
-  <div class="catagory" @click="setCatagory('VoiceOver')" >Voice Over</div>
-  <div  class="catagory" @click="setCatagory('VideoExplainer')">Video Explainer</div>
-  <div  class="catagory" @click="setCatagory('Programming')">Programming</div>
-  <div  class="catagory" @click="setCatagory('Illustration')">Illustration</div>
-</div> 
-  
+  <div class="filter-by-category">
+    <div class="category " @click="setcategory('')">All</div>
+    <div class="category" @click="setcategory('Logo')">Logo Design</div>
+    <div class="category" @click="setcategory('Wordpress')">Wordpress</div>
+    <div class="category" @click="setcategory('VoiceOver')">Voice Over</div>
+    <div class="category" @click="setcategory('VideoExplainer')">Video Explainer</div>
+    <div class="category" @click="setcategory('Programming')">Programming</div>
+    <div class="category" @click="setcategory('Illustration')">Illustration</div>
+  </div>
 
-<!-- </div> -->
- 
+
+  <!-- </div> -->
+
 </template>
 
 <script>
 
 export default {
-  
-  components:{
-   
+
+  components: {
+
   },
   data: () => {
-  return {
+    return {
 
-    
+
     };
   },
-   methods: {  
-      setCatagory(catagory){
-    
-      this.$router.push({query: {catagory: catagory}})
-      
+  methods: {
+    setcategory(category) {
+
+      this.$router.push({ query: { category: category } })
+
     },
   },
 
